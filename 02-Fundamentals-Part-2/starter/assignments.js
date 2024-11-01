@@ -119,3 +119,62 @@ neighbours[neighbours.indexOf('Burundi')] = 'Kenya';
 console.log(neighbours);
 
 */
+
+
+/*
+        //===** Intro to Object**===
+
+const myCountry = {
+    country: 'Rwanda', 
+    capital: 'Kigali', 
+    language: 'iKinyarwanda', 
+    population: 14, 
+    neighours: ['Burundi', 'Kenya', 'Uganda', 'Tanzania']
+}; 
+console.log(myCountry)
+
+
+
+        // Dot vs. Bracket Notation
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighours.length} neighbouring countries and a capital called ${myCountry.capital}`); 
+
+//Increase 2millions on population using dot notation
+myCountry.population += 2; 
+console.log(myCountry); 
+
+//Decrease 2 million using bracket notation
+myCountry['population'] -= 2; 
+console.log(myCountry);
+
+*/
+
+
+
+        //Object Method
+/*
+const myCountry = {
+    country: 'Rwanda', 
+    capital: 'Kigali', 
+    language: 'iKinyarwanda', 
+    population: 14, 
+    neighours: ['Burundi', 'Kenya', 'Uganda', 'Tanzania'], 
+
+    describe: function () {
+        console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighours.length} neighbouring countries and a capital called ${this.capital}`
+        );
+    }, 
+
+    checkIsland: function () {
+        this.isIsland = this.neighours.length === 0 ? true : false;
+    }
+}; 
+
+myCountry.describe(); 
+
+myCountry.checkIsland(); 
+console.log(myCountry); 
+
+*/
+
+
