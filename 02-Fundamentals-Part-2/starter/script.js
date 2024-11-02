@@ -265,9 +265,68 @@ console.log(jonas);
 console.log(jonas.getSummary());
         
 */
-        
-        
 
 
+        // ========= LOOP ==========
 
+/*
+// for loop keeps running while condition is TRUE. 
+for(let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights 
+        repetition 🏋🏽‍♂️ ${rep}`); 
+}
+    
+
+    // Looping arrays, Breaking and Continuing 
+
+const jonas = [
+    'Jonas', 
+    'Schmedtmann', 
+    2024 - 1991, 
+    'teacher', 
+    ['Micheal', 'Peter', 'Steven'], 
+    true
+];   
+
+const types = []; //to get a new array of type of value in janas Array
+
+for (let i = 0; i < jonas.length; i++){
+    // Reading from jonas array
+    console.log(jonas[i], typeof jonas[i]);
+
+        //Filling types array
+    // types[i] = typeof jonas[i];
+        // Other way
+    types.push(typeof jonas[i]); 
+}; 
+console.log(types);
+
+    //Other example
+const years = [1991, 1998, 2003, 2020]; 
+const ages = []; 
+
+for(let i = 0; i < years.length; i++){
+    ages.push(2024 - years[i]);
+}
+console.log(ages);
+
+
+    //CONTINUE AND BREAK!
+
+console.log('----- ONLY STRINGS -----');
+for (let i = 0; i < jonas.length; i++){
+    if(typeof jonas[i] !== 'string') continue; 
+
+    console.log(jonas[i], typeof jonas[i]);
+}
+
+console.log('----- BREAK WITH NUMBER -----');
+for (let i = 0; i < jonas.length; i++){
+    if(typeof jonas[i] === 'number') break; 
+
+    console.log(jonas[i], typeof jonas[i]);
+}
+
+
+*/
         
