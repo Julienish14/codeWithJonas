@@ -329,4 +329,29 @@ for (let i = 0; i < jonas.length; i++){
 
 
 */
-        
+
+
+        //LOOPING BACKWARDS AND LOOPS IN LOOPS
+/*
+const jonas = [
+    'Jonas', 
+    'Schmedtmann', 
+    2024 - 1991, 
+    'teacher', 
+    ['Micheal', 'Peter', 'Steven']
+];  
+
+    //Loop backwards
+for(let i = jonas.length - 1; i >= 0; i--){
+    console.log(i, jonas[i]);
+}
+
+    //Loops in Loops
+
+for(let exerices = 1; exerices < 4; exerices++){
+    console.log(`----- Start Exercises ${exerices} -------`); 
+    for(let rep = 1; rep < 6; rep ++){
+        console.log(` Exercises ${exerices}: Lifting weight repetition ${rep} 🏋🏽‍♂️`); 
+    }
+}
+*/

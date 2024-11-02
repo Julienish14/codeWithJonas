@@ -140,7 +140,55 @@ if(john.bmi > mark.bmi){
 
 */
 
+/*
+CHALLENGE #4
+Let's improve Steven's tip calculator even more, this time using loops!
+
+Your tasks:
+
+Create an array called bills containing all 10 test bill values.
+
+Create empty arrays for the tips and the totals (tips and totals)
+
+Use the calcTip function we wrote before (included in the starter code) to calculate tips and total values (bill + tip) for every bill value in the bills array. Use a for loop to perform the 10 calculations!
 
 
 
+TEST DATA: 22, 295, 176, 440, 37, 105, 10, 1100, 86, and 52.
+*/
+
+/*
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+  }
+  
+  const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]; 
+  const tips = []; 
+  const totals = [];
+  
+  for (let i = 0; i < bills.length; i++){
+        //fist way 
+    //   const tip = calcTip(bills[i]); 
+    //   tips.push(tip);
+
+        //Second way
+    tips.push(calcTip(bills[i]));
+
+        //Third way 
+    //   tips[i] = calcTip(bills[i]);
+      
+        //First way on Total
+    //   const tot = tips[i] + bills[i]; 
+    //   totals.push(tot);
+
+        //Second way on Total
+    totals.push(tips[i] + bills[i]); 
+
+        //Third way on Total
+    // totals[i] = tips[i] + bills[i]; 
+  }
+
+  console.log(bills, tips, totals);
+
+*/
 
