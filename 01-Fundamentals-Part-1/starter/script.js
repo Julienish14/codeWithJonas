@@ -214,7 +214,6 @@ if(height){
 }else{
    console.log('Height is UNDEFINED'); 
 }
-
    // Eqaulity operator === vs ==
 
 const age = 18; 
@@ -237,7 +236,6 @@ if(favourite === 23){
 }
 
 if(favourite !== 23) console.log('Why not 23? '); 
-
 
 
    //The Switch Statement
