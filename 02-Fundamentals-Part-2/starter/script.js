@@ -109,162 +109,162 @@ console.log(yearsUntilRetirement(1940, 'Bob'));
 
         // =====*** ARRAYS ***=====
 
-        const friend1 = 'Michael';
-        const friend2 = 'Monica';
-        const friend3 = 'Molata';
+const friend1 = 'Michael';
+const friend2 = 'Monica';
+const friend3 = 'Molata';
         
-        const friends = ['Michael', 'Monica', 'Molata'];
-        console.log(friends);
+const friends = ['Michael', 'Monica', 'Molata'];
+console.log(friends);
         
-        //Other way to write array
+//Other way to write array
         
-        const yearAr = new Array(1991, 1984, 2008, 2020);
-        console.log(yearAr)
+const yearAr = new Array(1991, 1984, 2008, 2020);
+console.log(yearAr)
         
-        console.log(friends[0]); 
-        console.log(friends[2]); 
+console.log(friends[0]); 
+console.log(friends[2]); 
         
-        console.log(friends.length); 
-        console.log(friends[friends.length - 1]); 
+console.log(friends.length); 
+console.log(friends[friends.length - 1]); 
         
-        //You can mutate array. 
-        friends[2] = 'Peter'; //you can mutate array even though it is declared as const because it primitive value
-        console.log(friends);
+    //You can mutate array. 
+friends[2] = 'Peter'; //you can mutate array even though it is declared as const because it primitive value
+console.log(friends);
         
-        const firstName = 'Jonas';
-        const jonas = [firstName, 'Schmedtmann', 2024 - 1991,'Teacher', friends]; 
-        console.log(jonas);
+const firstName = 'Jonas';
+const jonas = [firstName, 'Schmedtmann', 2024 - 1991,'Teacher', friends]; 
+console.log(jonas);
         
-            //Exercise
+    //Exercise
         
-        function calcAge1(birthYear){
-            return 2024 - birthYear; 
-        }
+function calcAge1(birthYear){
+    return 2024 - birthYear; 
+}
         
-        const years = [1990, 1964, 2002, 2010, 2018]; 
+const years = [1990, 1964, 2002, 2010, 2018]; 
         
-        const age1 = calcAge1(years[0]); 
-        const age2 = calcAge1(years[1]); 
-        const age3 = calcAge1(years[years.length - 1]); 
+const age1 = calcAge1(years[0]); 
+const age2 = calcAge1(years[1]); 
+const age3 = calcAge1(years[years.length - 1]); 
         
-        console.log(age1, age2, age3);
+console.log(age1, age2, age3);
         
-        const ages = [calcAge1(years[0]),calcAge1(years[1]),calcAge1(years[years.length - 1])];
-        console.log(ages);
-        
-        
-        const friends = ['Michael', 'Monica', 'Molata'];
-        //Add elements
-        const newLength = friends.push('Jay'); //push function(method) returns value
-         console.log(friends);
-         console.log(newLength);
-        
-         friends.unshift('John'); 
-         console.log(friends);
-        
-        //Remove elements. 
-        friends.pop(); //last
-        const popped = friends.pop();
-        console.log(popped);
-        console.log(friends);
-        
-        friends.shift(); //First 
-        console.log(friends);
-        
-        console.log(friends.indexOf('Monica'));
-        console.log(friends.indexOf('Bob')); //return -1 as Bob is not in array
-        
-        console.log(friends.includes('Monica')); //return true as she is in arry
-        console.log(friends.includes('Bob')); //return false as he's not in arry
-        
-        if(friends.includes('Monica')){
-            console.log('You have a friend called Monica'); 
-        }
-        
-        */
+const ages = [calcAge1(years[0]),calcAge1(years[1]),calcAg(years[years.length - 1])];
+console.log(ages);
         
         
-                // ======= ****** OBJECTS ******** ==========
-        /*
-        const jonas = {
-            firstName: 'Jonas', 
-            lastName: 'Schmedtmann', 
-            age: 2024 - 1994, 
-            job: 'teacher', 
-            friends: ['Michael', 'Peter', 'Steven']
-        };
+const friends = ['Michael', 'Monica', 'Molata'];
+//Add elements
+const newLength = friends.push('Jay'); //push function(method) returns value
+ console.log(friends);
+ console.log(newLength);
         
-                //Dot vs Bracket notation. 
+ friends.unshift('John'); 
+ console.log(friends);
         
-        console.log(jonas); 
-        console.log(jonas.lastName);
-        console.log(jonas['lastName']);
+//Remove elements. 
+friends.pop(); //last
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+        
+friends.shift(); //First 
+console.log(friends);
+        
+console.log(friends.indexOf('Monica'));
+console.log(friends.indexOf('Bob')); //return -1 as Bob is not in array
+        
+console.log(friends.includes('Monica')); //return true as she is in arry
+console.log(friends.includes('Bob')); //return false as he's not in arry
+        
+if(friends.includes('Monica')){
+    console.log('You have a friend called Monica'); 
+}
+        
+*/
         
         
-        const nameKey = 'Name'; 
-        console.log(jonas['first' + nameKey]);
-        console.log(jonas['last' + nameKey]);
+        // ======= ****** OBJECTS ******** ==========
+/*
+const jonas = {
+    firstName: 'Jonas', 
+    lastName: 'Schmedtmann', 
+    age: 2024 - 1994, 
+    job: 'teacher', 
+    friends: ['Michael', 'Peter', 'Steven']
+};
         
-        const interestedIn = prompt('What do you want to know about Jonas? Choose between firstname, lastname, age, job and friends');
+        //Dot vs Bracket notation. 
         
-        if(jonas[interestedIn]){
-            console.log(jonas[interestedIn]);
-        }else{
-            console.log('Wrong request!  Choose between firstname, lastname, age, job and friends'); 
-        }
+console.log(jonas); 
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
         
-        jonas.location = 'Portugal'; 
-        jonas['twitter'] = '@jonasschmedtman';
-        console.log(jonas);
+        
+const nameKey = 'Name'; 
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+        
+const interestedIn = prompt('What do you want to know about Jonas? Choose between firstname, lastname, age, job and friends');
+        
+if(jonas[interestedIn]){
+    console.log(jonas[interestedIn]);
+}else{
+    console.log('Wrong request!  Choose between firstname, lastname, age, job and friends'); 
+}
+        
+jonas.location = 'Portugal'; 
+jonas['twitter'] = '@jonasschmedtman';
+console.log(jonas);
          
-        //Challenge : write not hardcoded this version "jonas has 3 friends, and his best friend is called Michael";
+//Challenge : write not hardcoded this version "jonas has 3 friends, and his best friend is called Michael";
         
-        console.log(`${jonas.firstName} has ${jonas.friends.length} friends, his best friend is called ${jonas.friends[0]}`);
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, his best friend is called ${jonas.friends[0]}`);
         
-        */
+*/
         
         
-                // ==== Object Method =======
+         // ==== Object Method =======
         
-        /*
-        const jonas = {
-            firstName: 'Jonas', 
-            lastName: 'Schmedtmann', 
-            birthYear: 1991, 
-            job: 'teacher', 
-            friends: ['Michael', 'Peter', 'Steven'], 
-            hasDriversLicense: true, 
+/*
+const jonas = {
+    firstName: 'Jonas', 
+    lastName: 'Schmedtmann', 
+    birthYear: 1991, 
+    job: 'teacher', 
+    friends: ['Michael', 'Peter', 'Steven'], 
+    hasDriversLicense: true, 
         
-            // calcAge: function(birthYear){
-            //     return 2024 - birthYear; 
-            // }
+    // calcAge: function(birthYear){
+    //     return 2024 - birthYear; 
+    // }
             
-            // calcAge: function(){
-            //     return 2024 - this.birthYear; //this. same as jonas.
-            // }
+    // calcAge: function(){
+    //     return 2024 - this.birthYear; //this. same as jonas.
+    // }
              
-            calcAge: function () {
-                this['age'] = 2024 - this.birthYear; //with this. we created new property
-                return this.age;  
-            },
+    calcAge: function () {
+        this['age'] = 2024 - this.birthYear; //with this. we created new property
+        return this.age;  
+    },
         
-            getSummary: function(){
-                return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's licence`;
+    getSummary: function(){
+        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's licence`;
                 
-            }
-        };
+    }
+};
         
-        console.log(jonas.calcAge());
-        console.log(jonas['calcAge']());
-        console.log(jonas.age);
-        console.log(jonas.age);
-        console.log(jonas);
+console.log(jonas.calcAge());
+console.log(jonas['calcAge']());
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas);
         
-        //Challange 
-        // "Jonas is a 46-year old teacher, and he has a driver's license"
-        console.log(jonas.getSummary());
+    //Challange 
+// "Jonas is a 46-year old teacher, and he has a driver's license"
+console.log(jonas.getSummary());
         
-        */
+*/
         
         
 
