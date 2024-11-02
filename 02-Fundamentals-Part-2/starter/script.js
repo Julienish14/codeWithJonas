@@ -354,4 +354,33 @@ for(let exerices = 1; exerices < 4; exerices++){
         console.log(` Exercises ${exerices}: Lifting weight repetition ${rep} 🏋🏽‍♂️`); 
     }
 }
+
+*/
+        //WHILE LOOP
+
+
+//For comparision 
+//while loop is more versatile than the for loop, which means it can be use in a larger variety of situations. 
+
+// for(let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repetition 🏋🏽‍♂️ ${rep}`); 
+// }
+
+/*
+let rep = 1; 
+while(rep <= 10){
+    // console.log(`WHILE: Lifting weights repetition 🏋🏽‍♂️ ${rep}`); 
+    rep++; 
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1; 
+
+while (dice !== 6){ 
+    console.log(`You rolled a ${dice}`); 
+    dice = Math.trunc(Math.random() * 6) + 1; 
+    if(dice === 6) console.log('Loop is about to end...');
+}
+
+//The while loop does really not have to depend on any counter variable.
+
 */
