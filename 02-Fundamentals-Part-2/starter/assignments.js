@@ -225,3 +225,23 @@ while(i < populations.length){
 console.log(percentages3);
 
 */
+
+const myCountry = {
+    country: 'Rwanda', 
+    capital: 'Kigali', 
+    language: 'iKinyarwanda', 
+    population: 14, 
+    neighours: ['Burundi', 'Kenya', 'Uganda', 'Tanzania'], 
+
+    describe: function(){
+        console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighours.length} neighbouring countries and a capital called ${this.capital}`)
+    }, 
+
+    checkIsland: function(){
+        this.isIsland = this.neighours.length === 0 ? 'true' : 'false'; 
+    }
+}; 
+
+myCountry.describe(); 
+myCountry.checkIsland();
+console.log(myCountry); 
