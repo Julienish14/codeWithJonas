@@ -201,7 +201,7 @@ console.log(`${country}'s polulation ${population > 33 ? 'is above' : 'is below'
 
 let country = 'Angola'; 
 let continent = 'Africa'; 
-let population = 50; 
+let population = 20; 
 
 console.log(country, continent, population);
 
@@ -274,3 +274,5 @@ switch(language){
     default: 
         console.log('Great language too :D');
 }
+
+console.log(`${country}'s population is ${population > 33 ? 'above': 'below'} average`)
