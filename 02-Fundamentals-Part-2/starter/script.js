@@ -384,3 +384,21 @@ while (dice !== 6){
 //The while loop does really not have to depend on any counter variable.
 
 */
+
+/*
+const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+
+for (let i = 0; i < listOfNeighbours.length; i++){
+    for(let k = 0; k < listOfNeighbours[i].length; k++){
+        console.log(`Neighbour: ${listOfNeighbours[i][k]}`);
+    }
+}
+
+for (let i = 1; i <= 3; i++){
+    console.log('----** Exerices **-----'); 
+    for(let f = 1; f <= 10; f++){
+        console.log(`Exerices No ${i} Lifting Heave bench 🏋🏽‍♂️`); 
+    }
+}
+
+*/
