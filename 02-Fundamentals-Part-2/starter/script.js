@@ -385,6 +385,7 @@ while (dice !== 6){
 
 */
 
+/*
 const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
 
 for (let i = 0; i < listOfNeighbours.length; i++){
@@ -399,3 +400,5 @@ for (let i = 1; i <= 3; i++){
         console.log(`Exerices No ${i} Lifting Heave bench 🏋🏽‍♂️`); 
     }
 }
+
+*/

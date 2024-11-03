@@ -226,6 +226,69 @@ console.log(percentages3);
 
 */
 
+        // ======== ***** ---- REVIEW REVIEW.... ---- ***** ========
+
+const describeCountry = function(country, population, capitalCity){
+    const perce = population * 100 / 7900; 
+
+   const des = console.log(`${country} has ${population} million people and its capital city is ${capitalCity} And the Word percentage of country is: ${perce}%`);
+   return des; 
+}
+
+describeCountry('Rwanda', 13, 'Kigali'); 
+describeCountry('Burundi', 23, 'Gitega'); 
+describeCountry('Zanzibar', 39, 'Dodoma'); 
+
+
+        //FUNCTION EXPRESSION 
+const percentageOfWorld1 = function(population) {
+    return population * 100 / 7900; 
+}
+
+const Rwanda = percentageOfWorld1(219); 
+const Buru = percentageOfWorld1(230); 
+const Tanza = percentageOfWorld1(200); 
+console.log(Rwanda,Buru,Tanza);
+
+
+
+        //FUNCTION DECLARATION
+function percentageOfWorld2 (population){
+    return population * 100 / 7900; 
+}
+const CD = percentageOfWorld1(519); 
+const TZ = percentageOfWorld1(230); 
+const KN = percentageOfWorld1(600); 
+console.log(CD,TZ,KN);
+
+const percentageOfWorld3 = population => population * 100 / 7900; 
+
+const percPortugal3 = percentageOfWorld3(10).toFixed(2);
+const percChina3 = percentageOfWorld3(1441).toFixed(2);
+const percUSA3 = percentageOfWorld3(332).toFixed(2);
+
+console.log(percPortugal3, percChina3, percUSA3);
+
+
+const describePopulation = (country, population) => console.log(`${country} has ${population} million people, which is about ${percentageOfWorld3(population).toFixed(2)}% of the world.`);
+
+const desCountry1 = describePopulation('Rwanda', 10);
+const desCountry2 = describePopulation('Kenya', 1441);
+const desCountry3 = describePopulation('Zanzibar', 332);
+
+const population = [234, 122, 345, 204, 343];
+
+console.log(population.length === 4);
+const percentage = [
+    percentageOfWorld1(population[0]),
+    percentageOfWorld1(population[1]),
+    percentageOfWorld1(population[2]),
+    percentageOfWorld1(population[3])
+]; 
+console.log(percentage);
+
+
+/*
 const myCountry = {
     country: 'Rwanda', 
     capital: 'Kigali', 
@@ -250,3 +313,5 @@ console.log(myCountry);
 for(let i = 1; i <= 50; i++){
     console.log(`Voter number ${i} is currently voting`);
 }
+
+*/
