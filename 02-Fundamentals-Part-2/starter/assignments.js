@@ -287,6 +287,74 @@ const percentage = [
 ]; 
 console.log(percentage);
 
+const neighbours = ['Somali', 'Tz', 'UG']; 
+
+neighbours.push('Utopia'); 
+console.log(neighbours);
+neighbours.pop(); 
+console.log(neighbours);
+
+if(!neighbours.includes('Germany')) console.log('Probably not a central european coutnry :D'); 
+
+neighbours[neighbours.indexOf('Tz')] = "Kenya";
+console.log(neighbours);
+
+
+const myCountry = {
+    country: 'Tz', 
+    capital: 'Dodoma', 
+    language: 'Swahili',
+    population: 45, 
+    neighbours: ['Rwanda', 'Burundi', 'Uganda', 'Congo'],
+    describe: function(){
+        console.log(`** This is Describe Method: ${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}... `)
+    },  
+    checkIsland: function(){
+        this.isIsland = this.neighbours.length === 0 ? 'true' : 'false';
+    }
+}
+
+myCountry.describe(); 
+myCountry.checkIsland(); 
+console.log(myCountry);
+
+
+
+console.log(myCountry);
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}... `);
+
+myCountry.population += 2; 
+console.log(myCountry); 
+myCountry.population -= 2; 
+console.log(myCountry); 
+
+
+
+const percentage2 = [];
+
+for(let i = 0; i < population.length; i++){
+    percentage2.push(percentageOfWorld3(population[i])); 
+}
+console.log(population); 
+console.log( percentage2); 
+
+const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+
+for(let i = 0; i < listOfNeighbours.length; i++){
+    for(let m = 0; m < listOfNeighbours[i].length; m++){
+        console.log('Neighbour: '+ listOfNeighbours[i][m]);    
+    }
+}
+
+const perce3 = []; 
+
+let i = 0; 
+while(i < population.length){
+    perce3.push(percentageOfWorld3(population[i])); 
+    i++; 
+}
+console.log(perce3);
 
 /*
 const myCountry = {
