@@ -1,3 +1,4 @@
+'use strict';
 /*
 // Assignment NumberOne.
 
@@ -199,6 +200,8 @@ console.log(`${country}'s polulation ${population > 33 ? 'is above' : 'is below'
 
 */
 
+/*
+
 let country = 'Angola'; 
 let continent = 'Africa'; 
 let population = 20; 
@@ -233,6 +236,7 @@ console.log('19' - '13' + 17); // -> ? 23
 console.log('123' < 57); // -> ? false
 console.log(5 + 6 + '4' + 9 - 4 - 2); // -> ? 1143
 
+
 /*
 const numNeighbours = Number(prompt('How many neighbour countries does your contry have?'));
 
@@ -248,6 +252,8 @@ if(numNeighbours === 1){
 console.log(typeof numNeighbours);
 */
 
+
+/*
 if(language === 'English' && population < 50 && isIsland === false){
     console.log(`You should live in ${country} :)`); 
 }else{
@@ -275,4 +281,6 @@ switch(language){
         console.log('Great language too :D');
 }
 
-console.log(`${country}'s population is ${population > 33 ? 'above': 'below'} average`)
+console.log(`${country}'s population is ${population > 33 ? 'above': 'below'} average`);
+
+*/
