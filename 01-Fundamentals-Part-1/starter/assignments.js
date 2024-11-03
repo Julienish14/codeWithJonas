@@ -201,12 +201,12 @@ console.log(`${country}'s polulation ${population > 33 ? 'is above' : 'is below'
 
 let country = 'Angola'; 
 let continent = 'Africa'; 
-let population = 13; 
+let population = 50; 
 
 console.log(country, continent, population);
 
 let isIsland = false; 
-let language ; 
+let language = 'English'; 
 
 console.log(typeof country); 
 console.log(typeof continent); 
@@ -233,6 +233,7 @@ console.log('19' - '13' + 17); // -> ? 23
 console.log('123' < 57); // -> ? false
 console.log(5 + 6 + '4' + 9 - 4 - 2); // -> ? 1143
 
+/*
 const numNeighbours = Number(prompt('How many neighbour countries does your contry have?'));
 
 if(numNeighbours === 1){
@@ -243,5 +244,12 @@ if(numNeighbours === 1){
     console.log('No border'); 
 }
 
-console.log(typeof numNeighbours);
 
+console.log(typeof numNeighbours);
+*/
+
+if(language === 'English' && population < 50 && isIsland === false){
+    console.log(`You should live in ${country} :)`); 
+}else{
+    console.log(`${country} does not meet your creteria :(`);
+}
