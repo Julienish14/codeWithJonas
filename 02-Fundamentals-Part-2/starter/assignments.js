@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 //Ass One
 
 /* 
@@ -74,7 +74,7 @@ describePopulation('Burundi', 1023);
 
 */
 
-    //Introduction to ARRAYS
+//Introduction to ARRAYS
 /*
 
 const populations = [14, 202, 133, 100];
@@ -100,8 +100,7 @@ console.log(percentages);
 
 */
 
-
-        //Basic Array Operations(Methods)
+//Basic Array Operations(Methods)
 /*
 const neighbours = ['Uganda', 'Burundi', 'Tanzania']; 
 console.log(neighbours);
@@ -120,7 +119,6 @@ neighbours[neighbours.indexOf('Burundi')] = 'Kenya';
 console.log(neighbours);
 
 */
-
 
 /*
         //===** Intro to Object**===
@@ -150,9 +148,7 @@ console.log(myCountry);
 
 */
 
-
-
-        //Object Method
+//Object Method
 /*
 const myCountry = {
     country: 'Rwanda', 
@@ -178,8 +174,7 @@ console.log(myCountry);
 
 */
 
-
-        // Iteration: The for Loop
+// Iteration: The for Loop
 /*
 
 for(let voter = 1; voter <= 50; voter++){
@@ -357,11 +352,7 @@ while(i < population.length){
     i++; 
 }
 console.log(perce3);
-
-
 */
-
-
 
 /*
 const myCountry = {
