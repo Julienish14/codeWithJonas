@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 /* 
 CHALLENGE #1
 Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new gymnastics discipline, which works differently.
@@ -44,7 +44,6 @@ checkWinner(scoreDolphines, scoreKoalas);
 
 */
 
-
 /*
 
     CHALLENGE #2
@@ -64,7 +63,7 @@ TEST DATA: 125, 555, and 44.
 
 */
 
-    //Task One
+//Task One
 /*
 const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2; 
 
@@ -193,7 +192,6 @@ const calcTip = function (bill) {
 
 */
 
-
 /*
   BONUS:
 
@@ -221,3 +219,32 @@ function calcAverage (arr){
 console.log(calcAverage(bills));
 
 */
+
+//========== ******* CHALLENGES ******* ========
+
+//CHALLENGE ONE: You are given a number say true or false if number is narcissistic ex: 153 -> 1^3 + 5^3 + 3^3
+
+function isItNarcissistic(num) {
+  const toStr = num.toString();
+  const numLeng = toStr.length;
+  let result = 0;
+  for (let i = 0; i < numLeng; i++) {
+    const y = parseInt(toStr[i]);
+    result += Math.pow(y, numLeng);
+  }
+  return result === num;
+}
+
+console.log(isItNarcissistic(153));
+console.log(isItNarcissistic(13));
+
+//CHALLENGE TWO: Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+
+function repeater(n, s) {
+  let rep = "";
+  for (let i = 1; i <= n; i++) {
+    rep += s;
+  }
+  return rep;
+}
+console.log(repeater(4, "HelloWorld|"));
