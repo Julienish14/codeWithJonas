@@ -260,8 +260,8 @@ function findSmall(arr) {
   }
   return smallNum;
 }
-const thisArr = [34, 12, 32, 33];
-console.log(findSmall(thisArr));
+const thisArr = [34, 12, 52, 33];
+console.log(`This is the small number:  ${findSmall(thisArr)}`);
 
 //CHALLENGE FOUR: write a function that takes a string and return a new string with all vowels removed.
 
