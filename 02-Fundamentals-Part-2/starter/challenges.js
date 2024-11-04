@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /* 
 CHALLENGE #1
 Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new gymnastics discipline, which works differently.
@@ -241,13 +241,13 @@ console.log(isItNarcissistic(13));
 //CHALLENGE TWO: Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
 
 function repeater(n, s) {
-  let rep = "";
+  let rep = '';
   for (let i = 1; i <= n; i++) {
     rep += s;
   }
   return rep;
 }
-console.log(repeater(4, "HelloWorld|"));
+console.log(repeater(4, 'HelloWorld|'));
 
 //CHALLENGE THREE: Given an array of integers your solution should find the smallest integer.
 
@@ -266,8 +266,8 @@ console.log(findSmall(thisArr));
 //CHALLENGE FOUR: write a function that takes a string and return a new string with all vowels removed.
 
 function removeVowel(sent) {
-  const allVowels = ["a", "i", "e", "u", "o", "A", "I", "E", "U", "O"];
-  let newSent = "";
+  const allVowels = ['a', 'i', 'e', 'u', 'o', 'A', 'I', 'E', 'U', 'O'];
+  let newSent = '';
   for (let i = 0; i < sent.length; i++) {
     if (!allVowels.includes(sent[i])) {
       newSent += sent[i];
@@ -276,4 +276,16 @@ function removeVowel(sent) {
   return newSent;
 }
 
-console.log(removeVowel("This is The SENTENCE and removed vowels"));
+console.log(removeVowel('This is The SENTENCE and removed vowels'));
+
+//CHALLENGE FIVE: Make a function that reverses whatever we pass into it.
+
+const reverses = function (whatever) {
+  let newWhat = ' ';
+  for (let i = whatever.length - 1; i >= 0; i--) {
+    newWhat += whatever[i];
+  }
+  return newWhat;
+};
+
+console.log(reverses('Hello My baby'));
