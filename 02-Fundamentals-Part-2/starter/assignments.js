@@ -1,3 +1,4 @@
+'use strict';
 //Ass One
 
 /* 
@@ -226,6 +227,7 @@ console.log(percentages3);
 
 */
 
+/*
         // ======== ***** ---- REVIEW REVIEW.... ---- ***** ========
 
 const describeCountry = function(country, population, capitalCity){
@@ -355,6 +357,11 @@ while(i < population.length){
     i++; 
 }
 console.log(perce3);
+
+
+*/
+
+
 
 /*
 const myCountry = {
