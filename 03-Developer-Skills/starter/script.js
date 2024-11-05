@@ -173,6 +173,7 @@ console.log(printForecast(maxTemp));
 
 // console.log(`is it included? ${ele.includes(43)}`);
 
+/*
 const isIsogram = function (str) {
   str = str.toLowerCase();
   const toArr = str.split('');
@@ -185,4 +186,16 @@ const isIsogram = function (str) {
   }
   return true;
 };
-console.log(isIsogram(''));
+console.log(isIsogram('Alphabet'));
+
+*/
+
+//Other way PRO 😎
+
+/*
+function isIsogram(str) {
+  return !/(\w).*\1/i.test(str);
+}
+console.log(`is this isogram? : ${isIsogram('Alphabet')}`);
+
+*/
