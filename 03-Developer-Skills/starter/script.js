@@ -201,7 +201,7 @@ console.log(`is this isogram? : ${isIsogram('Alphabet')}`);
 */
 
 //Other way:
-
+/*
 function isIsogram(str) {
   str = str.toLowerCase();
 
@@ -216,3 +216,4 @@ function isIsogram(str) {
   return true;
 }
 console.log('This is the ans: ' + isIsogram('backgrouND'));
+*/

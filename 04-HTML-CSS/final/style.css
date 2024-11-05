@@ -60,3 +60,7 @@ a {
   padding: 50px;
   text-align: center;
 }
+
+.flex-container {
+  display: flex;
+}
