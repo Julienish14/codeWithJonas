@@ -1,6 +1,6 @@
 // Remember, we're gonna use strict mode in all scripts now!
 'use strict';
-
+/*
 // Using Google, StackOverflow and MDN
 // PROBLEM 1:
 // We work for a company building a smart home thermometer. Our most recent task is this: "Given an array of temperatures of one day, calculate the temperature amplitude. Keep in mind that sometimes there might be a sensor error."
@@ -29,3 +29,30 @@ const tempRoom1 = [23, 12, 44, 12];
 const tempRoom2 = ['Error', 3, 'Error'];
 const amplitude = tempAmplitude(tempRoom1, tempRoom2);
 console.log(amplitude);
+
+*/
+
+//Debugging with the console and breakingpoints
+
+const measureKelvin = function () {
+  const measurement = {
+    type: 'temp',
+    unit: 'celsius',
+
+    //C) FIX
+    value: Number(prompt('Degrees celsius: ')),
+  };
+
+  // FIND
+  console.table(measurement);
+
+  console.log(typeof measurement.value);
+  //   console.warn(measurement.value);
+  //   console.error(measurement.value);
+
+  const kelvin = measurement.value + 275;
+  return kelvin;
+};
+
+// A) IDENTIFY
+console.log(measureKelvin());
