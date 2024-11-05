@@ -152,3 +152,37 @@ printForecastJ(maxTemp);
 console.log(printForecast(maxTemp));
 
 */
+
+////////////////////////
+//CHALLENGES From CodeWar
+
+/*An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
+ */
+
+//Understand problem
+// - What is isogram? no repeating letters
+// - Only letters.
+// - Empty string is an isogram
+// - Ignore letter case.
+
+// Break it into sub question
+// - How to detect repeated letter.
+// - How to make empty string
+
+// const ele = ['e', 'bay', 'mony', 34, 'iro'];
+
+// console.log(`is it included? ${ele.includes(43)}`);
+
+const isIsogram = function (str) {
+  str = str.toLowerCase();
+  const toArr = str.split('');
+  toArr.sort();
+
+  if (str === '') console.log(true);
+
+  for (let i = 0; i < str.length; i++) {
+    if (toArr[i] === toArr[i + 1]) return false;
+  }
+  return true;
+};
+console.log(isIsogram(''));
