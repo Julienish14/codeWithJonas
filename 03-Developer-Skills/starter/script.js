@@ -64,6 +64,8 @@ console.log(measureKelvin());
 const tempAmplitudeBug = function (temp1, temp2) {
   const temp = temp1.concat(temp2);
   console.log(temp);
+
+  // FIX 
   let max = 0;
   let min = 0;
   for (let i = 0; i < temp.length; i++) {
@@ -84,5 +86,69 @@ const amplitudeBug = tempAmplitudeBug(tempRoom1, tempRoom2);
 
 // A) IDENTIFY
 console.log(amplitudeBug);
+
+*/
+
+///////////////////////////////////////
+// Coding Challenge #1
+
+/*
+Given an array of forecasted maximum temperatures, the thermometer displays a string with these temperatures.
+
+Example: [17, 21, 23] will print "... 17ºC in 1 days ... 21ºC in 2 days ... 23ºC in 3 days ..."
+
+Create a function 'printForecast' which takes in an array 'arr' and logs a string like the above to the console.
+
+Use the problem-solving framework: Understand the problem and break it up into sub-problems!
+
+TEST DATA 1: [17, 21, 23]
+TEST DATA 2: [12, 5, -5, 0, 4]
+*/
+
+//Understand the problem
+// - given max temp display them with days. (Mines)
+// - Array transformed to string, separated by ... (Jonas)
+// - What is the X days? Answer: index +1 (Jonas)
+
+//Break it up into sub-problems.
+//- How to display given element from array? (Mines)
+//- How to display days incrementing  (Mines)
+//- How to make that string (Mines)
+
+// Jonas
+
+// - Transform array into string
+// - Transform each element to string with °c
+// - Strings needs to contain day (index +1)
+// - Add ... between elements and start and end of string.
+// - Log string to console
+
+// My solution with low level of Problem solving 😅
+/*
+const printForecast = function (arr) {
+  let day = 1;
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    newArr.push(`... ${arr[i]}°c in ${day++} days`);
+  }
+  return newArr.toString();
+};
+
+*/
+
+// Jonas's solution. Pro😎
+
+/*
+const printForecastJ = function (arr) {
+  let str = '';
+  for (let i = 0; i < arr.length; i++) {
+    str += `... ${arr[i]}°C in ${i + 1} days `;
+  }
+  console.log(str + '...');
+};
+// const maxTemp = [17, 21, 23];
+const maxTemp = [12, 5, -5, 0, 4];
+printForecastJ(maxTemp);
+console.log(printForecast(maxTemp));
 
 */
