@@ -32,6 +32,7 @@ console.log(amplitude);
 
 */
 
+/*
 //Debugging with the console and breakingpoints
 
 const measureKelvin = function () {
@@ -40,7 +41,8 @@ const measureKelvin = function () {
     unit: 'celsius',
 
     //C) FIX
-    value: Number(prompt('Degrees celsius: ')),
+    // value: Number(prompt('Degrees celsius: ')),
+    value: 10,
   };
 
   // FIND
@@ -56,3 +58,31 @@ const measureKelvin = function () {
 
 // A) IDENTIFY
 console.log(measureKelvin());
+
+// Using a debugger
+
+const tempAmplitudeBug = function (temp1, temp2) {
+  const temp = temp1.concat(temp2);
+  console.log(temp);
+  let max = 0;
+  let min = 0;
+  for (let i = 0; i < temp.length; i++) {
+    let currentTemp = temp[i];
+    if (typeof currentTemp !== 'number') continue;
+
+    // debugger;
+    if (currentTemp > max) max = currentTemp;
+    if (currentTemp < min) min = currentTemp;
+  }
+  console.log(max, min);
+  return max - min;
+};
+
+const tempRoom1 = [23, 12, 44, 12];
+const tempRoom2 = ['Error', 3, 'Error'];
+const amplitudeBug = tempAmplitudeBug(tempRoom1, tempRoom2);
+
+// A) IDENTIFY
+console.log(amplitudeBug);
+
+*/
