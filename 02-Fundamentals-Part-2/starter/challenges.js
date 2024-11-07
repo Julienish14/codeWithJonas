@@ -293,6 +293,7 @@ console.log(reverses('Hello My Baby!!!'));
 
 */
 
+/*
 //CHALLENGE SIX: Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
 function XO(str) {
   str = str.toLowerCase();
@@ -323,3 +324,17 @@ console.log(XOo('xooxx'));
 console.log(XOo('ooxXm'));
 console.log(XOo('zpzpzpzpp'));
 console.log(XOo('zzoo'));
+
+*/
+
+//CHALLENGE SEVEN: Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result. It should remove all values from list a, which are present in list b keeping their order.
+
+const arrDiffe = function (a, b) {
+  const result = [];
+  for (let i = 0; i < a.length; i++) {
+    if (!b.includes(a[i])) {
+      result.push(a[i]);
+    }
+  }
+  return result;
+};
