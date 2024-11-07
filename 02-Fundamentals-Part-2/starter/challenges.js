@@ -224,6 +224,7 @@ console.log(calcAverage(bills));
 
 //CHALLENGE ONE: You are given a number say true or false if number is narcissistic ex: 153 -> 1^3 + 5^3 + 3^3
 
+/*
 function isItNarcissistic(num) {
   const toStr = num.toString();
   const numLeng = toStr.length;
@@ -289,3 +290,59 @@ const reverses = function (whatever) {
 };
 
 console.log(reverses('Hello My Baby!!!'));
+
+*/
+
+/*
+//CHALLENGE SIX: Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+function XO(str) {
+  str = str.toLowerCase();
+  const strin = str.split('');
+  strin.sort();
+  const xx = [];
+  const oo = [];
+
+  for (let i = 0; i < strin.length; i++) {
+    if (strin[i] === 'x') xx.push(strin[i]);
+    else if (strin[i] === 'o') oo.push(str[i]);
+  }
+  if (xx.length === oo.length) return true;
+  else if (!strin.includes('o') && !strin.includes('x')) return true;
+  return false;
+}
+
+//Other simple way to do it like PRO 😎
+function XOo(str) {
+  str = str.toLowerCase().split('');
+  return (
+    str.filter(x => x === 'x').length === str.filter(o => o === 'o').length
+  );
+}
+
+console.log(XOo('zpspsps'));
+console.log(XOo('xooxx'));
+console.log(XOo('ooxXm'));
+console.log(XOo('zpzpzpzpp'));
+console.log(XOo('zzoo'));
+
+*/
+
+//CHALLENGE SEVEN: Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result. It should remove all values from list a, which are present in list b keeping their order.
+
+const arrDiffe = function (a, b) {
+  const result = [];
+  for (let i = 0; i < a.length; i++) {
+    if (!b.includes(a[i])) {
+      result.push(a[i]);
+    }
+  }
+  return result;
+};
+
+//Other simple way to do it like PRO 😎
+
+const arrDiff = (a, b) => {
+  return a.filter(i => !b.includes(i));
+};
+
+console.log(arrDiffe([2, 4, 4, 1, 5], [2, 4, 3]));
