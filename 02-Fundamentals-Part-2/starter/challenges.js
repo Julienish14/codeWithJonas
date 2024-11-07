@@ -224,6 +224,7 @@ console.log(calcAverage(bills));
 
 //CHALLENGE ONE: You are given a number say true or false if number is narcissistic ex: 153 -> 1^3 + 5^3 + 3^3
 
+/*
 function isItNarcissistic(num) {
   const toStr = num.toString();
   const numLeng = toStr.length;
@@ -289,3 +290,28 @@ const reverses = function (whatever) {
 };
 
 console.log(reverses('Hello My Baby!!!'));
+
+*/
+
+//CHALLENGE SIX: Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+function XO(str) {
+  str = str.toLowerCase();
+  const strin = str.split('');
+  strin.sort();
+  const xx = [];
+  const oo = [];
+
+  for (let i = 0; i < strin.length; i++) {
+    if (strin[i] === 'x') xx.push(strin[i]);
+    else if (strin[i] === 'o') oo.push(str[i]);
+  }
+  if (xx.length === oo.length) return true;
+  else if (!strin.includes('o') && !strin.includes('x')) return true;
+  return false;
+}
+
+console.log(XO('zpspsps'));
+console.log(XO('xooxx'));
+console.log(XO('ooxXm'));
+console.log(XO('zpzpzpzpp'));
+console.log(XO('zzoo'));
