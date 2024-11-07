@@ -338,3 +338,11 @@ const arrDiffe = function (a, b) {
   }
   return result;
 };
+
+//Other simple way to do it like PRO 😎
+
+const arrDiff = (a, b) => {
+  return a.filter(i => !b.includes(i));
+};
+
+console.log(arrDiffe([2, 4, 4, 1, 5], [2, 4, 3]));
