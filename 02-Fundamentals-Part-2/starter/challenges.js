@@ -310,8 +310,16 @@ function XO(str) {
   return false;
 }
 
-console.log(XO('zpspsps'));
-console.log(XO('xooxx'));
-console.log(XO('ooxXm'));
-console.log(XO('zpzpzpzpp'));
-console.log(XO('zzoo'));
+//Other simple way to do it like PRO 😎
+function XOo(str) {
+  str = str.toLowerCase().split('');
+  return (
+    str.filter(x => x === 'x').length === str.filter(o => o === 'o').length
+  );
+}
+
+console.log(XOo('zpspsps'));
+console.log(XOo('xooxx'));
+console.log(XOo('ooxXm'));
+console.log(XOo('zpzpzpzpp'));
+console.log(XOo('zzoo'));
