@@ -327,6 +327,7 @@ console.log(XOo('zzoo'));
 
 */
 
+/*
 //CHALLENGE SEVEN: Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result. It should remove all values from list a, which are present in list b keeping their order.
 
 const arrDiffe = function (a, b) {
@@ -346,3 +347,4 @@ const arrDiff = (a, b) => {
 };
 
 console.log(arrDiffe([2, 4, 4, 1, 5], [2, 4, 3]));
+*/
