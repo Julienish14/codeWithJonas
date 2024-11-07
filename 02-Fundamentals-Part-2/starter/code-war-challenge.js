@@ -30,3 +30,19 @@ function repeater(n, s) {
 }
 console.log(repeater(4, 'HelloWorld|'));
 */
+
+//CHALLENGE THREE: Given an array of integers your solution should find the smallest integer.
+
+/*
+function findSmall(arr) {
+    let smallNum = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] < smallNum) {
+        smallNum = arr[i];
+      }
+    }
+    return smallNum;
+  }
+  const thisArr = [34, 12, 52, 33];
+  console.log(`This is the small number:  ${findSmall(thisArr)}`);
+  */
