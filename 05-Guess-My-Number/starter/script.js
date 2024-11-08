@@ -10,19 +10,8 @@ document.querySelector('.guess').value = 14;
 console.log(document.querySelector('.guess').value);
 */
 
-const secretNumber = Math.trunc(Math.random() * 20) + 0;
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
-
-document.querySelector('.again').addEventListener('click', function () {
-  document.querySelector('.score').textContent = 20; //Not working
-  document.querySelector('.guess').textContent = ' '; //Not working
-  document.querySelector('.number').textContent = '?';
-  document.querySelector('.message').textContent = 'Start guessing...';
-
-  //CSS or Styles manipulation
-  document.querySelector('body').style.backgroundColor = '#222';
-  document.querySelector('.number').style.width = '15rem';
-});
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
@@ -77,7 +66,23 @@ Implement a game rest functionality, so that the player can make a new guess! He
 GOOD LUCK 😀
 */
 
-//Me trying to work on it with console.
+//Challenge for Again button...
+
+document.querySelector('.again').addEventListener('click', function () {
+  score = 20;
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
+
+  document.querySelector('.message').textContent = 'Start guessing...';
+  document.querySelector('.score').textContent = score;
+  document.querySelector('.guess').value = '';
+  document.querySelector('.number').textContent = '?';
+
+  //CSS or Styles manipulation
+  document.querySelector('body').style.backgroundColor = '#222';
+  document.querySelector('.number').style.width = '15rem';
+});
+
+//=========******* Me trying to work on it with console. ********========
 /*
 const gameGuessNumber = function (number) {
   const num = Math.trunc(Math.random() * 20) + 1;
