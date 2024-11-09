@@ -11,6 +11,11 @@ document.querySelector('.check').addEventListener('click', function () {
   if (!guess) {
     document.querySelector('.message').textContent = '⛔️ No Number!';
   } else if (guess === secretNumber) {
+    if (score > highscore) {
+      highscore = score;
+      document.querySelector('.highscore').textContent = highscore;
+    }
+
     document.querySelector('.message').textContent =
       '🎉 Woow!! Congratulations!';
 
