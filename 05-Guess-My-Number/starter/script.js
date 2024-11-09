@@ -10,6 +10,7 @@ document.querySelector('.guess').value = 14;
 console.log(document.querySelector('.guess').value);
 */
 
+/*
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highscore = 0;
@@ -53,6 +54,7 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   }
 
+
   //When guess is too high
   // else if (guess > secretNumber) {
   //   if (score > 1) {
@@ -77,6 +79,8 @@ document.querySelector('.check').addEventListener('click', function () {
   // }
 });
 
+*/
+
 ///////////////////////////////////////
 // Coding Challenge #1
 
@@ -92,7 +96,7 @@ GOOD LUCK 😀
 */
 
 //Challenge for Again button...
-
+/*
 document.querySelector('.again').addEventListener('click', function () {
   score = 20;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
@@ -107,3 +111,5 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.number').style.width = '15rem';
 });
+
+*/
