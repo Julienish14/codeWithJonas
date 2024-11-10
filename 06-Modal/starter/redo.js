@@ -10,3 +10,13 @@ for (let i = 0; i < btnMdl.length; i++)
     modal.classList.remove('hidden');
     overlay.classList.remove('hidden');
   });
+
+btnClsMdl.addEventListener('click', function () {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+});
+
+overlay.addEventListener('click', function () {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+});
