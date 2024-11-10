@@ -11,8 +11,12 @@ score0El.textContent = 0;
 score1El.textContent = 0;
 diceEl.classList.add('hidden');
 
-document.addEventListener('keydown', function (k) {
-  if (k.key === 't') {
+removeDice.addEventListener('click', function () {
+  diceEl.classList.remove('hidden');
+});
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'g') {
     diceEl.classList.remove('hidden');
   } else {
     diceEl.classList.add('hidden');
