@@ -20,3 +20,13 @@ overlay.addEventListener('click', function () {
   modal.classList.add('hidden');
   overlay.classList.add('hidden');
 });
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' || e.key === 'Y') {
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+  } else if (!modal.classList.contains('hidden')) {
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+  }
+});
