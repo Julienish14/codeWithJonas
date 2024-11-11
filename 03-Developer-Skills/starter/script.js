@@ -159,6 +159,19 @@ console.log(printForecast(maxTemp));
 /*An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
  */
 
+function isThisIso(str) {
+  str = str.toLowerCase().split('').sort();
+  let newS = '';
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === str[i + 1]) return false;
+    else return true;
+  }
+  return true;
+}
+
+console.log(isThisIso('Helo'));
+
 //Understand problem
 // - What is isogram? no repeating letters
 // - Only letters.
