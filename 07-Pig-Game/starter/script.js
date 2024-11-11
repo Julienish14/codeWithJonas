@@ -21,28 +21,19 @@ let currentScore = 0;
 //Rolling dice functionality
 
 btnRoll.addEventListener('click', function () {
-  diceEl.classList.remove('hidden');
+  // 1. Generating a random dice roll
   const dice = Math.trunc(Math.random() * 6) + 1;
+
+  // 2. Display dice
+  diceEl.classList.remove('hidden');
   diceEl.src = `dice-${dice}.png`;
+  // 3. Check for rolled 1: if true, switch to next player
 
-  currentScore += dice;
-  current0El.textContent = currentScore;
+  if (dice !== 1) {
+    //Add dice to current score
+    currentScore += dice;
+    current0El.textContent = currentScore; //CHANGE LATER
+  } else {
+    //Switch to next player
+  }
 });
-
-// btnRoll.addEventListener('click', function () {
-//   // 1. Generating a random dice roll
-//   const dice = Math.trunc(Math.random() * 6) + 1;
-
-//   // 2. Display dice
-//   diceEl.classList.remove('hidden');
-//   diceEl.src = `dice-${dice}.png`;
-//   // 3. Check for rolled 1: if true, switch to next player
-
-//   if (dice !== 1) {
-//     //Add dice to current score
-//     currentScore += dice;
-//     current0El.textContent = currentScore; //CHANGE LATER
-//   } else {
-//     //Switch to next player
-//   }
-// });
