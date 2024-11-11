@@ -22,6 +22,11 @@ let currentScore = 0;
 
 btnRoll.addEventListener('click', function () {
   diceEl.classList.remove('hidden');
+  const dice = Math.trunc(Math.random() * 6) + 1;
+  diceEl.src = `dice-${dice}.png`;
+
+  currentScore += dice;
+  current0El.textContent = currentScore;
 });
 
 // btnRoll.addEventListener('click', function () {
