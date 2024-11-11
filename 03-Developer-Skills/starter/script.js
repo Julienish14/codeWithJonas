@@ -160,17 +160,18 @@ console.log(printForecast(maxTemp));
  */
 
 function isThisIso(str) {
-  str = str.toLowerCase().split('').sort();
-  let newS = '';
+  str = str.toLowerCase();
+  const strn = str.split('');
+  strn.sort();
 
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === str[i + 1]) return false;
+  for (let i = 0; i < strn.length; i++) {
+    if (strn[i] === strn[i + 1]) return false;
     else return true;
   }
   return true;
 }
 
-console.log(isThisIso('Helo'));
+console.log(isThisIso('Alphbet'));
 
 //Understand problem
 // - What is isogram? no repeating letters
