@@ -54,13 +54,25 @@ btnHold.addEventListener('click', function () {
     scores[activePlayer] += currentScore;
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
-    switchPlayer();
 
     //Win a game
 
     if (scores[activePlayer] >= 20) {
       playing = false;
       diceEl.classList.add('hidden');
+
+      document
+        .querySelector(`.player--${activePlayer}`)
+        .classList.add('player--winner');
+      document
+        .querySelector(`.player--${activePlayer}`)
+        .classList.remove('player--active');
+
+      document
+        .querySelector(`.winner--${activePlayer}`)
+        .classList.remove('hidden');
+    } else {
+      switchPlayer();
     }
   }
 });
