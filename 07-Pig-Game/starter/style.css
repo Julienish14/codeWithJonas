@@ -171,7 +171,6 @@ main {
 }
 
 .win {
-  /* display: none; */
   position: absolute;
   width: 43rem;
   height: 60rem;

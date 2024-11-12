@@ -68,6 +68,7 @@ btnHold.addEventListener('click', function () {
     if (scores[activePlayer] >= 20) {
       // Finish the game
       playing = false;
+      diceEl.classList.add('hidden');
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.add('player--winner');
@@ -83,4 +84,27 @@ btnHold.addEventListener('click', function () {
       switchPlayer();
     }
   }
+});
+
+// CHALLENGES WORK ON reset button...
+
+btnNew.addEventListener('click', function () {
+  score0El.textContent = 0;
+  score1El.textContent = 0;
+  current0El.textContent = 0;
+  current1El.textContent = 0;
+
+  currentScore = 0;
+  scores[activePlayer] = 0;
+  playing = true;
+
+  document.querySelector(`.winner--${activePlayer}`).classList.add('hidden');
+
+  document
+    .querySelector(`.player--${activePlayer}`)
+    .classList.remove('player--winner');
+
+  document
+    .querySelector(`.player--${activePlayer}`)
+    .classList.add('player--active');
 });
