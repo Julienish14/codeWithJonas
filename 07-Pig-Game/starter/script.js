@@ -1,6 +1,7 @@
 'use strict';
 
 // Selecting elements
+
 const player0El = document.querySelector('.player--0');
 const player1El = document.querySelector('.player--1');
 
@@ -73,6 +74,10 @@ btnHold.addEventListener('click', function () {
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.remove('player--active');
+
+      document
+        .querySelector(`.winner--${activePlayer}`)
+        .classList.remove('hidden');
     } else {
       // Switch to the next player
       switchPlayer();

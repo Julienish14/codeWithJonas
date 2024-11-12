@@ -169,3 +169,11 @@ main {
 .hidden {
   display: none;
 }
+
+.win {
+  /* display: none; */
+  position: absolute;
+  width: 43rem;
+  height: 60rem;
+  top: 0rem;
+}
