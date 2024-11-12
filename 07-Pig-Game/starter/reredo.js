@@ -8,6 +8,10 @@ const playerOne = document.querySelector('.player--0');
 const playerTwo = document.querySelector('.player--1');
 const scoreOne = document.getElementById('score--0');
 const scoreTwo = document.getElementById('score--1');
+const currentOne = document.getElementById('current--0');
+const currentTwo = document.getElementById('current--1');
+const winnerOne = document.querySelector('.winner--0');
+const winnerTwo = document.querySelector('.winner--1');
 
 const diceRo = document.querySelector('.dice');
 
@@ -20,6 +24,14 @@ let currentScore = 0;
 let currentPlayer = 0;
 let playing = true;
 
+const changeToOther = () => {
+  document.getElementById(`current--${currentPlayer}`).textContent = 0;
+  currentPlayer = currentPlayer === 0 ? 1 : 0;
+  currentScore = 0;
+  playerOne.classList.toggle('player--active');
+  playerTwo.classList.toggle('player--active');
+};
+
 buttonRoll.addEventListener('click', function () {
   if (playing) {
     diceRo.classList.remove('hidden');
@@ -28,9 +40,12 @@ buttonRoll.addEventListener('click', function () {
     const diceK = Math.trunc(Math.random() * 6) + 1;
     diceRo.src = `dice-${diceK}.png`;
     currentScore += diceK;
-
-    document.getElementById(`current--${currentPlayer}`).textContent =
-      currentScore;
+    if (diceK !== 1) {
+      document.getElementById(`current--${currentPlayer}`).textContent =
+        currentScore;
+    } else {
+      changeToOther();
+    }
   }
 });
 
@@ -46,13 +61,30 @@ buttonHold.addEventListener('click', function () {
       document
         .querySelector(`.player--${currentPlayer}`)
         .classList.add('player--winner');
+      document
+        .querySelector(`.winner--${currentPlayer}`)
+        .classList.remove('hidden');
     } else {
-      document.getElementById(`current--${currentPlayer}`).textContent = 0;
-      currentPlayer = currentPlayer === 0 ? 1 : 0;
-      currentScore = 0;
-
-      playerOne.classList.toggle('player--active');
-      playerTwo.classList.toggle('player--active');
+      changeToOther();
     }
   }
+});
+
+buttonReset.addEventListener('click', function () {
+  scores = [0, 0];
+  currentScore = 0;
+  currentPlayer = 0;
+  scoreOne.textContent = 0;
+  scoreTwo.textContent = 0;
+  currentOne.textContent = 0;
+  currentTwo.textContent = 0;
+  playing = true;
+
+  playerOne.classList.add('player--active');
+  playerTwo.classList.remove('player--active');
+  playerOne.classList.remove('player--winner');
+  playerTwo.classList.remove('player--winner');
+
+  winnerOne.classList.add('hidden');
+  winnerTwo.classList.add('hidden');
 });
