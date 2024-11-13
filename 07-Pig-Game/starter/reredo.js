@@ -70,7 +70,7 @@ buttonHold.addEventListener('click', function () {
     document.getElementById(`score--${currentPlayer}`).textContent =
       scores[currentPlayer];
 
-    if (scores[currentPlayer] >= 20) {
+    if (scores[currentPlayer] >= 100) {
       //Game over
       playing = false;
       document
