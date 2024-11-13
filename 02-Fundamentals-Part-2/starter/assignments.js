@@ -386,18 +386,34 @@ const popu = [120, 221, 240, 100];
 
 console.log(popu.length === 4);
 
-const percs = [];
 const percOfWorl1 = popu => {
   return (popu * 100) / 7900;
 };
-percs[0] = percOfWorl1(popu[0]);
-percs[1] = percOfWorl1(popu[1]);
-percs[2] = percOfWorl1(popu[2]);
-percs[3] = percOfWorl1(popu[3]);
+const percs = [
+  percOfWorl1(popu[0]),
+  percOfWorl1(popu[1]),
+  percOfWorl1(popu[2]),
+  percOfWorl1(popu[3]),
+];
+
 console.log(percs);
 
+//Challenge Three.
+
+const nei = ['CD', 'TZ', 'UG', 'BG'];
+console.log(nei);
+nei.push('Utopia');
+console.log(nei);
+nei.pop();
+console.log(nei);
+
+if (!nei.includes('Germany'))
+  console.log(`Probably not a central european country :D`);
+
+nei[nei.indexOf('TZ')] = 'KN';
+console.log(nei);
 // The for loop
 
-for (let i = 1; i <= 50; i++) {
-  console.log(`Voter number ${i} is currently voting.`);
-}
+// for (let i = 1; i <= 50; i++) {
+//   console.log(`Voter number ${i} is currently voting.`);
+// }
