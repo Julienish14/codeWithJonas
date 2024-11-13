@@ -1,19 +1,5 @@
 'use strict';
 
-const secNum = document.querySelector('.number');
-const checkBtn = document.querySelector('.check');
-const guNum = document.querySelector('.guess').value;
-const msg = document.querySelector('.message');
-const Rand = Math.trunc(Math.random() * 20) + 1;
-console.log(Rand);
-console.log(guNum);
-checkBtn.addEventListener('click', function () {
-  console.log(guNum);
-  if (Rand === guNum) {
-    msg = 'Wow Congz!';
-  }
-});
-
 // secNum.textContent = Rand;
 
 // let secretNumber = Math.trunc(Math.random() * 20) + 1;
