@@ -295,6 +295,24 @@ console.log(reverses('Hello My Baby!!!'));
 
 /*
 //CHALLENGE SIX: Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+*/
+
+const XO = str => {
+  str = str.toLowerCase();
+  const strn = str.split('');
+  strn.sort;
+  const xx = [];
+  const oo = [];
+  for (let i = 0; i < strn.length; i++) {
+    if (strn[i] === 'x') xx.push(strn[i]);
+    else if (strn[i] === 'o') oo.push(strn[i]);
+  }
+  return xx.length === oo.length;
+};
+
+console.log(XO('XoX'));
+
+/*
 function XO(str) {
   str = str.toLowerCase();
   const strin = str.split('');
