@@ -281,6 +281,7 @@ console.log(removeVowel('This is The SENTENCE and removed vowels'));
 
 //CHALLENGE FIVE: Make a function that reverses whatever we pass into it.
 
+
 const reverses = function (whatever) {
   let newWhat = ' ';
   for (let i = whatever.length - 1; i >= 0; i--) {
@@ -295,6 +296,9 @@ console.log(reverses('Hello My Baby!!!'));
 
 /*
 //CHALLENGE SIX: Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+*/
+
+/*
 function XO(str) {
   str = str.toLowerCase();
   const strin = str.split('');
