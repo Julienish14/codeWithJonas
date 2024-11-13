@@ -281,19 +281,6 @@ console.log(removeVowel('This is The SENTENCE and removed vowels'));
 
 //CHALLENGE FIVE: Make a function that reverses whatever we pass into it.
 
-*/
-const rev = str => {
-  str = str.toLowerCase();
-  // const strAr = str.split('');
-  // strAr.sort();
-  let res = '';
-  for (let i = str.length - 1; i >= 0; i--) {
-    res += str[i];
-  }
-  return res;
-};
-console.log(rev('ThisAnd'));
-/*
 
 const reverses = function (whatever) {
   let newWhat = ' ';
