@@ -22,16 +22,7 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.number').textContent = secretNumber;
     document.querySelector('body').style.backgroundColor = 'green';
     document.querySelector('.number').style.width = '50rem';
-  } else if (guess !== secretNumber) {
-    if (score > 1) {
-      displayMess(guess > secretNumber ? '📈 To High!' : '📉 To Low!');
-      score--;
-      document.querySelector('.score').textContent = score;
-    } else {
-      displayMess('💥 You looseee G!!');
-      document.querySelector('.score').textContent = 0;
-    }
-  }
+
 });
 /*
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
