@@ -16,17 +16,7 @@ document.querySelector('.check').addEventListener('click', function () {
       highscore = score;
       document.querySelector('.highscore').textContent = highscore;
     }
-  } else if (guess !== secretNumber) {
-    if (score > 1) {
-      displayMess(guess > secretNumber ? '📈 To High!' : '📉 To Low!');
-      score--;
-      document.querySelector('.score').textContent = score;
-    } else {
-      displayMess('💥 You looseee G!!');
-      document.querySelector('.score').textContent = 0;
-    }
-  }
-});
+ 
 document.querySelector('.again').addEventListener('click', function () {
   displayMess('Start guessing...');
   score = 20;
