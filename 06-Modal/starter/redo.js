@@ -21,7 +21,6 @@ overlay.addEventListener('click', displayM);
 
 document.addEventListener('keydown', function (k) {
   if (k.key === 'Escape') {
-    modal.classList.add('hidden');
-    overlay.classList.add('hidden');
+    displayM();
   }
 });
