@@ -9,21 +9,22 @@ const hiSco = document.querySelector('.highscore');
 let numberToGuess = Math.trunc(Math.random() * 5) + 1;
 
 let scoreN = 20;
+let highscore = 0;
 
 checkBtn.addEventListener('click', function () {
   const youGuess = Number(document.querySelector('.guess').value);
-  num.textContent = numberToGuess;
-  if (youGuess === numberToGuess) {
+  if (!youGuess) {
+    msg.textContent = 'No number';
+  } else if (youGuess === numberToGuess) {
+    num.textContent = numberToGuess;
     msg.textContent = '🎉 Congz!';
-    let highscore = 0;
-    highscore = scoreN;
-    console.log(highscore);
-  } else if (youGuess > numberToGuess) {
-    msg.textContent = 'too high';
-    scoreN--;
-    score.textContent = scoreN;
-  } else if (youGuess < numberToGuess) {
-    msg.textContent = 'too low';
+    if (scoreN > highscore) {
+      highscore = scoreN;
+      hiSco.textContent = highscore;
+    }
+  } else if (youGuess !== numberToGuess) {
+    msg.textContent = `${youGuess > numberToGuess ? 'Too High' : 'Too Low!'}`;
+
     scoreN--;
     score.textContent = scoreN;
   }
