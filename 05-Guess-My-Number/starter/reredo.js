@@ -32,7 +32,7 @@ checkBtn.addEventListener('click', function () {
     }
   } else if (youGuess !== numberToGuess) {
     if (scoreN > 1) {
-      msg.textContent = `${youGuess > numberToGuess ? 'Too High' : 'Too Low!'}`;
+      dispM(`${youGuess > numberToGuess ? 'Too High' : 'Too Low!'}`);
       scoreN--;
       score.textContent = scoreN;
     } else {
