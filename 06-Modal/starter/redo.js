@@ -1,34 +1,26 @@
 'use strict';
 
-const btnMdl = document.querySelectorAll('.show-modal');
-const btnClsMdl = document.querySelector('.close-modal');
+const showModal = document.querySelectorAll('.show-modal');
+const closeModal = document.querySelector('.close-modal');
 const overlay = document.querySelector('.overlay');
 const modal = document.querySelector('.modal');
 
-const showModal = function () {
-  modal.classList.remove('hidden');
-  overlay.classList.remove('hidden');
-};
-const hideModal = () => {
+const displayM = () => {
   modal.classList.add('hidden');
   overlay.classList.add('hidden');
 };
-
-for (let i = 0; i < btnMdl.length; i++)
-  btnMdl[i].addEventListener('click', function () {
+for (let i = 0; i < showModal.length; i++)
+  showModal[i].addEventListener('click', function () {
     modal.classList.remove('hidden');
     overlay.classList.remove('hidden');
   });
 
-btnClsMdl.addEventListener('click', hideModal);
+closeModal.addEventListener('click', displayM);
 
-overlay.addEventListener('click', hideModal);
+overlay.addEventListener('click', displayM);
 
-document.addEventListener('keydown', function (e) {
-  if (
-    (e.key === 'Escape' || e.key === 'y') &&
-    !modal.classList.contains('hidden')
-  ) {
-    hideModal();
+document.addEventListener('keydown', function (k) {
+  if (k.key === 'Escape') {
+    displayM();
   }
 });
