@@ -15,10 +15,7 @@ for (let i = 0; i < showModal.length; i++)
     overlay.classList.remove('hidden');
   });
 
-closeModal.addEventListener('click', function () {
-  modal.classList.add('hidden');
-  overlay.classList.add('hidden');
-});
+closeModal.addEventListener('click', displayM);
 
 overlay.addEventListener('click', displayM);
 
