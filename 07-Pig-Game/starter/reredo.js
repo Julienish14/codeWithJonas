@@ -72,7 +72,7 @@ holdPoints.addEventListener('click', function () {
     score[playingPlayer] += currScore;
     document.getElementById(`score--${playingPlayer}`).textContent =
       score[playingPlayer];
-    if (score[playingPlayer] >= 20) {
+    if (score[playingPlayer] >= 100) {
       playing = false;
       document
         .querySelector(`.player--${playingPlayer}`)
