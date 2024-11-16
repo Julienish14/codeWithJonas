@@ -60,6 +60,10 @@ holdPoints.addEventListener('click', function () {
     document
       .querySelector(`.player--${playingPlayer}`)
       .classList.add('player--winner');
+
+    document
+      .querySelector(`.winner--${playingPlayer}`)
+      .classList.remove('hidden');
   }
   switchSwitch();
 });
