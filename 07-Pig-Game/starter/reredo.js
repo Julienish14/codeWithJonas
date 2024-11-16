@@ -20,13 +20,28 @@ const diceImgEl = document.querySelector('.dice');
 
 diceImgEl.classList.add('hidden');
 
-let holdedScore = 0;
-let currScore = 0;
-let playingPlayer = 0;
-let playing = true;
-let score = [0, 0];
-scoreElOne.textContent = holdedScore;
-scoreElTwo.textContent = holdedScore;
+let holdedScore, currScore, playing, score, playingPlayer;
+
+const initialization = () => {
+  holdedScore = 0;
+  currScore = 0;
+  playingPlayer = 0;
+  playing = true;
+  score = [0, 0];
+  scoreElOne.textContent = holdedScore;
+  scoreElTwo.textContent = holdedScore;
+  currOneScore.textContent = 0;
+  currTwoScore.textContent = 0;
+
+  diceImgEl.classList.add('hidden');
+
+  playerOne.classList.add('player--active');
+  playerTwo.classList.remove('player--active');
+  playerOne.classList.remove('player--winner');
+  playerTwo.classList.remove('player--winner');
+  winnerOne.classList.add('hidden');
+  winnerTwo.classList.add('hidden');
+};
 
 const switchSwitch = () => {
   document.getElementById(`current--${playingPlayer}`).textContent = 0;
@@ -36,6 +51,7 @@ const switchSwitch = () => {
   playerTwo.classList.toggle('player--active');
 };
 
+initialization();
 //ROLL DICE
 
 rollDice.addEventListener('click', function () {
@@ -73,20 +89,4 @@ holdPoints.addEventListener('click', function () {
   }
 });
 
-resetGame.addEventListener('click', function () {
-  score = [0, 0];
-  currScore = 0;
-  playing = true;
-  diceImgEl.classList.add('hidden');
-  currOneScore.textContent = 0;
-  currTwoScore.textContent = 0;
-  scoreElOne.textContent = 0;
-  scoreElTwo.textContent = 0;
-
-  playerOne.classList.add('player--active');
-  playerTwo.classList.remove('player--active');
-  playerOne.classList.remove('player--winner');
-  playerTwo.classList.remove('player--winner');
-  winnerOne.classList.add('hidden');
-  winnerTwo.classList.add('hidden');
-});
+resetGame.addEventListener('click', initialization);
