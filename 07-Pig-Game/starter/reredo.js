@@ -13,6 +13,9 @@ const currTwoScore = document.getElementById('current--1');
 const playerOne = document.querySelector('.player--0');
 const playerTwo = document.querySelector('.player--1');
 
+const winnerOne = document.querySelector('.winner--0');
+const winnerTwo = document.querySelector('.winner--1');
+
 const diceImgEl = document.querySelector('.dice');
 
 diceImgEl.classList.add('hidden');
@@ -66,4 +69,20 @@ holdPoints.addEventListener('click', function () {
       .classList.remove('hidden');
   }
   switchSwitch();
+});
+
+resetGame.addEventListener('click', function () {
+  playing = true;
+  diceImgEl.classList.add('hidden');
+  currOneScore.textContent = 0;
+  currTwoScore.textContent = 0;
+  scoreElOne.textContent = 0;
+  scoreElTwo.textContent = 0;
+
+  playerOne.classList.add('player--active');
+  playerTwo.classList.remove('player--active');
+  playerOne.classList.remove('player--winner');
+  playerTwo.classList.remove('player--winner');
+  winnerOne.classList.add('hidden');
+  winnerTwo.classList.add('hidden');
 });
