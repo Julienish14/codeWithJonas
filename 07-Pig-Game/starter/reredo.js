@@ -16,5 +16,14 @@ const diceImgEl = document.querySelector('.dice');
 diceImgEl.classList.add('hidden');
 
 let holdedScore = 0;
+let currScore = 0;
 scoreElOne.textContent = holdedScore;
 scoreElTwo.textContent = holdedScore;
+
+//ROLL DICE
+
+rollDice.addEventListener('click', function () {
+  diceImgEl.classList.remove('hidden');
+  let diceSide = Math.trunc(Math.random() * 6) + 1;
+  diceImgEl.src = `dice-${diceSide}.png`;
+});
