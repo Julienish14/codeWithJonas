@@ -55,23 +55,27 @@ rollDice.addEventListener('click', function () {
 });
 
 holdPoints.addEventListener('click', function () {
-  score[playingPlayer] += currScore;
-  document.getElementById(`score--${playingPlayer}`).textContent =
-    score[playingPlayer];
-  if (score[playingPlayer] >= 20) {
-    playing = false;
-    document
-      .querySelector(`.player--${playingPlayer}`)
-      .classList.add('player--winner');
+  if (playing) {
+    score[playingPlayer] += currScore;
+    document.getElementById(`score--${playingPlayer}`).textContent =
+      score[playingPlayer];
+    if (score[playingPlayer] >= 20) {
+      playing = false;
+      document
+        .querySelector(`.player--${playingPlayer}`)
+        .classList.add('player--winner');
 
-    document
-      .querySelector(`.winner--${playingPlayer}`)
-      .classList.remove('hidden');
+      document
+        .querySelector(`.winner--${playingPlayer}`)
+        .classList.remove('hidden');
+    }
+    switchSwitch();
   }
-  switchSwitch();
 });
 
 resetGame.addEventListener('click', function () {
+  score = [0, 0];
+  currScore = 0;
   playing = true;
   diceImgEl.classList.add('hidden');
   currOneScore.textContent = 0;
