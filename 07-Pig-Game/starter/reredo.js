@@ -12,13 +12,10 @@ const currOneScore = document.getElementById('current--0');
 const currTwoScore = document.getElementById('current--1');
 const playerOne = document.querySelector('.player--0');
 const playerTwo = document.querySelector('.player--1');
-
 const winnerOne = document.querySelector('.winner--0');
 const winnerTwo = document.querySelector('.winner--1');
 
 const diceImgEl = document.querySelector('.dice');
-
-diceImgEl.classList.add('hidden');
 
 let holdedScore, currScore, playing, score, playingPlayer;
 
@@ -42,6 +39,7 @@ const initialization = () => {
   winnerOne.classList.add('hidden');
   winnerTwo.classList.add('hidden');
 };
+initialization();
 
 const switchSwitch = () => {
   document.getElementById(`current--${playingPlayer}`).textContent = 0;
@@ -51,7 +49,6 @@ const switchSwitch = () => {
   playerTwo.classList.toggle('player--active');
 };
 
-initialization();
 //ROLL DICE
 
 rollDice.addEventListener('click', function () {
