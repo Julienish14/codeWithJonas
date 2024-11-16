@@ -21,8 +21,17 @@ let holdedScore = 0;
 let currScore = 0;
 let playingPlayer = 0;
 let playing = true;
+let score = [0, 0];
 scoreElOne.textContent = holdedScore;
 scoreElTwo.textContent = holdedScore;
+
+const switchSwitch = () => {
+  document.getElementById(`current--${playingPlayer}`).textContent = 0;
+  currScore = 0;
+  playingPlayer = playingPlayer === 0 ? 1 : 0;
+  playerOne.classList.toggle('player--active');
+  playerTwo.classList.toggle('player--active');
+};
 
 //ROLL DICE
 
@@ -37,11 +46,15 @@ rollDice.addEventListener('click', function () {
       document.getElementById(`current--${playingPlayer}`).textContent =
         currScore;
     } else {
-      document.getElementById(`current--${playingPlayer}`).textContent = 0;
-      currScore = 0;
-      playingPlayer = playingPlayer === 0 ? 1 : 0;
-      playerOne.classList.toggle('player--active');
-      playerTwo.classList.toggle('player--active');
+      switchSwitch();
     }
   }
+});
+
+holdPoints.addEventListener('click', function () {
+  score[playingPlayer] += currScore;
+  document.getElementById(`score--${playingPlayer}`).textContent =
+    score[playingPlayer];
+
+  switchSwitch();
 });
