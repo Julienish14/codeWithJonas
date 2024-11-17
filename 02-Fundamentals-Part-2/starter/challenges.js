@@ -106,6 +106,9 @@ const Mar = {
   fullName: 'Mark Miller',
   mass: 78,
   height: 1.69,
+  bmi: function () {
+    return this.mass / (this.height * this.height);
+  },
 };
 const Joh = {
   fullName: 'John Smith',
