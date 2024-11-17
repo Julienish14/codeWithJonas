@@ -28,17 +28,19 @@ const calAv = (scoreOne, scoreTwo, scoreThree) => {
 };
 
 const scoreDol = calAv(43, 56, 74);
-const scoreKoa = calAv(100, 45, 23);
+const scoreKoa = calAv(140, 345, 23);
 
 const checkW = (avDol, avKoa) => {
-  if (avDol === avKoa * 2) {
+  if (avDol >= avKoa * 2) {
     return `Dolphines win (${avDol} vs. ${avKoa})`;
-  } else if (avKoa === avDol * 2) {
+  } else if (avKoa >= avDol * 2) {
     return `Koalas win (${avKoa} vs. ${avDol})`;
   } else {
     return `No Team win`;
   }
 };
+
+console.log(checkW(scoreDol, scoreKoa));
 
 console.log(scoreDol);
 
