@@ -27,6 +27,11 @@ const calAv = (scoreOne, scoreTwo, scoreThree) => {
   return av;
 };
 
+const scoreDol = calAv();
+const scoreKoa = calAv();
+
+const checkW = (avDol, avKoa) => {};
+
 console.log(calAv(23, 43, 45));
 
 /*
