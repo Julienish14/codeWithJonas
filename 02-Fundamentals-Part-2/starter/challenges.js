@@ -27,12 +27,12 @@ const calAv = (scoreOne, scoreTwo, scoreThree) => {
   return av;
 };
 
-const scoreDol = calAv();
-const scoreKoa = calAv();
+const scoreDol = calAv(43, 56, 74);
+const scoreKoa = calAv(100, 45, 23);
 
 const checkW = (avDol, avKoa) => {};
 
-console.log(calAv(23, 43, 45));
+console.log(scoreDol);
 
 /*
     //TASK ONE
