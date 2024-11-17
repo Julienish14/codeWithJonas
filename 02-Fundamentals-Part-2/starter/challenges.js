@@ -102,25 +102,6 @@ TEST DATA: Marks weighs 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.95 
 
 */
 
-const Mar = {
-  fullName: 'Mark Miller',
-  mass: 78,
-  height: 1.69,
-  calBMI: function () {
-    this.bmi = this.mass / (this.height * this.height);
-    return this.bmi;
-  },
-};
-const Joh = {
-  fullName: 'John Smith',
-  mass: 92,
-  height: 1.92,
-  calBMI: function () {
-    this.bmi = this.mass / (this.height * this.height);
-    return bmi;
-  },
-};
-console.log(`${Mar.bmi > Joh.bmi}`);
 /* Write your code below. Good luck! 🙂 */
 
 /*
