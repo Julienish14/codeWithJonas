@@ -22,6 +22,13 @@ Use the checkWinner function to determine the winner for both DATA 1 and DATA 2.
 Ignore draws this time. Instead, log No team wins... to the console if there is no winner.
 */
 
+const calAv = (scoreOne, scoreTwo, scoreThree) => {
+  const av = (scoreOne + scoreTwo + scoreThree) / 3;
+  return av;
+};
+
+console.log(calAv(23, 43, 45));
+
 /*
     //TASK ONE
 const calcAverage = (scoreOne, scoreTwo, scoreThree) => (scoreOne + scoreTwo + scoreThree) / 3; 
