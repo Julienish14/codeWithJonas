@@ -105,18 +105,6 @@ TEST DATA 1: [17, 21, 23]
 TEST DATA 2: [12, 5, -5, 0, 4]
 */
 
-//Just rewinding
-
-const printForecast = function (arr) {
-  let res = '';
-  for (let i = 0; i < arr.length; i++) {
-    res += `... ${arr[i]}°C in ${i + 1} days`;
-  }
-  console.log(res + ' ...');
-};
-
-console.log(printForecast([17, 21, 23]));
-
 //Understand the problem
 // - given max temp display them with days. (Mines)
 // - Array transformed to string, separated by ... (Jonas)
@@ -170,21 +158,6 @@ console.log(printForecast(maxTemp));
 
 /*An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
  */
-
-const isIso = str => {
-  str = str.toLowerCase();
-  const inArr = str.split('');
-
-  if (str === '') return true;
-  for (let i = 0; i < inArr.length; i++) {
-    if (inArr[i] === inArr[i + 1]) return false;
-  }
-  return true;
-};
-
-console.log(isIso('Helo'));
-
-/*
 
 //Understand problem
 // - What is isogram? no repeating letters
