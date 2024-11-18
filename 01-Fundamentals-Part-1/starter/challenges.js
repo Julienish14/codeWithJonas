@@ -45,7 +45,6 @@ console.log("Mark has hight BMI than John? : " +markHigherBMI);
 
 */
 
-
 /*
 CHALLENGE #2
 Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
@@ -153,4 +152,3 @@ let tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${tip + bill}`); 
 
 */
-
