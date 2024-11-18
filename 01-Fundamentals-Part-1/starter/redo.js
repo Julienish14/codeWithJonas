@@ -88,3 +88,15 @@ function isItNarcissistic(num) {
   }
   return result === num;
 }
+
+console.log(isItNarcissistic(153));
+console.log(isItNarcissistic(13));
+
+function repeater(n, s) {
+  let rep = '';
+  for (let i = 1; i <= n; i++) {
+    rep += s;
+  }
+  return rep;
+}
+console.log(repeater(4, 'HelloWorld|'));
