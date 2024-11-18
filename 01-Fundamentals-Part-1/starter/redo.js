@@ -30,3 +30,22 @@ if (scoreDolphines > scoreKoalas) {
 } else if (scoreDolphines === scoreKoalas) {
   console.log('Both win the trophy');
 }
+
+const marks = 4;
+
+switch (marks) {
+  case 89:
+    console.log('Excellent!');
+    break;
+  case 70:
+    console.log('Very Good!');
+    break;
+  case 60:
+    console.log('Good!');
+    break;
+  case 45:
+    console.log('Not Good!');
+    break;
+  default:
+    console.log('NOT QUALIFIED');
+}
