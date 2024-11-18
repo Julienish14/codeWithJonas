@@ -17,3 +17,16 @@ if (BMIMark > BMIJohn) {
 } else {
   console.log(`John's BMI ${BMIJohn} is heigher than Mark's!(${BMIMark})`);
 }
+
+const scoreDolphines = (96 + 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
+
+console.log(scoreDolphines, scoreKoalas);
+
+if (scoreDolphines > scoreKoalas) {
+  console.log('Dolphins win the trophy 🏆');
+} else if (scoreDolphines < scoreKoalas) {
+  console.log('Koalas win the trophy 🏆');
+} else if (scoreDolphines === scoreKoalas) {
+  console.log('Both win the trophy');
+}
