@@ -52,7 +52,7 @@ switch (marks) {
     console.log('NOT QUALIFIED');
 }
 
-*/
+
 
 const bill = 430;
 let tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
@@ -60,3 +60,22 @@ let tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
 console.log(
   `The bill was ${bill}, the tip was ${tip}, and the total value ${tip + bill}`
 );
+*/
+const calcAverage = (q, t, b) => {
+  return (q + t + b) / 3;
+};
+const scoreDol = calcAverage(44, 23, 71);
+const scoreKol = calcAverage(60, 5, 4);
+console.log(`Dolphines ${scoreDol} And Koala ${scoreKol}`);
+//TASK THREE
+function checkWinner(avgDolphins, avgKoalas) {
+  if (avgDolphins >= avgKoalas * 2) {
+    return console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas} )`);
+  } else if (avgKoalas >= avgDolphins) {
+    return console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+  } else {
+    return console.log(`No team wins...`);
+  }
+}
+
+checkWinner(scoreDol, scoreKol);
