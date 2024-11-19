@@ -1,4 +1,6 @@
-const massMark = 95;
+'use strict';
+
+/*const massMark = 95;
 const heightMark = 1.88;
 const massJohn = 85;
 const heightJohn = 1.76;
@@ -28,4 +30,24 @@ if (scoreDolphines > scoreKoalas) {
   console.log('Koalas win the trophy 🏆');
 } else if (scoreDolphines === scoreKoalas) {
   console.log('Both win the trophy');
+}
+*/
+
+const marks = 90;
+
+switch (marks) {
+  case 89:
+    console.log('Excellent!');
+    break;
+  case 70:
+    console.log('Very Good!');
+    break;
+  case 60:
+    console.log('Good!');
+    break;
+  case 45:
+    console.log('Not Good!');
+    break;
+  default:
+    console.log('NOT QUALIFIED');
 }
