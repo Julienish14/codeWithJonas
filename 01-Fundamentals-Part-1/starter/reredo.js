@@ -31,7 +31,7 @@ if (scoreDolphines > scoreKoalas) {
 } else if (scoreDolphines === scoreKoalas) {
   console.log('Both win the trophy');
 }
-*/
+
 
 const marks = 90;
 
@@ -51,3 +51,12 @@ switch (marks) {
   default:
     console.log('NOT QUALIFIED');
 }
+
+*/
+
+const bill = 430;
+let tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
+
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value ${tip + bill}`
+);
