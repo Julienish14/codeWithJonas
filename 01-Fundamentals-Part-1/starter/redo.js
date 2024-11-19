@@ -98,3 +98,13 @@ const now = 2024;
 const ageJonas = now - 1991;
 const ageSarah = now - 2018;
 console.log(ageJonas, ageSarah);
+
+console.log(ageJonas * 3, ageJonas / 10, 2 ** 3);
+//2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
+
+const firstName = 'Jonas';
+const lastName = 'Schmedtman';
+
+//We can use Plus "+" operator to concatinate
+
+console.log(firstName + ' ' + lastName);
