@@ -11,3 +11,8 @@ console.log('Body Mass Index of Mark: ' + BMIMark);
 console.log('Body Mass Index of John: ' + BMIJohn);
 
 console.log('Mark has hight BMI than John? : ' + markHigherBMI);
+if (BMIMark > BMIJohn) {
+  console.log(`Mark's BMI (${BMIMark}) is higher than John's!(${BMIJohn})`);
+} else {
+  console.log(`John's BMI ${BMIJohn} is heigher than Mark's!(${BMIMark})`);
+}
