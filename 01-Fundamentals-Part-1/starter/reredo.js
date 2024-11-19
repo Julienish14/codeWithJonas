@@ -79,3 +79,28 @@ function checkWinner(avgDolphins, avgKoalas) {
 }
 
 checkWinner(scoreDol, scoreKol);
+
+// //This is about narci
+
+// function isItNarcissistic(num) {
+//   const toStr = num.toString();
+//   const numLeng = toStr.length;
+//   let result = 0;
+//   for (let i = 0; i < numLeng; i++) {
+//     const y = parseInt(toStr[i]);
+//     result += Math.pow(y, numLeng);
+//   }
+//   return result === num;
+// }
+
+// console.log(isItNarcissistic(153));
+// console.log(isItNarcissistic(13));
+
+// function repeater(n, s) {
+//   let rep = '';
+//   for (let i = 1; i <= n; i++) {
+//     rep += s;
+//   }
+//   return rep;
+// }
+// console.log(repeater(4, 'HelloWorld|'));
