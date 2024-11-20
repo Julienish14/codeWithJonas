@@ -2,18 +2,18 @@
 
 //Select every element we might need.
 
-// const resetGame = document.querySelector('.btn--new');
-// const rollDice = document.querySelector('.btn--roll');
-// const holdPoints = document.querySelector('.btn--hold');
+const resetGame = document.querySelector('.btn--new');
+const rollDice = document.querySelector('.btn--roll');
+const holdPoints = document.querySelector('.btn--hold');
 
-// const scoreElOne = document.getElementById('score--0');
-// const scoreElTwo = document.getElementById('score--1');
-// const currOneScore = document.getElementById('current--0');
-// const currTwoScore = document.getElementById('current--1');
-// const playerOne = document.querySelector('.player--0');
-// const playerTwo = document.querySelector('.player--1');
-// const winnerOne = document.querySelector('.winner--0');
-// const winnerTwo = document.querySelector('.winner--1');
+const scoreElOne = document.getElementById('score--0');
+const scoreElTwo = document.getElementById('score--1');
+const currOneScore = document.getElementById('current--0');
+const currTwoScore = document.getElementById('current--1');
+const playerOne = document.querySelector('.player--0');
+const playerTwo = document.querySelector('.player--1');
+const winnerOne = document.querySelector('.winner--0');
+const winnerTwo = document.querySelector('.winner--1');
 
 const diceImgEl = document.querySelector('.dice');
 
