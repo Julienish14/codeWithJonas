@@ -4,8 +4,8 @@ const scoreOne = document.getElementById('score--0');
 const scoreTwo = document.getElementById('score--1');
 const currScoreOne = document.getElementById('current--0');
 const currScoreTwo = document.getElementById('current--1');
-const playerOne = document.getElementById('.player--0');
-const playerTwo = document.getElementById('.player--1');
+const playerOne = document.querySelector('.player--0');
+const playerTwo = document.querySelector('.player--1');
 
 const dice = document.querySelector('.dice');
 
@@ -18,8 +18,18 @@ scoreTwo.textContent = 0;
 let isPlaying = true;
 let currentP = 0;
 let currentScore = 0;
+let holdedScore = [0, 0];
 
 dice.classList.add('hidden');
+
+const swithGame = () => {
+  document.querySelector(`#current--${currentP}`).textContent = 0;
+  currentScore = 0;
+
+  currentP = currentP === 0 ? 1 : 0;
+  playerOne.classList.toggle('player--active');
+  playerTwo.classList.toggle('player--active');
+};
 
 btn_roll.addEventListener('click', function () {
   if (isPlaying) {
@@ -31,12 +41,25 @@ btn_roll.addEventListener('click', function () {
       document.querySelector(`#current--${currentP}`).textContent =
         currentScore;
     } else {
-      currentScore = 0;
-      document.querySelector(`#current--${currentP}`).textContent = 0;
+      swithGame();
+    }
+  }
+});
 
-      currentP = currentP === 0 ? 1 : 0;
-      playerOne.classList.toggle('player--active');
-      playerTwo.classList.toggle('player--active');
+btn_hold.addEventListener('click', function () {
+  if (isPlaying) {
+    holdedScore[currentP] += currentScore;
+    document.getElementById(`score--${currentP}`).textContent =
+      holdedScore[currentP];
+
+    if (holdedScore[currentP] >= 20) {
+      isPlaying = false;
+
+      document
+        .querySelector(`.player--${currentP}`)
+        .classList.add('player--winner');
+    } else {
+      swithGame();
     }
   }
 });
