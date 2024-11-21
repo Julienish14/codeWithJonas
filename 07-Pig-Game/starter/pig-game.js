@@ -70,13 +70,16 @@ btn_hold.addEventListener('click', function () {
     document.getElementById(`score--${currentP}`).textContent =
       holdedScore[currentP];
 
-    if (holdedScore[currentP] >= 20) {
+    if (holdedScore[currentP] >= 100) {
       isPlaying = false;
-
+      dice.classList.remove('hidden');
       document
         .querySelector(`.player--${currentP}`)
         .classList.add('player--winner');
       document.querySelector(`.winner--${currentP}`).classList.remove('hidden');
+      document
+        .querySelector(`.player--${currentP}`)
+        .classList.remove('player--active');
     } else {
       swithGame();
     }
