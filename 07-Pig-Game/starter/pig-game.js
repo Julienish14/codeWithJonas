@@ -10,5 +10,14 @@ const btn_new = document.querySelector('.btn--new');
 
 scoreOne.textContent = 0;
 scoreTwo.textContent = 0;
+let isPlaying = true;
 
 dice.classList.add('hidden');
+
+btn_roll.addEventListener('click', function () {
+  if (isPlaying) {
+    dice.classList.remove('hidden');
+    const tossDice = Math.trunc(Math.random() * 6) + 1;
+    dice.src = `dice-${tossDice}.png`;
+  }
+});
