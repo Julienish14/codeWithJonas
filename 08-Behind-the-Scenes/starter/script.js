@@ -1,5 +1,6 @@
 'use strict';
 
+/*
 function calcAge(birthYear) {
   const age = 2025 - birthYear;
 
@@ -79,3 +80,28 @@ var numProducts = 10;
 function deleteShoppingCart() {
   console.log('All products deleted!');
 }
+
+var x = 1; //variable declared with var will create propert on global window object.
+let y = 5;
+const z = 7;
+
+console.log(x === window.x); //true
+console.log(y === window.y); //false
+console.log(z === window.z); //false
+*/
+
+// THIS KEY WORD in practice
+
+console.log(this);
+
+const calcAge = function (birthYear) {
+  console.log(2024 - birthYear);
+  console.log(this);
+};
+calcAge(1998);
+
+const calcAgeArrow = birthYear => {
+  console.log(2024 - 1990);
+  console.log(this);
+};
+calcAgeArrow();
