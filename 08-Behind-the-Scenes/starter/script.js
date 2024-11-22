@@ -88,7 +88,6 @@ const z = 7;
 console.log(x === window.x); //true
 console.log(y === window.y); //false
 console.log(z === window.z); //false
-*/
 
 // THIS KEY WORD in practice
 
@@ -125,3 +124,16 @@ matilda.calcAge();
 
 const f = jonas.calcAge;
 f();
+*/
+
+const jonas = {
+  firstName: 'Jonas',
+  year: 1991,
+  calcAge: function () {
+    console.log(this);
+    console.log(2024 - this.year);
+  },
+  greet: () => console.log(`Hey ${this.firstName}`),
+};
+
+jonas.greet();
