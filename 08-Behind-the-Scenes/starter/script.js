@@ -256,3 +256,18 @@ const herCopy = Object.assign({}, Jess);
 herCopy.lastName = 'Muller';
 console.log('Before Marriage: ', Jess);
 console.log('After Marriage: ', herCopy);
+
+const teams = {
+  PL: 'Arsenal',
+  serieA: 'AC Milan',
+  laliga: 'Barcelona',
+  player: ['lamal', 'lewndo'],
+};
+
+const teamCopy = Object.assign({}, teams);
+teamCopy.laliga = 'Atletico';
+teamCopy.player.push('Tony');
+teamCopy.player.push('vin');
+
+console.log('Original: ', teams);
+console.log('Copy: ', teamCopy);
