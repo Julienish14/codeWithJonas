@@ -252,7 +252,6 @@ if(numNeighbours === 1){
 console.log(typeof numNeighbours);
 */
 
-
 /*
 if(language === 'English' && population < 50 && isIsland === false){
     console.log(`You should live in ${country} :)`); 

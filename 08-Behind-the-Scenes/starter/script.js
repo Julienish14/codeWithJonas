@@ -124,7 +124,6 @@ matilda.calcAge();
 
 const f = jonas.calcAge;
 f();
-*/
 
 // var firstName = 'Matilda';
 
@@ -169,8 +168,158 @@ const addExpr = function (a, b) {
 addExpr(2, 5);
 addExpr(2, 5, 6, 71);
 
-var addArrow = (a, b) => {
-  console.log(arguments);
-  return a + b;
-}; //argument function doesn't exist in arrow fun
-addArrow(2, 5, 6);
+// var addArrow = (a, b) => {
+//   console.log(arguments);
+//   return a + b;
+// }; //argument function doesn't exist in arrow fun
+// addArrow(2, 5, 6);
+*/
+
+// PRIMITIVES VS. OBJECTS (PRIMITIVES VS. REFERENCE TYPES)
+
+/* 
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+  name: 'Jonas',
+  age: 30,
+};
+
+const friend = me;
+friend.age = 27;
+console.log('Friend: ', friend);
+console.log('Me: ', me);
+*/
+
+// PRIMITIVES Vs OBJECTS IN PRACTICE
+
+/*
+//Primitive types
+let lastName = 'Williams';
+let oldLastName = lastName;
+lastName = 'Davis';
+console.log(lastName, oldLastName);
+
+//Reference types
+const jessica = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+};
+const marriedJessica = jessica;
+marriedJessica.lastName = 'Davis';
+console.log('Before marriage: ', jessica);
+console.log('After marriage: ', marriedJessica);
+
+// compying objects
+const jessica2 = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+  family: ['Alice', 'Bob'],
+};
+
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = 'Davis';
+
+jessicaCopy.family.push('Mary');
+jessicaCopy.family.push('John');
+
+console.log('Before marriage: ', jessica2);
+console.log('After marriage: ', jessicaCopy);
+
+*/
+
+//Review some from 01-02-03
+
+console.log('9' - '5'); // -> 4
+console.log('19' - '13' + '17'); // -> 617
+console.log('19' - '13' + 17); // -> 23
+console.log('123' < 57); // -> false
+console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
+
+// const numNeighbours = Number(
+//   prompt('How many neighbour countries does your contry have?')
+// );
+
+// if (numNeighbours == 1) console.log('Only 1 border');
+// else if (numNeighbours > 1) console.log('More than 1 border');
+// else console.log('No boder');
+
+// // Using === not ==
+
+// if (numNeighbours === 1) console.log('G: Only 1 border');
+// else if (numNeighbours > 1) console.log('G: More than 1 border');
+// else console.log('G: No boder');
+
+const language = 'mandarin';
+
+switch (language) {
+  case 'chinese':
+  case 'mandarin':
+    console.log('MOST number of native speakers!');
+    break;
+  case 'spanish':
+    console.log('2nd place in number of native speakers');
+    break;
+  case 'english':
+    console.log('3rd place');
+    break;
+  case 'hindi':
+    console.log('Number 4');
+    break;
+  case 'arabic':
+    console.log('5th most spoken language');
+    break;
+  default:
+    console.log('Great language too :D');
+}
+
+const population = 24;
+console.log(
+  `Portugal's population is ${population > 33 ? 'above' : 'below'} average`
+);
+
+function desCountry(cn, pop, cap) {
+  return `${cn} has ${pop} million people and its capital city is ${cap}`;
+}
+console.log(desCountry('Rwanda', 15, 'kigali'));
+
+function perW1(pop) {
+  return (pop * 100) / 7900;
+}
+console.log(perW1(1441));
+
+const perW2 = function (pop) {
+  return (pop * 100) / 7900;
+};
+
+const perW3 = pop => (pop * 100) / 7900;
+console.log(perW3(345));
+
+const popu = [1232, 3443, 56, 64];
+
+console.log(popu.length === 4);
+
+const perc = [perW3(popu[0]), perW3(popu[1]), perW3(popu[2]), perW3(popu[3])];
+console.log(perc);
+
+const nei = ['Malawi', 'Mozambique', 'South Africa'];
+console.log('OG neighbours: ', nei);
+nei.push('Utopia');
+console.log(nei);
+nei.pop();
+console.log(nei);
+
+if (!nei.includes('Germany'))
+  console.log('Probably not a central european country :D');
+
+nei[nei.indexOf('South Africa')] = 'Congo Brazzavile';
+console.log(nei);
+
+// for (let index = 1; index <= 50; index++)
+//   console.log(`Voter number ${index} is currently voting`);
