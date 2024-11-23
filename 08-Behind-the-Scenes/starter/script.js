@@ -278,3 +278,8 @@ switch (language) {
   default:
     console.log('Great language too :D');
 }
+
+const population = 34;
+console.log(
+  `Portugal's population is ${population > 33 ? 'above' : 'below'} average`
+);
