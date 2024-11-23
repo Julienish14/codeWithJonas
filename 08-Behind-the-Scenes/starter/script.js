@@ -243,5 +243,16 @@ const Letitia = {
 const missLet = Letitia;
 missLet.lastName = 'John';
 
-console.log(missLet);
-console.log(Letitia);
+console.log('Before Marriage: ', missLet);
+console.log('After Marriage: ', Letitia);
+
+const Jess = {
+  firstName: 'Jessica',
+  lastName: 'Muriel',
+  age: 23,
+};
+
+const herCopy = Object.assign({}, Jess);
+herCopy.lastName = 'Muller';
+console.log('Before Marriage: ', Jess);
+console.log('After Marriage: ', herCopy);
