@@ -279,7 +279,24 @@ switch (language) {
     console.log('Great language too :D');
 }
 
-const population = 34;
+const population = 24;
 console.log(
   `Portugal's population is ${population > 33 ? 'above' : 'below'} average`
 );
+
+function desCountry(cn, pop, cap) {
+  return `${cn} has ${pop} million people and its capital city is ${cap}`;
+}
+console.log(desCountry('Rwanda', 15, 'kigali'));
+
+function perW1(pop) {
+  return (pop * 100) / 7900;
+}
+console.log(perW1(1441));
+
+const perW2 = function (pop) {
+  return (pop * 100) / 7900;
+};
+
+const perW3 = pop => (pop * 100) / 7900;
+console.log(perW3(345));
