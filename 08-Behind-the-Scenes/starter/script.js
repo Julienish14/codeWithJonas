@@ -318,5 +318,8 @@ console.log(nei);
 if (!nei.includes('Germany'))
   console.log('Probably not a central european country :D');
 
+nei[nei.indexOf('South Africa')] = 'Congo Brazzavile';
+console.log(nei);
+
 // for (let index = 1; index <= 50; index++)
 //   console.log(`Voter number ${index} is currently voting`);
