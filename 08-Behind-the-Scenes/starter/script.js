@@ -177,7 +177,7 @@ addExpr(2, 5, 6, 71);
 
 // PRIMITIVES VS. OBJECTS (PRIMITIVES VS. REFERENCE TYPES)
 
-/*
+/* 
 let age = 30;
 let oldAge = age;
 age = 31;
@@ -197,6 +197,7 @@ console.log('Me: ', me);
 
 // PRIMITIVES Vs OBJECTS IN PRACTICE
 
+/*
 //Primitive types
 let lastName = 'Williams';
 let oldLastName = lastName;
@@ -230,3 +231,17 @@ jessicaCopy.family.push('John');
 
 console.log('Before marriage: ', jessica2);
 console.log('After marriage: ', jessicaCopy);
+
+*/
+
+const Letitia = {
+  fistName: 'Letitia',
+  lastName: 'Musk',
+  age: 32,
+};
+
+const missLet = Letitia;
+missLet.lastName = 'John';
+
+console.log(missLet);
+console.log(Letitia);
