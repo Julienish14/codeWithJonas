@@ -300,3 +300,23 @@ const perW2 = function (pop) {
 
 const perW3 = pop => (pop * 100) / 7900;
 console.log(perW3(345));
+
+const popu = [1232, 3443, 56, 64];
+
+console.log(popu.length === 4);
+
+const perc = [perW3(popu[0]), perW3(popu[1]), perW3(popu[2]), perW3(popu[3])];
+console.log(perc);
+
+const nei = ['Malawi', 'Mozambique', 'South Africa'];
+console.log('OG neighbours: ', nei);
+nei.push('Utopia');
+console.log(nei);
+nei.pop();
+console.log(nei);
+
+if (!nei.includes('Germany'))
+  console.log('Probably not a central european country :D');
+
+// for (let index = 1; index <= 50; index++)
+//   console.log(`Voter number ${index} is currently voting`);
