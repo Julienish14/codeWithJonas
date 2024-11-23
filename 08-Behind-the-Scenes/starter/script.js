@@ -234,40 +234,10 @@ console.log('After marriage: ', jessicaCopy);
 
 */
 
-const Letitia = {
-  fistName: 'Letitia',
-  lastName: 'Musk',
-  age: 32,
-};
+//Review some from 01-02-03
 
-const missLet = Letitia;
-missLet.lastName = 'John';
-
-console.log('Before Marriage: ', missLet);
-console.log('After Marriage: ', Letitia);
-
-const Jess = {
-  firstName: 'Jessica',
-  lastName: 'Muriel',
-  age: 23,
-};
-
-const herCopy = Object.assign({}, Jess);
-herCopy.lastName = 'Muller';
-console.log('Before Marriage: ', Jess);
-console.log('After Marriage: ', herCopy);
-
-const teams = {
-  PL: 'Arsenal',
-  serieA: 'AC Milan',
-  laliga: 'Barcelona',
-  player: ['lamal', 'lewndo'],
-};
-
-const teamCopy = Object.assign({}, teams);
-teamCopy.laliga = 'Atletico';
-teamCopy.player.push('Tony');
-teamCopy.player.push('vin');
-
-console.log('Original: ', teams);
-console.log('Copy: ', teamCopy);
+console.log('9' - '5'); // -> 4
+console.log('19' - '13' + '17'); // -> 617
+console.log('19' - '13' + 17); // -> 23
+console.log('123' < 57); // -> false
+console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
