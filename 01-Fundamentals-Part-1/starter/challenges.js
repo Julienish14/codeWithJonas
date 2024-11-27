@@ -16,8 +16,12 @@ BONUS: Create a boolean variable markHigherBMI containing information about whet
 TEST DATA 1: Marks weighs 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.95 m tall.
 
 TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
-
 */
+
+const mMark = 78;
+const hMark = 1.69;
+const mJohn = 92;
+const hJohn = 1.95;
 
 /*
 //SOLUTIONS 
@@ -44,7 +48,6 @@ console.log("Body Mass Index of John: " +BMIJohn);
 console.log("Mark has hight BMI than John? : " +markHigherBMI);
 
 */
-
 
 /*
 CHALLENGE #2
@@ -153,4 +156,3 @@ let tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${tip + bill}`); 
 
 */
-
