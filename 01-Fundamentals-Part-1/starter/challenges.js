@@ -143,27 +143,27 @@ if(scoreDolphines > scoreKoalas){
 }
 
 
-const marks = 4;
-
-switch(marks){
-    case 89: 
-        console.log('Excellent!');
-        break; 
-    case 70: 
-        console.log('Very Good!'); 
-        break; 
-    case 60: 
-        console.log('Good!'); 
-        break; 
-    case 45: 
-        console.log('Not Good!');
-        break; 
-    default: 
-        console.log('NOT QUALIFIED');
-}
 
 */
 
+const marks = 4;
+
+switch (marks) {
+  case 89:
+    console.log('Excellent!');
+    break;
+  case 70:
+    console.log('Very Good!');
+    break;
+  case 60:
+    console.log('Good!');
+    break;
+  case 45:
+    console.log('Not Good!');
+    break;
+  default:
+    console.log('NOT QUALIFIED');
+}
 /*
 CHALLENGE #4
 Steven needs a very simple tip calculator for whenever he goes to eat in a restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
