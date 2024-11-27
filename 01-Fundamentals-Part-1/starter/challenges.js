@@ -179,7 +179,16 @@ Example: The bill was 275, the tip was 41.25, and the total value 316.25.
 Note: Use the values of the bill and tip variables to construct this string. Don't hard-code them 🙂
 
 TEST DATA: Test with different bill values: 275, 40, and 430
+*/
 
+const bill = 430;
+const tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
+
+console.log(
+  `The bill was ${bill}, the tip was ${tip} and total values ${tip + bill}`
+);
+
+/*
 //SOLUTION
 
 const bill = 430; 
