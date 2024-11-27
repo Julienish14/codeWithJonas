@@ -32,6 +32,8 @@ console.log(
   } than John's ${bmiJ} BMI`
 );
 
+const markHB = bmiM > bmiJ;
+console.log(markHB);
 /*
 //SOLUTIONS 
 // const massMark = 78; 
