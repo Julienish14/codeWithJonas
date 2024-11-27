@@ -1,22 +1,6 @@
 'use strict';
-const mMark = 78;
-const hMark = 1.69;
-const mJohn = 920;
-const hJohn = 1.95;
-
-const bmiM = mMark / (hMark * hMark);
-const bmiJ = mJohn / (hJohn * hJohn);
-
-console.log(
-  `Mark's BMI ${bmiM} is ${
-    bmiM > bmiJ ? 'great' : 'less'
-  } than John's ${bmiJ} BMI`
-);
-
-const markHB = bmiM > bmiJ;
-console.log(markHB);
 /* 
-    CHALLENGE #1
+CHALLENGE #1
 Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / (height * height) (mass in kg and height in meters).
 
 Your task is to write some code to help them:
@@ -85,8 +69,8 @@ Note: Don't round the BMI values. Leave them as they are.
 /*
 if(BMIMark > BMIJohn){
     console.log(`Mark's BMI (${BMIMark}) is higher than John's!(${BMIJohn})`);
-}else{
-    console.log(`John's BMI ${BMIJohn} is heigher than Mark's!(${BMIMark})`);
+    }else{
+        console.log(`John's BMI ${BMIJohn} is heigher than Mark's!(${BMIMark})`);
 }
 
 */
@@ -135,60 +119,60 @@ console.log(scoreDolphines, scoreKoalas);
 
 if(scoreDolphines > scoreKoalas){
     console.log('Dolphins win the trophy 🏆'); 
-}else if (scoreDolphines < scoreKoalas){
-    console.log('Koalas win the trophy 🏆');
-}else if (scoreDolphines === scoreKoalas){
-    console.log('Both win the trophy');
-}
-
-
-
-const marks = 4;
-
-switch (marks) {
-  case 89:
-    console.log('Excellent!');
-    break;
-  case 70:
-    console.log('Very Good!');
-    break;
-  case 60:
-    console.log('Good!');
-    break;
-  case 45:
-    console.log('Not Good!');
-    break;
-  default:
-    console.log('NOT QUALIFIED');
-}
-
-*/
+    }else if (scoreDolphines < scoreKoalas){
+        console.log('Koalas win the trophy 🏆');
+        }else if (scoreDolphines === scoreKoalas){
+            console.log('Both win the trophy');
+            }
+            
+            
+            
+            const marks = 4;
+            
+            switch (marks) {
+                case 89:
+                    console.log('Excellent!');
+                    break;
+                    case 70:
+                        console.log('Very Good!');
+                        break;
+                        case 60:
+                            console.log('Good!');
+                            break;
+                            case 45:
+                                console.log('Not Good!');
+                                break;
+                                default:
+                                    console.log('NOT QUALIFIED');
+                                    }
+                                    
+                                    */
 /*
-CHALLENGE #4
-Steven needs a very simple tip calculator for whenever he goes to eat in a restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
-
-Your tasks:
-
-Calculate the tip, depending on the bill value. Create a variable called tip for this. It's not allowed to use an if...else statement (if it's easier for you, you can start with an if...else statement, and then try to convert it to a ternary operator).
-
-Print a string to the console containing the bill value, the tip, and the final value (bill + tip).
-
-Example: The bill was 275, the tip was 41.25, and the total value 316.25.
-
-Note: Use the values of the bill and tip variables to construct this string. Don't hard-code them 🙂
-
-TEST DATA: Test with different bill values: 275, 40, and 430
-*/
+                                   CHALLENGE #4
+                                   Steven needs a very simple tip calculator for whenever he goes to eat in a restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+                                   
+                                   Your tasks:
+                                   
+                                   Calculate the tip, depending on the bill value. Create a variable called tip for this. It's not allowed to use an if...else statement (if it's easier for you, you can start with an if...else statement, and then try to convert it to a ternary operator).
+                                   
+                                   Print a string to the console containing the bill value, the tip, and the final value (bill + tip).
+                                   
+                                   Example: The bill was 275, the tip was 41.25, and the total value 316.25.
+                                   
+                                   Note: Use the values of the bill and tip variables to construct this string. Don't hard-code them 🙂
+                                   
+                                   TEST DATA: Test with different bill values: 275, 40, and 430
+                                   */
 
 /*
-//SOLUTION
-
-const bill = 430; 
-let tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100; 
-
-console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${tip + bill}`); 
-
-*/
+                                  //SOLUTION
+                                  
+                                  const bill = 430; 
+                                  let tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100; 
+                                  
+                                  console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${tip + bill}`); 
+                                  
+                                  */
 
 const bill = 430;
 const tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
@@ -196,3 +180,20 @@ const tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
 console.log(
   `The bill was ${bill}, the tip was ${tip} and total values ${tip + bill}`
 );
+
+const mMark = 78;
+const hMark = 1.69;
+const mJohn = 920;
+const hJohn = 1.95;
+
+const bmiM = mMark / (hMark * hMark);
+const bmiJ = mJohn / (hJohn * hJohn);
+
+console.log(
+  `Mark's BMI ${bmiM} is ${
+    bmiM > bmiJ ? 'great' : 'less'
+  } than John's ${bmiJ} BMI`
+);
+
+const markHB = bmiM > bmiJ;
+console.log(markHB);
