@@ -112,6 +112,21 @@ Your tasks:
 
 TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
 
+
+*/
+
+const sDol = (96 + 108 + 89) / 3;
+const sKol = (88 + 91 + 110) / 3;
+
+if (sDol > sKol) {
+  console.log(`Dolphins win the trophy`);
+} else if (sDol < sKol) {
+  console.log(`Koalas win the trophy`);
+} else {
+  console.log(`Both win the trophy`);
+}
+
+/*
 //Solutions
 
 const scoreDolphines = (96 + 108 + 89)/3;
