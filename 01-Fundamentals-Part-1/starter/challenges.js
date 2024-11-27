@@ -1,6 +1,6 @@
 'use strict';
 /* 
-    CHALLENGE #1
+CHALLENGE #1
 Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / (height * height) (mass in kg and height in meters).
 
 Your task is to write some code to help them:
@@ -16,7 +16,6 @@ BONUS: Create a boolean variable markHigherBMI containing information about whet
 TEST DATA 1: Marks weighs 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.95 m tall.
 
 TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
-
 */
 
 /*
@@ -65,8 +64,9 @@ Note: Don't round the BMI values. Leave them as they are.
 /*
 if(BMIMark > BMIJohn){
     console.log(`Mark's BMI (${BMIMark}) is higher than John's!(${BMIJohn})`);
-}else{
-    console.log(`John's BMI ${BMIJohn} is heigher than Mark's!(${BMIMark})`);
+    }else{
+        console.log(`John's BMI ${BMIJohn} is heigher than Mark's!(${BMIMark})`);
+      
 }
 
 */
@@ -91,6 +91,10 @@ Your tasks:
 
 TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
 
+
+*/
+
+/*
 //Solutions
 
 const scoreDolphines = (96 + 108 + 89)/3;
@@ -107,27 +111,27 @@ if(scoreDolphines > scoreKoalas){
 }
 
 
+
 const marks = 4;
 
-switch(marks){
-    case 89: 
-        console.log('Excellent!');
-        break; 
-    case 70: 
-        console.log('Very Good!'); 
-        break; 
-    case 60: 
-        console.log('Good!'); 
-        break; 
-    case 45: 
-        console.log('Not Good!');
-        break; 
-    default: 
-        console.log('NOT QUALIFIED');
+switch (marks) {
+  case 89:
+    console.log('Excellent!');
+    break;
+  case 70:
+    console.log('Very Good!');
+    break;
+  case 60:
+    console.log('Good!');
+    break;
+  case 45:
+    console.log('Not Good!');
+    break;
+  default:
+    console.log('NOT QUALIFIED');
 }
 
 */
-
 /*
 CHALLENGE #4
 Steven needs a very simple tip calculator for whenever he goes to eat in a restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
@@ -143,7 +147,9 @@ Example: The bill was 275, the tip was 41.25, and the total value 316.25.
 Note: Use the values of the bill and tip variables to construct this string. Don't hard-code them 🙂
 
 TEST DATA: Test with different bill values: 275, 40, and 430
+*/
 
+/*
 //SOLUTION
 
 const bill = 430; 
