@@ -1,4 +1,20 @@
 'use strict';
+const mMark = 78;
+const hMark = 1.69;
+const mJohn = 920;
+const hJohn = 1.95;
+
+const bmiM = mMark / (hMark * hMark);
+const bmiJ = mJohn / (hJohn * hJohn);
+
+console.log(
+  `Mark's BMI ${bmiM} is ${
+    bmiM > bmiJ ? 'great' : 'less'
+  } than John's ${bmiJ} BMI`
+);
+
+const markHB = bmiM > bmiJ;
+console.log(markHB);
 /* 
     CHALLENGE #1
 Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / (height * height) (mass in kg and height in meters).
@@ -18,22 +34,6 @@ TEST DATA 1: Marks weighs 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.9
 TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
 */
 
-const mMark = 78;
-const hMark = 1.69;
-const mJohn = 920;
-const hJohn = 1.95;
-
-const bmiM = mMark / (hMark * hMark);
-const bmiJ = mJohn / (hJohn * hJohn);
-
-console.log(
-  `Mark's BMI ${bmiM} is ${
-    bmiM > bmiJ ? 'great' : 'less'
-  } than John's ${bmiJ} BMI`
-);
-
-const markHB = bmiM > bmiJ;
-console.log(markHB);
 /*
 //SOLUTIONS 
 // const massMark = 78; 
