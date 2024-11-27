@@ -20,7 +20,7 @@ TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1
 
 const mMark = 78;
 const hMark = 1.69;
-const mJohn = 92;
+const mJohn = 920;
 const hJohn = 1.95;
 
 const bmiM = mMark / (hMark * hMark);
@@ -74,6 +74,12 @@ Example: "Mark's BMI (28.3) is higher than John's (23.9)!" or "John's BMI (29.1)
 
 Note: Don't round the BMI values. Leave them as they are.
 */
+
+if (!markHB) {
+  console.log(`John's BMI is higher than Mark's!`);
+} else {
+  console.log(`Mark's BMI is higher than John's!`);
+}
 
 //Solution
 
