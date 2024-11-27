@@ -164,23 +164,6 @@ if(scoreDolphines > scoreKoalas){
                                    TEST DATA: Test with different bill values: 275, 40, and 430
                                    */
 
-/*
-                                  //SOLUTION
-                                  
-                                  const bill = 430; 
-                                  let tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100; 
-                                  
-                                  console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${tip + bill}`); 
-                                  
-                                  */
-
-const bill = 430;
-const tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
-
-console.log(
-  `The bill was ${bill}, the tip was ${tip} and total values ${tip + bill}`
-);
-
 const mMark = 78;
 const hMark = 1.69;
 const mJohn = 920;
@@ -197,3 +180,19 @@ console.log(
 
 const markHB = bmiM > bmiJ;
 console.log(markHB);
+/*
+//SOLUTION
+
+const bill = 430; 
+let tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100; 
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${tip + bill}`); 
+
+*/
+
+const bill = 430;
+const tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
+
+console.log(
+  `The bill was ${bill}, the tip was ${tip} and total values ${tip + bill}`
+);
