@@ -181,13 +181,6 @@ Note: Use the values of the bill and tip variables to construct this string. Don
 TEST DATA: Test with different bill values: 275, 40, and 430
 */
 
-const bill = 430;
-const tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
-
-console.log(
-  `The bill was ${bill}, the tip was ${tip} and total values ${tip + bill}`
-);
-
 /*
 //SOLUTION
 
@@ -197,3 +190,10 @@ let tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${tip + bill}`); 
 
 */
+
+const bill = 430;
+const tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
+
+console.log(
+  `The bill was ${bill}, the tip was ${tip} and total values ${tip + bill}`
+);
