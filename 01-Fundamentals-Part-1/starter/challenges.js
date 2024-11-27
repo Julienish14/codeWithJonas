@@ -23,6 +23,15 @@ const hMark = 1.69;
 const mJohn = 92;
 const hJohn = 1.95;
 
+const bmiM = mMark / (hMark * hMark);
+const bmiJ = mJohn / (hJohn * hJohn);
+
+console.log(
+  `Mark's BMI ${bmiM} is ${
+    bmiM > bmiJ ? 'great' : 'less'
+  } than John's ${bmiJ} BMI`
+);
+
 /*
 //SOLUTIONS 
 // const massMark = 78; 
