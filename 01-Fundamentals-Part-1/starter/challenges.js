@@ -60,6 +60,11 @@ console.log("Mark has hight BMI than John? : " +markHigherBMI);
 
 */
 
+if (!markHB) {
+  console.log(`John's BMI is higher than Mark's!`);
+} else {
+  console.log(`Mark's BMI is higher than John's!`);
+}
 /*
 CHALLENGE #2
 Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
@@ -74,12 +79,6 @@ Example: "Mark's BMI (28.3) is higher than John's (23.9)!" or "John's BMI (29.1)
 
 Note: Don't round the BMI values. Leave them as they are.
 */
-
-if (!markHB) {
-  console.log(`John's BMI is higher than Mark's!`);
-} else {
-  console.log(`Mark's BMI is higher than John's!`);
-}
 
 //Solution
 
