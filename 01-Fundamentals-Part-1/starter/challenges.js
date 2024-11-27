@@ -44,11 +44,6 @@ console.log("Mark has hight BMI than John? : " +markHigherBMI);
 
 */
 
-if (!markHB) {
-  console.log(`John's BMI is higher than Mark's!`);
-} else {
-  console.log(`Mark's BMI is higher than John's!`);
-}
 /*
 CHALLENGE #2
 Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
@@ -71,6 +66,7 @@ if(BMIMark > BMIJohn){
     console.log(`Mark's BMI (${BMIMark}) is higher than John's!(${BMIJohn})`);
     }else{
         console.log(`John's BMI ${BMIJohn} is heigher than Mark's!(${BMIMark})`);
+      
 }
 
 */
@@ -98,17 +94,6 @@ TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
 
 */
 
-const sDol = (96 + 108 + 89) / 3;
-const sKol = (88 + 91 + 110) / 3;
-
-if (sDol > sKol) {
-  console.log(`Dolphins win the trophy`);
-} else if (sDol < sKol) {
-  console.log(`Koalas win the trophy`);
-} else {
-  console.log(`Both win the trophy`);
-}
-
 /*
 //Solutions
 
@@ -119,67 +104,51 @@ console.log(scoreDolphines, scoreKoalas);
 
 if(scoreDolphines > scoreKoalas){
     console.log('Dolphins win the trophy 🏆'); 
-    }else if (scoreDolphines < scoreKoalas){
-        console.log('Koalas win the trophy 🏆');
-        }else if (scoreDolphines === scoreKoalas){
-            console.log('Both win the trophy');
-            }
-            
-            
-            
-            const marks = 4;
-            
-            switch (marks) {
-                case 89:
-                    console.log('Excellent!');
-                    break;
-                    case 70:
-                        console.log('Very Good!');
-                        break;
-                        case 60:
-                            console.log('Good!');
-                            break;
-                            case 45:
-                                console.log('Not Good!');
-                                break;
-                                default:
-                                    console.log('NOT QUALIFIED');
-                                    }
-                                    
-                                    */
+}else if (scoreDolphines < scoreKoalas){
+    console.log('Koalas win the trophy 🏆');
+}else if (scoreDolphines === scoreKoalas){
+    console.log('Both win the trophy');
+}
+
+
+
+const marks = 4;
+
+switch (marks) {
+  case 89:
+    console.log('Excellent!');
+    break;
+  case 70:
+    console.log('Very Good!');
+    break;
+  case 60:
+    console.log('Good!');
+    break;
+  case 45:
+    console.log('Not Good!');
+    break;
+  default:
+    console.log('NOT QUALIFIED');
+}
+
+*/
 /*
-                                   CHALLENGE #4
-                                   Steven needs a very simple tip calculator for whenever he goes to eat in a restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
-                                   
-                                   Your tasks:
-                                   
-                                   Calculate the tip, depending on the bill value. Create a variable called tip for this. It's not allowed to use an if...else statement (if it's easier for you, you can start with an if...else statement, and then try to convert it to a ternary operator).
-                                   
-                                   Print a string to the console containing the bill value, the tip, and the final value (bill + tip).
-                                   
-                                   Example: The bill was 275, the tip was 41.25, and the total value 316.25.
-                                   
-                                   Note: Use the values of the bill and tip variables to construct this string. Don't hard-code them 🙂
-                                   
-                                   TEST DATA: Test with different bill values: 275, 40, and 430
-                                   */
+CHALLENGE #4
+Steven needs a very simple tip calculator for whenever he goes to eat in a restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
 
-const mMark = 78;
-const hMark = 1.69;
-const mJohn = 920;
-const hJohn = 1.95;
+Your tasks:
 
-const bmiM = mMark / (hMark * hMark);
-const bmiJ = mJohn / (hJohn * hJohn);
+Calculate the tip, depending on the bill value. Create a variable called tip for this. It's not allowed to use an if...else statement (if it's easier for you, you can start with an if...else statement, and then try to convert it to a ternary operator).
 
-console.log(
-  `Mark's BMI ${bmiM} is ${
-    bmiM > bmiJ ? 'great' : 'less'
-  } than John's ${bmiJ} BMI`
-);
+Print a string to the console containing the bill value, the tip, and the final value (bill + tip).
 
-const markHB = bmiM > bmiJ;
-console.log(markHB);
+Example: The bill was 275, the tip was 41.25, and the total value 316.25.
+
+Note: Use the values of the bill and tip variables to construct this string. Don't hard-code them 🙂
+
+TEST DATA: Test with different bill values: 275, 40, and 430
+*/
+
 /*
 //SOLUTION
 
@@ -189,10 +158,3 @@ let tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${tip + bill}`); 
 
 */
-
-const bill = 430;
-const tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
-
-console.log(
-  `The bill was ${bill}, the tip was ${tip} and total values ${tip + bill}`
-);
