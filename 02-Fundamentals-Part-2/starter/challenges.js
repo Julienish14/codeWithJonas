@@ -65,6 +65,23 @@ TEST DATA: 125, 555, and 44.
 
 //Task One
 
+const calcTip = bill => (bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2);
+
+console.log(calcTip(100));
+
+//Task Two
+
+const bills = [125, 555, 44];
+
+//Task Three
+
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(bills, tips);
+//Task Four
+
+const totals = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
+console.log(totals);
+
 /*
 CHALLENGE #3
 Let's go back to Mark and John comparing their BMIs!
@@ -87,266 +104,249 @@ TEST DATA: Marks weighs 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.95 
 
 /*
 const mark = {
-  fullName : 'Mark Miller', 
-  mass : 78, 
-  height : 1.69,
-  
-  calcBMI : function () {
-    this.bmi = this.mass / this.height ** 2;
-    return this.bmi; 
-    }
-    };
+    fullName : 'Mark Miller', 
+    mass : 78, 
+    height : 1.69,
     
-    const john = {
-      fullName : 'John Smith', 
-      mass : 92, 
-      height : 1.95,
-      
-      calcBMI : function () {
+    calcBMI : function () {
         this.bmi = this.mass / this.height ** 2;
         return this.bmi; 
-        }
-        };
-        
-        mark.calcBMI(); 
-        john.calcBMI(); 
-        
-        console.log(mark.bmi, john.bmi)
-        
-        if(john.bmi > mark.bmi){
-          console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})`);
-          }else{
-            console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})`);
-        }
-        
-        */
+    }
+};
+
+const john = {
+    fullName : 'John Smith', 
+    mass : 92, 
+    height : 1.95,
+    
+    calcBMI : function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi; 
+    }
+};
+
+mark.calcBMI(); 
+john.calcBMI(); 
+
+console.log(mark.bmi, john.bmi)
+
+if(john.bmi > mark.bmi){
+    console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})`);
+}else{
+    console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})`);
+}
+
+*/
 
 /*
-       CHALLENGE #4
-       Let's improve Steven's tip calculator even more, this time using loops!
-       
-       Your tasks:
-       
-       Create an array called bills containing all 10 test bill values.
-       
-       Create empty arrays for the tips and the totals (tips and totals)
-       
-       Use the calcTip function we wrote before (included in the starter code) to calculate tips and total values (bill + tip) for every bill value in the bills array. Use a for loop to perform the 10 calculations!
-       
-       
-       
-       TEST DATA: 22, 295, 176, 440, 37, 105, 10, 1100, 86, and 52.
-       */
+CHALLENGE #4
+Let's improve Steven's tip calculator even more, this time using loops!
+
+Your tasks:
+
+Create an array called bills containing all 10 test bill values.
+
+Create empty arrays for the tips and the totals (tips and totals)
+
+Use the calcTip function we wrote before (included in the starter code) to calculate tips and total values (bill + tip) for every bill value in the bills array. Use a for loop to perform the 10 calculations!
+
+
+
+TEST DATA: 22, 295, 176, 440, 37, 105, 10, 1100, 86, and 52.
+*/
 
 /*
-      const calcTip = function (bill) {
-        return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-        }
-        
-        const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]; 
-        const tips = []; 
-        const totals = [];
-        
-        for (let i = 0; i < bills.length; i++){
-          //fist way 
-          //   const tip = calcTip(bills[i]); 
-          //   tips.push(tip);
-          
-          //Second way
-          tips.push(calcTip(bills[i]));
-          
-          //Third way 
-          //   tips[i] = calcTip(bills[i]);
-          
-          //First way on Total
-          //   const tot = tips[i] + bills[i]; 
-          //   totals.push(tot);
-          
-          //Second way on Total
-          totals.push(tips[i] + bills[i]); 
-          
-          //Third way on Total
-          // totals[i] = tips[i] + bills[i]; 
-          }
-          
-          console.log(bills, tips, totals);
-          
-          */
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+  }
+  
+  const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]; 
+  const tips = []; 
+  const totals = [];
+  
+  for (let i = 0; i < bills.length; i++){
+        //fist way 
+    //   const tip = calcTip(bills[i]); 
+    //   tips.push(tip);
+
+        //Second way
+    tips.push(calcTip(bills[i]));
+
+        //Third way 
+    //   tips[i] = calcTip(bills[i]);
+      
+        //First way on Total
+    //   const tot = tips[i] + bills[i]; 
+    //   totals.push(tot);
+
+        //Second way on Total
+    totals.push(tips[i] + bills[i]); 
+
+        //Third way on Total
+    // totals[i] = tips[i] + bills[i]; 
+  }
+
+  console.log(bills, tips, totals);
+
+*/
 
 /*
-         BONUS:
-         
-         Write a function calcAverage which takes an array called arr as an argument. This function calculates the average of all numbers in the given array. This is a DIFFICULT challenge (we haven't done this before)! Here is how to solve it if you feel like it:
-         
-         1. First, you will need to add up all values in the array. To do the addition, start by creating a variable sum that starts at 0. Then loop over the array using a for loop. In each iteration, add the current value to the sum variable. This way, by the end of the loop, you have all values added together.
-         
-         2. To calculate the average, divide the sum you calculated before by the length of the array (because that's the number of elements).
-         
-         3. Call the function with the totals array.
-         
-         */
+  BONUS:
+
+Write a function calcAverage which takes an array called arr as an argument. This function calculates the average of all numbers in the given array. This is a DIFFICULT challenge (we haven't done this before)! Here is how to solve it if you feel like it:
+
+1. First, you will need to add up all values in the array. To do the addition, start by creating a variable sum that starts at 0. Then loop over the array using a for loop. In each iteration, add the current value to the sum variable. This way, by the end of the loop, you have all values added together.
+
+2. To calculate the average, divide the sum you calculated before by the length of the array (because that's the number of elements).
+
+3. Call the function with the totals array.
+
+*/
 
 /*
-        //Results
-        
-        function calcAverage (arr){
-          let sum = 0; 
-          for(let i = 0; i < arr.length; i++){
-            sum += arr[i];
-            }
-            return sum / arr.length; 
-            }
-            
-            console.log(calcAverage(bills));
-            
-            */
+//Results
+
+function calcAverage (arr){
+    let sum = 0; 
+    for(let i = 0; i < arr.length; i++){
+        sum += arr[i];
+    }
+    return sum / arr.length; 
+}
+
+console.log(calcAverage(bills));
+
+*/
 
 //========== ******* CHALLENGES ******* ========
 
 //CHALLENGE ONE: You are given a number say true or false if number is narcissistic ex: 153 -> 1^3 + 5^3 + 3^3
 
 /*
-           function isItNarcissistic(num) {
-            const toStr = num.toString();
-            const numLeng = toStr.length;
-            let result = 0;
-            for (let i = 0; i < numLeng; i++) {
-              const y = parseInt(toStr[i]);
-              result += Math.pow(y, numLeng);
-              }
-              return result === num;
-              }
-              
-              console.log(isItNarcissistic(153));
-              console.log(isItNarcissistic(13));
-              
-              //CHALLENGE TWO: Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
-              
-              function repeater(n, s) {
-                let rep = '';
-                for (let i = 1; i <= n; i++) {
-                  rep += s;
-                  }
-                  return rep;
-                  }
-                  console.log(repeater(4, 'HelloWorld|'));
-                  
-                  //CHALLENGE THREE: Given an array of integers your solution should find the smallest integer.
-                  
-                  function findSmall(arr) {
-                    let smallNum = arr[0];
-                    for (let i = 1; i < arr.length; i++) {
-                      if (arr[i] < smallNum) {
-                        smallNum = arr[i];
-                        }
-                        }
-                        return smallNum;
-                        }
-                        const thisArr = [34, 12, 52, 33];
-                        console.log(`This is the small number:  ${findSmall(thisArr)}`);
-                        
-                        //CHALLENGE FOUR: write a function that takes a string and return a new string with all vowels removed.
-                        
-                        function removeVowel(sent) {
-                          const allVowels = ['a', 'i', 'e', 'u', 'o', 'A', 'I', 'E', 'U', 'O'];
-                          let newSent = '';
-                          for (let i = 0; i < sent.length; i++) {
-                            if (!allVowels.includes(sent[i])) {
-                              newSent += sent[i];
-                              }
-                              }
-                              return newSent;
-                              }
-                              
-                              console.log(removeVowel('This is The SENTENCE and removed vowels'));
-                              
-                              //CHALLENGE FIVE: Make a function that reverses whatever we pass into it.
-                              
-                              
-                              const reverses = function (whatever) {
-                                let newWhat = ' ';
-                                for (let i = whatever.length - 1; i >= 0; i--) {
-                                  newWhat += whatever[i];
-                                  }
-                                  return newWhat;
-                                  };
-                                  
-                                  console.log(reverses('Hello My Baby!!!'));
-                                  
-                                  */
+function isItNarcissistic(num) {
+  const toStr = num.toString();
+  const numLeng = toStr.length;
+  let result = 0;
+  for (let i = 0; i < numLeng; i++) {
+    const y = parseInt(toStr[i]);
+    result += Math.pow(y, numLeng);
+  }
+  return result === num;
+}
+
+console.log(isItNarcissistic(153));
+console.log(isItNarcissistic(13));
+
+//CHALLENGE TWO: Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+
+function repeater(n, s) {
+  let rep = '';
+  for (let i = 1; i <= n; i++) {
+    rep += s;
+  }
+  return rep;
+}
+console.log(repeater(4, 'HelloWorld|'));
+
+//CHALLENGE THREE: Given an array of integers your solution should find the smallest integer.
+
+function findSmall(arr) {
+  let smallNum = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < smallNum) {
+      smallNum = arr[i];
+    }
+  }
+  return smallNum;
+}
+const thisArr = [34, 12, 52, 33];
+console.log(`This is the small number:  ${findSmall(thisArr)}`);
+
+//CHALLENGE FOUR: write a function that takes a string and return a new string with all vowels removed.
+
+function removeVowel(sent) {
+  const allVowels = ['a', 'i', 'e', 'u', 'o', 'A', 'I', 'E', 'U', 'O'];
+  let newSent = '';
+  for (let i = 0; i < sent.length; i++) {
+    if (!allVowels.includes(sent[i])) {
+      newSent += sent[i];
+    }
+  }
+  return newSent;
+}
+
+console.log(removeVowel('This is The SENTENCE and removed vowels'));
+
+//CHALLENGE FIVE: Make a function that reverses whatever we pass into it.
+
+
+const reverses = function (whatever) {
+  let newWhat = ' ';
+  for (let i = whatever.length - 1; i >= 0; i--) {
+    newWhat += whatever[i];
+  }
+  return newWhat;
+};
+
+console.log(reverses('Hello My Baby!!!'));
+
+*/
 
 /*
-                                 //CHALLENGE SIX: Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
-                                 */
+//CHALLENGE SIX: Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+*/
 
 /*
-                                function XO(str) {
-                                  str = str.toLowerCase();
-                                  const strin = str.split('');
-                                  strin.sort();
-                                  const xx = [];
-                                  const oo = [];
-                                  
-                                  for (let i = 0; i < strin.length; i++) {
-                                    if (strin[i] === 'x') xx.push(strin[i]);
-                                    else if (strin[i] === 'o') oo.push(str[i]);
-                                    }
-                                    if (xx.length === oo.length) return true;
-                                    else if (!strin.includes('o') && !strin.includes('x')) return true;
-                                    return false;
-                                    }
-                                    
-                                    //Other simple way to do it like PRO 😎
-                                    function XOo(str) {
-                                      str = str.toLowerCase().split('');
-                                      return (
-                                        str.filter(x => x === 'x').length === str.filter(o => o === 'o').length
-                                        );
-                                        }
-                                        
-                                        console.log(XOo('zpspsps'));
-                                        console.log(XOo('xooxx'));
-                                        console.log(XOo('ooxXm'));
-                                        console.log(XOo('zpzpzpzpp'));
-                                        console.log(XOo('zzoo'));
-                                        
-                                        */
+function XO(str) {
+  str = str.toLowerCase();
+  const strin = str.split('');
+  strin.sort();
+  const xx = [];
+  const oo = [];
+
+  for (let i = 0; i < strin.length; i++) {
+    if (strin[i] === 'x') xx.push(strin[i]);
+    else if (strin[i] === 'o') oo.push(str[i]);
+  }
+  if (xx.length === oo.length) return true;
+  else if (!strin.includes('o') && !strin.includes('x')) return true;
+  return false;
+}
+
+//Other simple way to do it like PRO 😎
+function XOo(str) {
+  str = str.toLowerCase().split('');
+  return (
+    str.filter(x => x === 'x').length === str.filter(o => o === 'o').length
+  );
+}
+
+console.log(XOo('zpspsps'));
+console.log(XOo('xooxx'));
+console.log(XOo('ooxXm'));
+console.log(XOo('zpzpzpzpp'));
+console.log(XOo('zzoo'));
+
+*/
 
 /*
-                                       //CHALLENGE SEVEN: Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result. It should remove all values from list a, which are present in list b keeping their order.
-                                       
-                                       const arrDiffe = function (a, b) {
-                                        const result = [];
-                                        for (let i = 0; i < a.length; i++) {
-                                          if (!b.includes(a[i])) {
-                                            result.push(a[i]);
-                                            }
-                                            }
-                                            return result;
-                                            };
-                                            
-                                            //Other simple way to do it like PRO 😎
-                                            
-                                            const arrDiff = (a, b) => {
-                                              return a.filter(i => !b.includes(i));
-                                              };
-                                              
-                                              console.log(arrDiffe([2, 4, 4, 1, 5], [2, 4, 3]));
-                                              */
+//CHALLENGE SEVEN: Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result. It should remove all values from list a, which are present in list b keeping their order.
 
-const calcTip = bill => (bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2);
+const arrDiffe = function (a, b) {
+  const result = [];
+  for (let i = 0; i < a.length; i++) {
+    if (!b.includes(a[i])) {
+      result.push(a[i]);
+    }
+  }
+  return result;
+};
 
-console.log(calcTip(100));
+//Other simple way to do it like PRO 😎
 
-//Task Two
+const arrDiff = (a, b) => {
+  return a.filter(i => !b.includes(i));
+};
 
-const bills = [125, 555, 44];
-
-//Task Three
-
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-console.log(bills, tips);
-//Task Four
-
-const totals = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
-console.log(totals);
+console.log(arrDiffe([2, 4, 4, 1, 5], [2, 4, 3]));
+*/
