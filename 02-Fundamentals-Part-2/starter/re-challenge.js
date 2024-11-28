@@ -22,6 +22,7 @@ Use the checkWinner function to determine the winner for both DATA 1 and DATA 2.
 Ignore draws this time. Instead, log No team wins... to the console if there is no winner.
 */
 
+/*
 const calcAve = (scOne, scTwo, scThree) => (scOne + scTwo + scThree) / 3;
 
 const scDol = calcAve(23, 45, 66);
@@ -38,7 +39,7 @@ function chWin(avDol, avKoa) {
 }
 
 chWin(scDol, scKoa);
-
+*/
 /*
 
     CHALLENGE #2
@@ -58,6 +59,7 @@ TEST DATA: 125, 555, and 44.
 
 */
 
+/*
 const calTip = function (bill) {
   let tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
   return tip;
@@ -65,9 +67,12 @@ const calTip = function (bill) {
 
 console.log(`Bill and Tip ${calTip(100)}`);
 
-let bills = [125, 555, 44];
+const bills = [125, 555, 44];
 let tips = [calTip(bills[0]), calTip(bills[1]), calTip(bills[2])];
 
 console.log(tips);
 
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(totals);
+
+*/
