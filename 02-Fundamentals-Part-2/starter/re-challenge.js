@@ -63,4 +63,9 @@ const calTip = function (bill) {
   return tip;
 };
 
-console.log(`Bill and Tip ${calTip(400)}`);
+console.log(`Bill and Tip ${calTip(100)}`);
+
+const bills = [125, 555, 44];
+const tips = [calTip(bills[0]), calTip(bills[1]), calTip(bills[2])];
+
+console.log(tips);
