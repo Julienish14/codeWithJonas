@@ -21,3 +21,6 @@ Use the checkWinner function to determine the winner for both DATA 1 and DATA 2.
 
 Ignore draws this time. Instead, log No team wins... to the console if there is no winner.
 */
+
+const calcAve = (scOne, scTwo, scThree) => (scOne + scTwo + scThree) / 3;
+console.log(calcAve(34, 55, 67));
