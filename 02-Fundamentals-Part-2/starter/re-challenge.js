@@ -57,3 +57,9 @@ BONUS: Create an array totals containing the total values, so the bill + tip.
 TEST DATA: 125, 555, and 44.
 
 */
+let tip;
+const calTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? (tip = bill * 0.15) : (tip = bill * 20);
+};
+
+console.log(`Bill and Tip ${calTip(400)}`);
