@@ -38,3 +38,14 @@ function chWin(avDol, avKoa) {
 }
 
 chWin(scDol, scKoa);
+
+/*
+
+    CHALLENGE #2
+Steven wants you to improve his tip calculator, using the same rules as before — tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
+
+Your tasks:
+
+Write a function calcTip that takes any bill value as an input and returns the corresponding tip, calculated based on the rules above (you can check out the code from the first tip calculator challenge if you need to). Use the function type you like the most. Test the function using a bill value of 100.
+
+*/
