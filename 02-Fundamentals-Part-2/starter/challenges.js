@@ -65,25 +65,23 @@ TEST DATA: 125, 555, and 44.
 
 //Task One
 /*
-const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2; 
+const calcTip = bill => (bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2);
 
-console.log(calcTip(100)); 
+console.log(calcTip(100));
 
-    //Task Two
+//Task Two
 
-const bills = [125, 555, 44]; 
+const bills = [125, 555, 44];
 
-    //Task Three
+//Task Three
 
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]; 
-console.log(bills, tips); 
-    //Task Four
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(bills, tips);
+//Task Four
 
-const totals = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]]
-console.log(totals); 
-
+const totals = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
+console.log(totals);
 */
-
 /*
 CHALLENGE #3
 Let's go back to Mark and John comparing their BMIs!
