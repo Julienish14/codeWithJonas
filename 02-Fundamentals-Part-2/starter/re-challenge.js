@@ -25,7 +25,7 @@ Ignore draws this time. Instead, log No team wins... to the console if there is 
 const calcAve = (scOne, scTwo, scThree) => (scOne + scTwo + scThree) / 3;
 
 const scDol = calcAve(23, 45, 66);
-const scKoa = calcAve(23, 56, 77);
+const scKoa = calcAve(423, 546, 77);
 
 function chWin(avDol, avKoa) {
   if (avDol > avKoa * 2) {
@@ -36,3 +36,5 @@ function chWin(avDol, avKoa) {
     console.log(`No team wins....`);
   }
 }
+
+chWin(scDol, scKoa);
