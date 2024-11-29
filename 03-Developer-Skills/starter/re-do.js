@@ -75,3 +75,10 @@ const tempAmplitudeBug = function (temp1, temp2) {
   console.log(max, min);
   return max - min;
 };
+
+const tempRoom1 = [23, 12, 44, 12];
+const tempRoom2 = ['Error', 3, 'Error'];
+const amplitudeBug = tempAmplitudeBug(tempRoom1, tempRoom2);
+
+// A) IDENTIFY
+console.log(amplitudeBug);
