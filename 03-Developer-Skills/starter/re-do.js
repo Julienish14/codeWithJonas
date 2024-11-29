@@ -51,3 +51,27 @@ const measureKelvin = function () {
   const kelvin = measurement.value + 275;
   return kelvin;
 };
+
+// A) IDENTIFY
+console.log(measureKelvin());
+
+// Using a debugger
+
+const tempAmplitudeBug = function (temp1, temp2) {
+  const temp = temp1.concat(temp2);
+  console.log(temp);
+
+  // FIX
+  let max = 0;
+  let min = 0;
+  for (let i = 0; i < temp.length; i++) {
+    let currentTemp = temp[i];
+    if (typeof currentTemp !== 'number') continue;
+
+    // debugger;
+    if (currentTemp > max) max = currentTemp;
+    if (currentTemp < min) min = currentTemp;
+  }
+  console.log(max, min);
+  return max - min;
+};
