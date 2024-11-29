@@ -99,3 +99,32 @@ Use the problem-solving framework: Understand the problem and break it up into s
 TEST DATA 1: [17, 21, 23]
 TEST DATA 2: [12, 5, -5, 0, 4]
 */
+
+//Understand the problem
+// - given max temp display them with days. (Mines)
+// - Array transformed to string, separated by ... (Jonas)
+// - What is the X days? Answer: index +1 (Jonas)
+
+//Break it up into sub-problems.
+//- How to display given element from array? (Mines)
+//- How to display days incrementing  (Mines)
+//- How to make that string (Mines)
+
+// Jonas
+
+// - Transform array into string
+// - Transform each element to string with °c
+// - Strings needs to contain day (index +1)
+// - Add ... between elements and start and end of string.
+// - Log string to console
+
+// My solution with low level of Problem solving 😅
+
+const printForecast = function (arr) {
+  let day = 1;
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    newArr.push(`... ${arr[i]}°c in ${day++} days`);
+  }
+  return newArr.toString();
+};
