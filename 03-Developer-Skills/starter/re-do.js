@@ -28,3 +28,16 @@ const tempRoom1 = [23, 12, 44, 12];
 const tempRoom2 = ['Error', 3, 'Error'];
 const amplitude = tempAmplitude(tempRoom1, tempRoom2);
 console.log(amplitude);
+
+
+//Debugging with the console and breakingpoints
+
+const measureKelvin = function () {
+  const measurement = {
+    type: 'temp',
+    unit: 'celsius',
+
+    //C) FIX
+    // value: Number(prompt('Degrees celsius: ')),
+    value: 10,
+  };
