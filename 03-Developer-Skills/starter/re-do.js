@@ -29,7 +29,6 @@ const tempRoom2 = ['Error', 3, 'Error'];
 const amplitude = tempAmplitude(tempRoom1, tempRoom2);
 console.log(amplitude);
 
-
 //Debugging with the console and breakingpoints
 
 const measureKelvin = function () {
@@ -41,3 +40,14 @@ const measureKelvin = function () {
     // value: Number(prompt('Degrees celsius: ')),
     value: 10,
   };
+
+  // FIND
+  console.table(measurement);
+
+  console.log(typeof measurement.value);
+  //   console.warn(measurement.value);
+  //   console.error(measurement.value);
+
+  const kelvin = measurement.value + 275;
+  return kelvin;
+};
