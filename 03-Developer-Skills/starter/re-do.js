@@ -128,3 +128,20 @@ const printForecast = function (arr) {
   }
   return newArr.toString();
 };
+
+// Jonas's solution. Pro😎
+
+/*
+const printForecastJ = function (arr) {
+  let str = '';
+  for (let i = 0; i < arr.length; i++) {
+    str += `... ${arr[i]}°C in ${i + 1} days `;
+  }
+  console.log(str + '...');
+};
+// const maxTemp = [17, 21, 23];
+const maxTemp = [12, 5, -5, 0, 4];
+printForecastJ(maxTemp);
+console.log(printForecast(maxTemp));
+
+*/
