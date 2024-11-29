@@ -30,7 +30,7 @@ const amplitude = tempAmplitude(tempRoom1, tempRoom2);
 console.log(amplitude);
 
 //Debugging with the console and breakingpoints
-
+/*
 const measureKelvin = function () {
   const measurement = {
     type: 'temp',
@@ -82,3 +82,5 @@ const amplitudeBug = tempAmplitudeBug(tempRoom1, tempRoom2);
 
 // A) IDENTIFY
 console.log(amplitudeBug);
+
+*/
