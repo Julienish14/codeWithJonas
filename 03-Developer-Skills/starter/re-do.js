@@ -241,3 +241,18 @@ function findSmall(arr) {
 }
 const thisArr = [34, 12, 52, 33];
 console.log(`This is the small number:  ${findSmall(thisArr)}`);
+
+//CHALLENGE FOUR: write a function that takes a string and return a new string with all vowels removed.
+
+function removeVowel(sent) {
+  const allVowels = ['a', 'i', 'e', 'u', 'o', 'A', 'I', 'E', 'U', 'O'];
+  let newSent = '';
+  for (let i = 0; i < sent.length; i++) {
+    if (!allVowels.includes(sent[i])) {
+      newSent += sent[i];
+    }
+  }
+  return newSent;
+}
+
+console.log(removeVowel('This is The SENTENCE and removed vowels'));
