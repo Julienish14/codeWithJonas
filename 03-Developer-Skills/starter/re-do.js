@@ -120,31 +120,22 @@ TEST DATA 2: [12, 5, -5, 0, 4]
 
 // My solution with low level of Problem solving 😅
 
-const printForecast = function (arr) {
-  let day = 1;
-  let newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    newArr.push(`... ${arr[i]}°c in ${day++} days`);
-  }
-  return newArr.toString();
-};
-
 // Jonas's solution. Pro😎
 
 /*
 const printForecastJ = function (arr) {
-  let str = '';
-  for (let i = 0; i < arr.length; i++) {
-    str += `... ${arr[i]}°C in ${i + 1} days `;
-  }
-  console.log(str + '...');
-};
-// const maxTemp = [17, 21, 23];
-const maxTemp = [12, 5, -5, 0, 4];
-printForecastJ(maxTemp);
-console.log(printForecast(maxTemp));
-
-*/
+    let str = '';
+    for (let i = 0; i < arr.length; i++) {
+        str += `... ${arr[i]}°C in ${i + 1} days `;
+        }
+        console.log(str + '...');
+        };
+        // const maxTemp = [17, 21, 23];
+        const maxTemp = [12, 5, -5, 0, 4];
+        printForecastJ(maxTemp);
+        console.log(printForecast(maxTemp));
+        
+        */
 
 ////////////////////////
 //CHALLENGES From CodeWar
@@ -167,21 +158,30 @@ console.log(printForecast(maxTemp));
 // console.log(`is it included? ${ele.includes(43)}`);
 
 /*
-const isIsogram = function (str) {
-  str = str.toLowerCase();
-  const toArr = str.split('');
-  toArr.sort();
+      const isIsogram = function (str) {
+        str = str.toLowerCase();
+        const toArr = str.split('');
+        toArr.sort();
+        
+        if (str === '') console.log(true);
+        
+        for (let i = 0; i < str.length; i++) {
+            if (toArr[i] === toArr[i + 1]) return false;
+            }
+            return true;
+            };
+            console.log(isIsogram('Alphabet'));
+            
+            */
 
-  if (str === '') console.log(true);
-
-  for (let i = 0; i < str.length; i++) {
-    if (toArr[i] === toArr[i + 1]) return false;
+const printForecast = function (arr) {
+  let day = 1;
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    newArr.push(`... ${arr[i]}°c in ${day++} days`);
   }
-  return true;
+  return newArr.toString();
 };
-console.log(isIsogram('Alphabet'));
-
-*/
 
 //Other way PRO 😎
 
