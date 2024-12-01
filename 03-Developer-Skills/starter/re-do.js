@@ -174,6 +174,16 @@ const printForecastJ = function (arr) {
             
             */
 
+//Other way PRO 😎
+
+/*
+           function isIsogram(str) {
+            return !/(\w).*\1/i.test(str);
+            }
+            console.log(`is this isogram? : ${isIsogram('Alphabet')}`);
+            
+            */
+
 const printForecast = function (arr) {
   let day = 1;
   let newArr = [];
@@ -182,13 +192,3 @@ const printForecast = function (arr) {
   }
   return newArr.toString();
 };
-
-//Other way PRO 😎
-
-/*
-function isIsogram(str) {
-  return !/(\w).*\1/i.test(str);
-}
-console.log(`is this isogram? : ${isIsogram('Alphabet')}`);
-
-*/
