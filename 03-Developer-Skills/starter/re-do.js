@@ -285,3 +285,16 @@ function XO(str) {
   else if (!strin.includes('o') && !strin.includes('x')) return true;
   return false;
 }
+
+function XOo(str) {
+  str = str.toLowerCase().split('');
+  return (
+    str.filter(x => x === 'x').length === str.filter(o => o === 'o').length
+  );
+}
+
+console.log(XOo('zpspsps'));
+console.log(XOo('xooxx'));
+console.log(XOo('ooxXm'));
+console.log(XOo('zpzpzpzpp'));
+console.log(XOo('zzoo'));
