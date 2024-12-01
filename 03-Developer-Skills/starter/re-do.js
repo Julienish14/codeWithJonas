@@ -256,3 +256,15 @@ function removeVowel(sent) {
 }
 
 console.log(removeVowel('This is The SENTENCE and removed vowels'));
+
+//CHALLENGE FIVE: Make a function that reverses whatever we pass into it.
+
+const reverses = function (whatever) {
+  let newWhat = ' ';
+  for (let i = whatever.length - 1; i >= 0; i--) {
+    newWhat += whatever[i];
+  }
+  return newWhat;
+};
+
+console.log(reverses('Hello My Baby!!!'));
