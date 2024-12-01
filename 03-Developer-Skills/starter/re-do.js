@@ -192,3 +192,25 @@ const printForecast = function (arr) {
   }
   return newArr.toString();
 };
+
+function isIsogram(str) {
+  return !/(\w).*\1/i.test(str);
+}
+console.log(`is this isogram? : ${isIsogram('Alphabet')}`);
+
+//Other way:
+
+function isIsogram(str) {
+  str = str.toLowerCase();
+
+  if (str === '') return true;
+
+  for (let i = 0; i < str.length; i++) {
+    for (let j = i + 1; j < str.length; j++) {
+      if (str[i] === str[j]) return false;
+    }
+  }
+
+  return true;
+}
+console.log('This is the ans: ' + isIsogram('backgrouND'));
