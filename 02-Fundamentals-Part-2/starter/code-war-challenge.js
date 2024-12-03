@@ -7,7 +7,7 @@
 /*
 function isItNarcissistic(num) {
   const toStr = num.toString();
-  const numLeng = toStr.length;
+  const numLeng = toStr.length; 
   let result = 0;
   for (let i = 0; i < numLeng; i++) {
     const y = parseInt(toStr[i]);
