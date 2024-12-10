@@ -336,22 +336,6 @@ for(let i = 0; i < population.length; i++){
 console.log(population); 
 console.log( percentage2); 
 
-const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
-
-for(let i = 0; i < listOfNeighbours.length; i++){
-    for(let m = 0; m < listOfNeighbours[i].length; m++){
-        console.log('Neighbour: '+ listOfNeighbours[i][m]);    
-    }
-}
-
-const perce3 = []; 
-
-let i = 0; 
-while(i < population.length){
-    perce3.push(percentageOfWorld3(population[i])); 
-    i++; 
-}
-console.log(perce3);
 */
 
 /*
@@ -361,23 +345,44 @@ const myCountry = {
     language: 'iKinyarwanda', 
     population: 14, 
     neighours: ['Burundi', 'Kenya', 'Uganda', 'Tanzania'], 
-
+    
     describe: function(){
         console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighours.length} neighbouring countries and a capital called ${this.capital}`)
-    }, 
+        }, 
+        
+        checkIsland: function(){
+            this.isIsland = this.neighours.length === 0 ? 'true' : 'false'; 
+            }
+            }; 
+            
+            myCountry.describe(); 
+            myCountry.checkIsland();
+            console.log(myCountry); 
+            
+            
+            for(let i = 1; i <= 50; i++){
+                console.log(`Voter number ${i} is currently voting`);
+                }
+                
+                */
 
-    checkIsland: function(){
-        this.isIsland = this.neighours.length === 0 ? 'true' : 'false'; 
-    }
-}; 
+const listOfNeighbours = [
+  ['Canada', 'Mexico'],
+  ['Spain'],
+  ['Norway', 'Sweden', 'Russia'],
+];
 
-myCountry.describe(); 
-myCountry.checkIsland();
-console.log(myCountry); 
-
-
-for(let i = 1; i <= 50; i++){
-    console.log(`Voter number ${i} is currently voting`);
+for (let i = 0; i < listOfNeighbours.length; i++) {
+  for (let m = 0; m < listOfNeighbours[i].length; m++) {
+    console.log('Neighbour: ' + listOfNeighbours[i][m]);
+  }
 }
 
-*/
+const perce3 = [];
+
+let i = 0;
+while (i < population.length) {
+  perce3.push(percentageOfWorld3(population[i]));
+  i++;
+}
+console.log(perce3);
