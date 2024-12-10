@@ -51,88 +51,89 @@ function findSmall(arr) {
 
   //CHALLENGE FOUR: write a function that takes a string and return a new string with all vowels removed.
 
-function removeVowel(sent) {
-    const allVowels = ['a', 'i', 'e', 'u', 'o', 'A', 'I', 'E', 'U', 'O'];
-    let newSent = '';
-    for (let i = 0; i < sent.length; i++) {
-      if (!allVowels.includes(sent[i])) {
-        newSent += sent[i];
-      }
-    }
-    return newSent;
-  }
-
-  console.log(removeVowel('This is The SENTENCE and removed vowels'));
-
+  
   */
 
 /*
-//CHALLENGE FIVE: Make a function that reverses whatever we pass into it.
-
-const reverses = function (whatever) {
-    let newWhat = ' ';
-    for (let i = whatever.length - 1; i >= 0; i--) {
-      newWhat += whatever[i];
+ //CHALLENGE FIVE: Make a function that reverses whatever we pass into it.
+ 
+ const reverses = function (whatever) {
+  let newWhat = ' ';
+  for (let i = whatever.length - 1; i >= 0; i--) {
+    newWhat += whatever[i];
     }
     return newWhat;
-  };
-
-  console.log(reverses('Hello My Baby!!!'));
-
-  */
-
-/*
-//CHALLENGE SIX: Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
-function XO(str) {
-  str = str.toLowerCase();
-  const strin = str.split('');
-  strin.sort();
-  const xx = [];
-  const oo = [];
-
-  for (let i = 0; i < strin.length; i++) {
-    if (strin[i] === 'x') xx.push(strin[i]);
-    else if (strin[i] === 'o') oo.push(str[i]);
-  }
-  if (xx.length === oo.length) return true;
-  else if (!strin.includes('o') && !strin.includes('x')) return true;
-  return false;
-}
-
-//Other simple way to do it like PRO 😎
-function XOo(str) {
-  str = str.toLowerCase().split('');
-  return (
-    str.filter(x => x === 'x').length === str.filter(o => o === 'o').length
-  );
-}
-
-console.log(XOo('zpspsps'));
-console.log(XOo('xooxx'));
-console.log(XOo('ooxXm'));
-console.log(XOo('zpzpzpzpp'));
-console.log(XOo('zzoo'));
-
-*/
+    };
+    
+    console.log(reverses('Hello My Baby!!!'));
+    
+    */
 
 /*
-//CHALLENGE SEVEN: Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result. It should remove all values from list a, which are present in list b keeping their order.
+   //CHALLENGE SIX: Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+   function XO(str) {
+    str = str.toLowerCase();
+    const strin = str.split('');
+    strin.sort();
+    const xx = [];
+    const oo = [];
+    
+    for (let i = 0; i < strin.length; i++) {
+      if (strin[i] === 'x') xx.push(strin[i]);
+      else if (strin[i] === 'o') oo.push(str[i]);
+      }
+      if (xx.length === oo.length) return true;
+      else if (!strin.includes('o') && !strin.includes('x')) return true;
+      return false;
+      }
+      
+      //Other simple way to do it like PRO 😎
+      function XOo(str) {
+        str = str.toLowerCase().split('');
+        return (
+          str.filter(x => x === 'x').length === str.filter(o => o === 'o').length
+          );
+          }
+          
+          console.log(XOo('zpspsps'));
+          console.log(XOo('xooxx'));
+          console.log(XOo('ooxXm'));
+          console.log(XOo('zpzpzpzpp'));
+          console.log(XOo('zzoo'));
+          
+          */
 
-const arrDiffe = function (a, b) {
-  const result = [];
-  for (let i = 0; i < a.length; i++) {
-    if (!b.includes(a[i])) {
-      result.push(a[i]);
+/*
+         //CHALLENGE SEVEN: Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result. It should remove all values from list a, which are present in list b keeping their order.
+         
+         const arrDiffe = function (a, b) {
+          const result = [];
+          for (let i = 0; i < a.length; i++) {
+            if (!b.includes(a[i])) {
+              result.push(a[i]);
+              }
+              }
+              return result;
+              };
+              
+              //Other simple way to do it like PRO 😎
+              
+              const arrDiff = (a, b) => {
+                return a.filter(i => !b.includes(i));
+                };
+                
+                console.log(arrDiffe([2, 4, 4, 1, 5], [2, 4, 3]));
+                */
+
+function removeVowel(sent) {
+  const allVowels = ['a', 'i', 'e', 'u', 'o', 'A', 'I', 'E', 'U', 'O'];
+  let newSent = '';
+  for (let i = 0; i < sent.length; i++) {
+    if (!allVowels.includes(sent[i])) {
+      newSent += sent[i];
     }
   }
-  return result;
-};
+  return newSent;
+}
 
-//Other simple way to do it like PRO 😎
-
-const arrDiff = (a, b) => {
-  return a.filter(i => !b.includes(i));
-};
-
-console.log(arrDiffe([2, 4, 4, 1, 5], [2, 4, 3]));
-*/
+console.log(removeVowel('This is The SENTENCE and removed vowels'));
