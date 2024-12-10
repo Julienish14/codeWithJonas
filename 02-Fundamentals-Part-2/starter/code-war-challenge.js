@@ -66,30 +66,16 @@ function removeVowel(sent) {
   
   */
 
-/*
-//CHALLENGE FIVE: Make a function that reverses whatever we pass into it.
-
-const reverses = function (whatever) {
-    let newWhat = ' ';
-    for (let i = whatever.length - 1; i >= 0; i--) {
-      newWhat += whatever[i];
-    }
-    return newWhat;
-  };
-  
-  console.log(reverses('Hello My Baby!!!'));
-  
-  */
-
-/*
-//CHALLENGE SIX: Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
-function XO(str) {
+ 
+ /*
+ //CHALLENGE SIX: Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+ function XO(str) {
   str = str.toLowerCase();
   const strin = str.split('');
   strin.sort();
   const xx = [];
   const oo = [];
-
+  
   for (let i = 0; i < strin.length; i++) {
     if (strin[i] === 'x') xx.push(strin[i]);
     else if (strin[i] === 'o') oo.push(str[i]);
@@ -103,6 +89,20 @@ function XO(str) {
 function XOo(str) {
   str = str.toLowerCase().split('');
   return (
+    /*
+    //CHALLENGE FIVE: Make a function that reverses whatever we pass into it.
+    
+    const reverses = function (whatever) {
+        let newWhat = ' ';
+        for (let i = whatever.length - 1; i >= 0; i--) {
+          newWhat += whatever[i];
+        }
+        return newWhat;
+      };
+      
+      console.log(reverses('Hello My Baby!!!'));
+      
+      */
     str.filter(x => x === 'x').length === str.filter(o => o === 'o').length
   );
 }
