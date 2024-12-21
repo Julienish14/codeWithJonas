@@ -39,7 +39,7 @@ calcAge(1991);
 */
 
 //HOISTING and TDZ
-
+/*
 //Variables
 console.log(me);
 // console.log(job);
@@ -80,3 +80,8 @@ const z = 3;
 console.log(x === window.x);
 console.log(y === window.y);
 console.log(z === window.z);
+*/
+
+//This key word in action.
+
+console.log(this);
