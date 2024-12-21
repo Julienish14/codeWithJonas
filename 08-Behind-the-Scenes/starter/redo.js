@@ -72,3 +72,11 @@ var numProducts = 10;
 function deleteShoppingCart() {
   console.log('All products deleted!');
 }
+
+var x = 100;
+let y = 2;
+const z = 3;
+
+console.log(x === window.x);
+console.log(y === window.y);
+console.log(z === window.z);
