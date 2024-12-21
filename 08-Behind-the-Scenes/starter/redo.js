@@ -85,3 +85,15 @@ console.log(z === window.z);
 //This key word in action.
 
 console.log(this);
+
+const calcAge = function (birthYear) {
+  console.log(2024 - birthYear);
+  console.log(this);
+};
+calcAge(1991);
+
+const calcAgeArrow = birthYear => {
+  console.log(2024 - birthYear);
+  console.log(this);
+};
+calcAgeArrow(1991);
