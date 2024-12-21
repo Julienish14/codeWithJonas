@@ -51,8 +51,9 @@ const year = 1991;
 
 //Functions
 console.log(addDecl(4, 5));
-console.log(addExpr(4, 5));
-console.log(addArrow(4, 5));
+// console.log(addExpr(4, 5));
+console.log(addArrow);
+// console.log(addArrow(4, 5));
 
 function addDecl(a, b) {
   return a + b;
@@ -60,4 +61,14 @@ function addDecl(a, b) {
 const addExpr = function (a, b) {
   return a + b;
 };
-const addArrow = (a, b) => a + b;
+var addArrow = (a, b) => a + b;
+
+//Example
+console.log(numProducts);
+if (!numProducts) deleteShoppingCart();
+
+var numProducts = 10;
+
+function deleteShoppingCart() {
+  console.log('All products deleted!');
+}
