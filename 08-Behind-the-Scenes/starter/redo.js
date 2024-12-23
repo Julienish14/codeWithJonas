@@ -116,3 +116,12 @@ matilda.calcAge();
 
 const f = jonas.calcAge;
 f();
+
+var firstName = 'Matilda';
+
+const jonas = {
+  firstName: 'Jonas',
+  year: 1991,
+  calcAge: function () {
+    // console.log(this);
+    console.log(2024 - this.year);
