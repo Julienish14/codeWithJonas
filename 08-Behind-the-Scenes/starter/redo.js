@@ -85,7 +85,7 @@ console.log(z === window.z);
 //This key word in action.
 
 // console.log(this);
-
+/*
 const calcAge = function (birthYear) {
   console.log(2024 - birthYear);
   //   console.log(this);
@@ -116,8 +116,7 @@ matilda.calcAge();
 
 const f = jonas.calcAge;
 f();
-
-
+*/
 
 var firstName = 'Matilda';
 
@@ -128,14 +127,13 @@ const jonas = {
     // console.log(this);
     console.log(2024 - this.year);
 
-
-        //Solution 1
+    //Solution 1
     const self = this; // self or that
-    const isMellenial = function () {
-      console.log(self);
-      console.log(self.year >= 1981 && self.year <= 1996);
-      //   console.log(this.year >= 1981 && this.year <= 1996);
-    };
+    // const isMellenial = function () {
+    //       console.log(self);
+    //       console.log(self.year >= 1981 && self.year <= 1996);
+    //       //   console.log(this.year >= 1981 && this.year <= 1996);
+    //     };
 
     //Solution 2
     const isMellenial = () => {
@@ -143,3 +141,11 @@ const jonas = {
       console.log(this);
       console.log(this.year >= 1981 && this.year <= 1996);
     };
+
+    isMellenial();
+  },
+  greet: () => {
+    console.log(this);
+    console.log(`Hey ${this.firstName}`);
+  },
+};
