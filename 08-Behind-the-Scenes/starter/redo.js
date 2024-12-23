@@ -166,3 +166,17 @@ addExpr(2, 5, 6, 71);
 //   return a + b;
 // }; //argument function doesn't exist in arrow fun
 // addArrow(2, 5, 6);
+
+// PRIMITIVES VS. OBJECTS (PRIMITIVES VS. REFERENCE TYPES)
+
+/* 
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+  name: 'Jonas',
+  age: 30,
+};
