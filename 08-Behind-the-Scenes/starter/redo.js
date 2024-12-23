@@ -117,6 +117,8 @@ matilda.calcAge();
 const f = jonas.calcAge;
 f();
 
+
+
 var firstName = 'Matilda';
 
 const jonas = {
@@ -125,3 +127,19 @@ const jonas = {
   calcAge: function () {
     // console.log(this);
     console.log(2024 - this.year);
+
+
+        //Solution 1
+    const self = this; // self or that
+    const isMellenial = function () {
+      console.log(self);
+      console.log(self.year >= 1981 && self.year <= 1996);
+      //   console.log(this.year >= 1981 && this.year <= 1996);
+    };
+
+    //Solution 2
+    const isMellenial = () => {
+      //Arrow func use this keyword from its parent
+      console.log(this);
+      console.log(this.year >= 1981 && this.year <= 1996);
+    };
