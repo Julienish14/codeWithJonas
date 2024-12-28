@@ -180,3 +180,15 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('body').style.backgroundColor = '#222';
     document.querySelector('.number').style.width = '15rem';
   });
+
+   //When guess is too low
+  } else if (guess < secretNumber) {
+    if (score > 1) {
+      document.querySelector('.message').textContent = '📉Too low!';
+      score--;
+      document.querySelector('.score').textContent = score;
+    } else {
+      document.querySelector('.message').textContent = '💥You lost the game';
+      document.querySelector('.score').textContent = 0;
+    }
+  }
