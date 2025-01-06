@@ -136,7 +136,7 @@ const jonas = {
     // };
 
     //Solution 2
-    const isMillenial = function () {
+    const isMillenial = () => {
       console.log(this);
       console.log(this.year >= 1981 && this.year <= 1996);
     };
@@ -151,3 +151,19 @@ const jonas = {
 
 jonas.greet();
 jonas.calcAge();
+
+//Argument keyword
+
+const addExpr = function (a, b) {
+  console.log(arguments);
+  return a + b;
+};
+addExpr(2, 5);
+addExpr(2, 4, 5, 7);
+
+var addArrow = (a, b) => {
+  console.log(arguments);
+  return a + b;
+};
+
+addArrow(2, 4, 6);
