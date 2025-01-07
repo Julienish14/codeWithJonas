@@ -199,8 +199,22 @@ const jessica = {
   family: ['Alice', 'Bob'],
 };
 
+//Shallow copy, when you only copy the first level codes not the nested
 const jessicaCopy = { ...jessica };
 jessicaCopy.lastName = 'Molino';
 
+jessicaCopy.family.push('Mary');
+jessicaCopy.family.push('John');
+
 console.log('Before: ', jessica);
 console.log('After: ', jessicaCopy);
+
+//Deep copy/clone
+
+const jessicaClone = structuredClone(jessica);
+
+jessicaClone.family.push('Malino');
+jessicaClone.family.push('John');
+
+console.log('Original: ', jessica);
+console.log('Cloned: ', jessicaClone);
