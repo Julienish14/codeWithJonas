@@ -173,13 +173,34 @@ addArrow(2, 4, 6);
 ////////////////////////////////////////
 // Object References in Practice (Shallow vs. Deep Copies)
 
-const jessica = {
+const jessicaOne = {
   firstName: 'Jessica',
   lastName: 'Williams',
   age: 27,
 };
 
-const marriedJessica = jessica;
-marriedJessica.lastName = 'Davis';
-console.log('Before: ', jessica);
+function marryPerson(OriginalPerson, newLastName) {
+  OriginalPerson.lastName = newLastName;
+  return OriginalPerson;
+}
+
+const marriedJessica = marryPerson(jessicaOne, 'Davis');
+
+// const marriedJessica = jessica;
+// marriedJessica.lastName = 'Davis';
+
+console.log('Before: ', jessicaOne);
 console.log('After: ', marriedJessica);
+
+const jessica = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+  family: ['Alice', 'Bob'],
+};
+
+const jessicaCopy = { ...jessica };
+jessicaCopy.lastName = 'Molino';
+
+console.log('Before: ', jessica);
+console.log('After: ', jessicaCopy);
