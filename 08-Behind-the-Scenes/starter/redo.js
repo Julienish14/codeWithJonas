@@ -120,6 +120,7 @@ f();
 
 // var firstName = 'Matilda';
 
+/*
 const jonas = {
   firstName: 'Jonas',
   year: 1991,
@@ -167,3 +168,18 @@ var addArrow = (a, b) => {
 };
 
 addArrow(2, 4, 6);
+*/
+
+////////////////////////////////////////
+// Object References in Practice (Shallow vs. Deep Copies)
+
+const jessica = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+};
+
+const marriedJessica = jessica;
+marriedJessica.lastName = 'Davis';
+console.log('Before: ', jessica);
+console.log('After: ', marriedJessica);
