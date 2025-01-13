@@ -225,6 +225,7 @@ const books = [
   },
 ];
 
+/*
 //Destructuring Arrays
 
 //1.1
@@ -256,3 +257,4 @@ console.log(rating, ratingsCount);
 const ratingStarts = [63405, 1808];
 const [fiveStarRatings, oneStarRatings, threeStarRatings = 0] = ratingStarts;
 console.log(fiveStarRatings, oneStarRatings, threeStarRatings);
+*/
