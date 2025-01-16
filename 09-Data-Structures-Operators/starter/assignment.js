@@ -261,7 +261,7 @@ console.log(fiveStarRatings, oneStarRatings, threeStarRatings);
 */
 
 //********* DESTRUCTURING OBJECTS ************
-
+/*
 //2.1
 // Destructure the first book from the books array into variables called title, author, ISBN.
 
@@ -289,7 +289,7 @@ let bookAuthor = 'unknown';
 ({ title: bookTitle, author: bookAuthor } = books[0]);
 
 console.log(title, author);
-
+*/
 //2.5
 /* Each book object has a deeply nested rating property as illustrated below:
 {
@@ -309,7 +309,7 @@ console.log(title, author);
 Destructure the first book object from the books array into a variable called bookRating. In the result of your destructuring, the bookRating variable should be assigned with the value of the book[0].thirdParty.goodreads.rating property. 
 Please do most of the work on the left side of the assignment operator: const ... = books[0];
   */
-
+/*
 const {
   thirdParty: {
     goodreads: { rating: bookRating },
@@ -326,3 +326,4 @@ const printBookInfo = function ({ title, author, year = 'year unknown' }) {
 };
 
 printBookInfo({ title: 'Be Kind', author: 'Mano', year: '2004' });
+*/

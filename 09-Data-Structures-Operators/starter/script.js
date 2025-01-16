@@ -34,7 +34,7 @@ const restaurant = {
   orderDelivery: function ({
     startIndex = 1,
     mainIndex = 0,
-    address,
+    address = 'kanombe',
     time = '20:00',
   }) {
     console.log(
@@ -42,7 +42,7 @@ const restaurant = {
     );
   },
 };
-
+/*
 restaurant.orderDelivery({
   time: '22:30',
   address: 'Via del Sole, 21',
@@ -52,8 +52,17 @@ restaurant.orderDelivery({
 
 restaurant.orderDelivery({
   address: 'Via del Sole, 21',
-  startIndex: 1,
+  startIndex: 0,
 });
+*/
+
+const arr = [7, 8, 9];
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(badNewArr);
+
+const newArr = [1, 2, ...arr];
+console.log(newArr);
+
 /*
 
 /////////////////////////////////////////
