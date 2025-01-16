@@ -62,6 +62,24 @@ console.log(badNewArr);
 
 const newArr = [1, 2, ...arr];
 console.log(newArr);
+console.log(...newArr); //will be the same as console.log(1, 2, 7, 8, 9)
+
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+console.log(newMenu);
+
+// Copy array.
+
+const mainMenuCopy = [...restaurant.mainMenu];
+
+// Join 2 arrays
+const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(menu);
+
+// Iterables: arrays, strings, maps, sets. NOT objects
+
+const str = 'Jonas';
+const letters = [...str, ' ', 'S.'];
+console.log(letters);
 
 /*
 
