@@ -48,21 +48,32 @@ const restaurant = {
     );
   },
 };
-/*
-restaurant.orderDelivery({
-  time: '22:30',
-  address: 'Via del Sole, 21',
-  mainIndex: 1,
-  startIndex: 2,
-});
 
-restaurant.orderDelivery({
-  address: 'Via del Sole, 21',
-  startIndex: 0,
-});
-*/
+//////////////
+// Rest pattern and parameters
+
+// SPREAD, because on RIGHT side of =
+const arr = [1, 2, ...[3, 4]];
+
+//REST, because on LEFT side of =
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
+
+const [pizza, , risotto, ...otherFood] = [
+  ...restaurant.mainMenu,
+  ...restaurant.starterMenu,
+];
+console.log(pizza, risotto, otherFood);
+
+//Objects
+
+const { sat, ...weekdays } = restaurant.openingHours;
+console.log(weekdays);
 
 /*
+////////////////////////////////
+// The Spread Operator (...)
+
 const arr = [7, 8, 9];
 const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
 console.log(badNewArr);
@@ -118,6 +129,18 @@ console.log(restaurant.name);
 
 /////////////////////////////////////////
 // Destructuring Objects
+
+restaurant.orderDelivery({
+  time: '22:30',
+  address: 'Via del Sole, 21',
+  mainIndex: 1,
+  startIndex: 2,
+});
+
+restaurant.orderDelivery({
+  address: 'Via del Sole, 21',
+  startIndex: 0,
+});
 
 const { name, openingHours, categories } = restaurant;
 console.log(name, openingHours, categories);

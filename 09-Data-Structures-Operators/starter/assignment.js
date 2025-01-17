@@ -329,7 +329,7 @@ printBookInfo({ title: 'Be Kind', author: 'Mano', year: '2004' });
 */
 
 // ************** THE SPREAD OPERATOR ***************
-
+/*
 //3.1
 // Each book object has the author property, which stores an array of strings (author names) if there are multiple authors, or a single string(author name) if there is just one author.
 //Declare an array called bookAuthors, and fill it with authors of the first two books from the books array. The bookAuthors array should have just one level (no nested arrays).
@@ -345,3 +345,4 @@ function spellWord(singleStr) {
 }
 
 spellWord('HelloWorld');
+*/
