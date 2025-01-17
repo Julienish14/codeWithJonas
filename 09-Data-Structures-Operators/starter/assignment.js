@@ -227,7 +227,7 @@ const books = [
 
 /*
 
-//********* DESTRUCTURING ARRAYS ***********
+//************************ DESTRUCTURING ARRAYS *****************************
 
 //1.1
 //Destructuring the books array into two variables called firstBook and secondBook.
@@ -260,7 +260,7 @@ const [fiveStarRatings, oneStarRatings, threeStarRatings = 0] = ratingStarts;
 console.log(fiveStarRatings, oneStarRatings, threeStarRatings);
 */
 
-//********* DESTRUCTURING OBJECTS ************
+//************************* DESTRUCTURING OBJECTS ****************************
 /*
 //2.1
 // Destructure the first book from the books array into variables called title, author, ISBN.
@@ -328,7 +328,7 @@ const printBookInfo = function ({ title, author, year = 'year unknown' }) {
 printBookInfo({ title: 'Be Kind', author: 'Mano', year: '2004' });
 */
 
-// ************** THE SPREAD OPERATOR ***************
+// **************************** THE SPREAD OPERATOR ***************************
 /*
 //3.1
 // Each book object has the author property, which stores an array of strings (author names) if there are multiple authors, or a single string(author name) if there is just one author.
@@ -345,4 +345,30 @@ function spellWord(singleStr) {
 }
 
 spellWord('HelloWorld');
+*/
+
+// *********************** Rest Pattern and Parameters ************************
+
+/*
+// 4.1
+// Destructure the keywords property (array) of the first book from the books array into variables called mainKeyword and rest. The first keyword should be assisgned to mainKeyword, and the rest of the keywords should be assigned to the rest variable (it should be an array).
+
+const [mainKeyword, ...rest] = books[0].keywords;
+console.log(mainKeyword, rest);
+
+//4.2
+//Destructure the second book from the books array into a variable called bookPublisher. The bookPublisher variable should be assigned with the value of the publisher property of the book object. Assign the rest of the properties to the restOfTheBook variable.
+
+const { publisher: bookPublisher, ...restOfTheBook } = books[1];
+console.log(bookPublisher, restOfTheBook);
+
+//4.3
+//Write a function called printBookAuthorsCount that has two parameters called title and authors. The authors parameter should accept any number of arguments. This function should log to the console a string formatted like that: "The book "${title}" has ${authors.length} authors".
+
+const printBookAuthorsCount = function (title, ...author) {
+  console.log(`The book ${title} has ${author.length} authors`);
+};
+
+printBookAuthorsCount('CoverEyes', 'Kevin', 'Kon', 'Bob');
+
 */

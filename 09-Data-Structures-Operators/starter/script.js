@@ -57,7 +57,8 @@ const restaurant = {
   },
 };
 
-//////////////
+/*
+/////////////////////////////////////
 // Rest pattern and parameters
 // 1) Destructuring
 
@@ -98,6 +99,7 @@ add(...x);
 
 restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
 restaurant.orderPizza('mushrooms');
+*/
 
 /*
 ////////////////////////////////
