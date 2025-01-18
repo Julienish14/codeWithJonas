@@ -57,6 +57,7 @@ const restaurant = {
   },
 };
 
+console.log('-------- OR --------');
 ////////////////////////////////////////
 //Short circuiting (&& and ||)
 
@@ -74,6 +75,14 @@ console.log(guest1);
 
 const guest2 = restaurant.numGuests || 10;
 console.log(guest2);
+
+console.log('-------- AND --------');
+
+console.log(0 && 'Jonas');
+console.log(7 && 'Jonas');
+console.log('Jonas' && 0);
+
+console.log('Hello' && 23 && null && 'jonas');
 
 /*
 /////////////////////////////////////
