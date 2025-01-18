@@ -49,9 +49,7 @@ const restaurant = {
   },
 
   orderPizza: function (mainIngredient, ...otherIngredients) {
-    console.log(
-      `This pizza is so yummy! Call it ${mainIngredient} and ${otherIngredients}`
-    );
+    console.log(mainIngredient, otherIngredients);
     // console.log(mainIngredient);
     // console.log(otherIngredients);
   },
@@ -83,6 +81,13 @@ console.log(7 && 'Jonas');
 console.log('Jonas' && 0);
 
 console.log('Hello' && 23 && null && 'jonas');
+
+// Practical example
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('mushrooms', 'spinach');
+}
+
+restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
 
 /*
 /////////////////////////////////////
