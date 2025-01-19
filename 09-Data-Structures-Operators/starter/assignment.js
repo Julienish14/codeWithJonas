@@ -403,3 +403,8 @@ console.log(hasExamplesInJava(books[0]));
   onlineContent: false,          // <-- HERE
 },
 */
+
+for (let i = 0; i < books.length; i++) {
+  books[i].onlineContent &&
+    console.log(`${books[i].title} provides online content.`);
+}
