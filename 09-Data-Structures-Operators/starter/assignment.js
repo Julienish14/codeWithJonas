@@ -393,3 +393,13 @@ function hasExamplesInJava(book) {
 }
 
 console.log(hasExamplesInJava(books[0]));
+
+//5.2
+//Some of the book objects have the onlineContent property, which is either true or false. Loop over the books array, and for the books that provide online content, log to the console a string in this format: "${title}" provides online content. Use short-circuiting.
+/*
+{
+  title: 'Operating System Concepts',
+  // ... removed for clarity
+  onlineContent: false,          // <-- HERE
+},
+*/
