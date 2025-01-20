@@ -57,7 +57,7 @@ const restaurant = {
 
 //////////////////////////////////////////////////
 //Logical Assignment Operators
-
+/*
 const rest1 = {
   name: 'Capri',
   // numGuests: 20,
@@ -80,8 +80,19 @@ const rest2 = {
 rest1.numGuests ??= 10;
 rest2.numGuests ??= 10;
 
+// AND assignment operator
+
+// rest1.owner = rest1.owner && '<ANONYMOUS>';
+// rest2.owner = rest2.owner && '<ANONYMOUS>';
+
+// Nullish assignment operator (null or undefined)
+
+rest1.owner &&= '<ANONYMOUS>';
+rest2.owner &&= '<ANONYMOUS>';
+
 console.log(rest1);
 console.log(rest2);
+*/
 
 //////////////////////////////////////////////////
 //The Nullish Coalescing Operator (??)
