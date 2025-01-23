@@ -59,5 +59,18 @@ const game = {
   },
 };
 
+//Ans 1
 const [players1, player2] = game.players;
 console.log(players1, player2);
+
+//Ans 2
+const [gk, ...fieldPlayers] = game.players[0];
+console.log(gk, fieldPlayers);
+
+//Ans 3
+const allPlayers = [...game.players[0], ...game.players[1]];
+console.log(allPlayers);
+
+//Ans 4
+const players1Final = [...game.players[0], 'Thiago', 'Coutinho', 'Perisic'];
+console.log(players1Final);
