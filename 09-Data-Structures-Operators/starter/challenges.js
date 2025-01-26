@@ -164,3 +164,14 @@ const game = {
     team2: 6.5,
   },
 };
+
+//Ans 1
+const [players1, player2] = game.players;
+console.log(players1, player2);
+
+//Ans 2
+const [gk, ...fieldPlayers] = game.players[0];
+
+//Jonas Ans
+const [gk1, ...fieldPlayers1] = players1;
+console.log(gk1, fieldPlayers1);
