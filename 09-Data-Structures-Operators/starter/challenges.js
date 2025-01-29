@@ -62,7 +62,9 @@ const game = {
 //Ans 1
 const [players1, player2] = game.players;
 console.log(players1, player2);
-
+//Ans 1
+const [players1, player2] = game.players;
+console.log(players1, player2);
 //Ans 2
 const [gk, ...fieldPlayers] = game.players[0];
 
