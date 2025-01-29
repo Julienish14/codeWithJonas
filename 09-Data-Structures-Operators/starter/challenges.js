@@ -18,6 +18,21 @@ GOOD LUCK😀
 
 */
 
+//Ans 6
+function printGoals(...players) {
+  console.log(`Players names: ${players}`);
+  console.log(`${players.length} goals were scored`);
+}
+
+printGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich');
+printGoals('Lewandowski', 'Kimmich');
+
+printGoals(...game.scored);
+
+//Ans 7
+team1 < team2 && console.log('Team one is more likely to win');
+team1 > team2 && console.log('Team Two is more likely to win');
+
 const game = {
   team1: 'Bayern Munich',
   team2: 'Borrussia Dortmund',
@@ -89,21 +104,6 @@ const {
   odds: { team1, x: draw, team2 },
 } = game;
 console.log(team1, draw, team2);
-
-//Ans 6
-function printGoals(...players) {
-  console.log(`Players names: ${players}`);
-  console.log(`${players.length} goals were scored`);
-}
-
-printGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich');
-printGoals('Lewandowski', 'Kimmich');
-
-printGoals(...game.scored);
-
-//Ans 7
-team1 < team2 && console.log('Team one is more likely to win');
-team1 > team2 && console.log('Team Two is more likely to win');
 
 //Ans 6
 function printGoals(...players) {
