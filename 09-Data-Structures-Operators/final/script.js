@@ -877,14 +877,7 @@ const {
   fri: { open: o, close: c },
 } = openingHours;
 console.log(o, c);
-let [main, , secondary] = restaurant.categories;
-console.log(main, secondary);
 
-// Switching variables
-// const temp = main;
-// main = secondary;
-// secondary = temp;
-// console.log(main, secondary);
 
 ///////////////////////////////////////
 // Destructuring Arrays
