@@ -59,8 +59,12 @@ const restaurant = {
 //The for of loop
 
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-
 console.log(menu);
+
+//This is the old way of doing things
+for (let i = 0; i < menu.length; i++) {
+  console.log(menu[i]);
+}
 
 //////////////////////////////////////////////////
 //Logical Assignment Operators
