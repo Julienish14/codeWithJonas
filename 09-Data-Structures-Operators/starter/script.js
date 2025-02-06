@@ -55,6 +55,13 @@ const restaurant = {
   },
 };
 
+///////////////////////////////////////////////////
+//The for of loop
+
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+console.log(menu);
+
 //////////////////////////////////////////////////
 //Logical Assignment Operators
 /*
