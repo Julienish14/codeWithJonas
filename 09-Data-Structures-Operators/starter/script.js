@@ -56,16 +56,26 @@ const restaurant = {
 };
 
 ///////////////////////////////////////////////////
-//The for of loop
+//The for-of-loop
 
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 console.log(menu);
 
 //This is the old way of doing things
+/*
 for (let i = 0; i < menu.length; i++) {
   console.log(menu[i]);
 }
+*/
 
+//New way (the for-of-loop)
+for (const item of menu) console.log(item);
+
+for (const item of menu.entries()) {
+  console.log(item);
+}
+
+console.log([...menu.entries()]);
 //////////////////////////////////////////////////
 //Logical Assignment Operators
 /*
