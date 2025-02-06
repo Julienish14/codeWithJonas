@@ -71,11 +71,18 @@ for (let i = 0; i < menu.length; i++) {
 //New way (the for-of-loop)
 for (const item of menu) console.log(item);
 
+// console.log([...menu.entries()]);
+
 for (const item of menu.entries()) {
-  console.log(item);
+  console.log(`${item[0] + 1}: ${item[1]}`);
 }
 
-console.log([...menu.entries()]);
+//Samething but in cool way using desctructuring:
+console.log('******* Using Destructuring *******');
+for (const [i, el] of menu.entries()) {
+  console.log(`${i + 1}: ${el}`);
+}
+
 //////////////////////////////////////////////////
 //Logical Assignment Operators
 /*
