@@ -59,6 +59,14 @@ const restaurant = {
     // console.log(otherIngredients);
   },
 };
+const arr = ['mon', 3, 34, 'buno', 'icon'];
+
+console.log(arr);
+
+for (const i of arr) console.log(i);
+
+for (const [s, k] of arr.entries()) console.log(s + 1, k);
+// console.log(s, k);
 
 ///////////////////////////////////////////////////
 //Enhanced Object Literals.
