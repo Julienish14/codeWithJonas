@@ -63,7 +63,9 @@ const restaurant = {
 ////////////////////////////////////////////////////
 // Optional chaining (?)
 
-console.log(restaurant.openingHours.mon);
+if (restaurant.openingHours.mon) console.log(restaurant.openingHours.mon.open);
+
+// if (restaurant.openingHours.fri) console.log(restaurant.openingHours.fri.open);
 
 ///////////////////////////////////////////////////
 //Enhanced Object Literals.
