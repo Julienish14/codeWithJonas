@@ -8,8 +8,8 @@ const flights =
 const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 
 const openingHours = {
-  thu: {
-    [weekdays[3]]: 12,
+  [weekdays[3]]: {
+    open: 12,
     close: 22,
   },
   [weekdays[4]]: {
@@ -71,6 +71,14 @@ if (restaurant.openingHours && restaurant.openingHours.mon)
 console.log(restaurant.openingHours.mon?.open);
 console.log(restaurant.openingHours?.mon?.open);
 
+// Example
+
+const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+for (const day of days) {
+  // console.log(day);
+  const open = restaurant.openingHours[day]?.open;
+  console.log(`On ${day}, we open at ${open}`);
+}
 ///////////////////////////////////////////////////
 //Enhanced Object Literals.
 
