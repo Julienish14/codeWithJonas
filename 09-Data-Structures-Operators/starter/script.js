@@ -80,6 +80,7 @@ for (const day of days) {
   console.log(`On ${day}, we open at ${open}`);
 }
 
+
 // Methods
 
 console.log(restaurant.order?.(0, 1) ?? 'Method does not exist');
@@ -96,13 +97,6 @@ console.log(users[0]?.name ?? 'User array empty');
 if (users.length > 0) console.log(users[0].name);
 else console.log('User array empty');
 
-const users = [];
-
-console.log(users[0]?.name ?? 'User array empty');
-
-//Without optional chaining
-if (users.length > 0) console.log(users[0].name);
-else console.log('User array empty');
 ///////////////////////////////////////////////////
 //Enhanced Object Literals.
 
@@ -397,6 +391,19 @@ console.log(main, secondary);
 // Receive 2 return values from a function
 const [starter, mainCourse] = restaurant.order(2, 0);
 console.log(starter, mainCourse);
+
+// De-structuring nested array
+const nested = [2, 4, [5, 6]];
+// const [i, , j] = nested;
+// console.log(i, j);
+
+const [i, , [j, k]] = nested;
+console.log(i, j, k);
+
+const [p = 1, q = 1, r = 1] = [8];
+console.log(p, q, r);
+*/
+
 
 // De-structuring nested array
 const nested = [2, 4, [5, 6]];
