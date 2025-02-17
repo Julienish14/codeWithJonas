@@ -416,3 +416,29 @@ console.log(i, j, k);
 const [p = 1, q = 1, r = 1] = [8];
 console.log(p, q, r);
 */
+
+
+
+// De-structuring nested array
+const nested = [2, 4, [5, 6]];
+// const [i, , j] = nested;
+// console.log(i, j);
+
+const [i, , [j, k]] = nested;
+console.log(i, j, k);
+
+const [p = 1, q = 1, r = 1] = [8];
+console.log(p, q, r);
+*/
+
+// De-structuring nested array
+const nested = [2, 4, [5, 6]];
+// const [i, , j] = nested;
+// console.log(i, j);
+
+const [i, , [j, k]] = nested;
+console.log(i, j, k);
+
+const [p = 1, q = 1, r = 1] = [8];
+console.log(p, q, r);
+*/
