@@ -437,3 +437,10 @@ for (let i = 0; i < books.length; i++) {
   books[i].highlighted &&= !(books[i].thirdParty.goodreads.rating < 4.2);
 }
 */
+
+/*
+for (let i = 0; i < books.length; i++) {
+  books[i].onlineContent &&
+    console.log(`${books[i].title} provides online content.`);
+}
+*/
