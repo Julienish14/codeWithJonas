@@ -38,9 +38,6 @@ const init = function () {
   player1El.classList.remove('player--active');
   winner0El.classList.add('hidden');
   winner1El.classList.add('hidden');
-
-  winner0El.classList.add('hidden');
-  winner1El.classList.add('hidden');
 };
 
 init();
