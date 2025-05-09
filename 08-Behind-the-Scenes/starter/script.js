@@ -222,7 +222,7 @@ const jessica2 = {
   age: 27,
   family: ['Alice', 'Bob'],
 };
-*/
+
 const jessicaCopy = Object.assign({}, jessica2);
 jessicaCopy.lastName = 'Davis';
 
@@ -231,3 +231,5 @@ jessicaCopy.family.push('John');
 
 console.log('Before marriage: ', jessica2);
 console.log('After marriage: ', jessicaCopy);
+
+*/
