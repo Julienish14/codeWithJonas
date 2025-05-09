@@ -105,27 +105,27 @@ btnHold.addEventListener('click', function () {
 
 // CHALLENGES WORK ON reset button...
 
-// btnNew.addEventListener('click', function () {
-//   score0El.textContent = 0;
-//   score1El.textContent = 0;
-//   current0El.textContent = 0;
-//   current1El.textContent = 0;
-//   currentScore = 0;
+btnNew.addEventListener('click', function () {
+  score0El.textContent = 0;
+  score1El.textContent = 0;
+  current0El.textContent = 0;
+  current1El.textContent = 0;
+  currentScore = 0;
 
-//   playing = true;
+  playing = true;
 
-//   document.querySelector(`.winner--${activePlayer}`).classList.add('hidden');
+  document.querySelector(`.winner--${activePlayer}`).classList.add('hidden');
 
-//   document
-//     .querySelector(`.player--${activePlayer}`)
-//     .classList.remove('player--winner');
+  document
+    .querySelector(`.player--${activePlayer}`)
+    .classList.remove('player--winner');
 
-//   document
-//     .querySelector(`.player--${activePlayer}`)
-//     .classList.add('player--active');
+  document
+    .querySelector(`.player--${activePlayer}`)
+    .classList.add('player--active');
 
-//   //   switchPlayer();
-// });
+  //   switchPlayer();
+});
 
 // Jonas Way
 
