@@ -34,6 +34,8 @@ const game = {
       'Muller',
       'Gnarby',
       'Lewandowski',
+      'Kane',
+      'Thiago',
     ],
     [
       'Burki',
