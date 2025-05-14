@@ -36,6 +36,8 @@ const game = {
       'Lewandowski',
       'Kane',
       'Thiago',
+      'Coutinho',
+      'Perisic',
     ],
     [
       'Burki',
