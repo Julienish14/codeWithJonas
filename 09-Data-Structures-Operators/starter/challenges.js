@@ -59,6 +59,7 @@ const game = {
   },
 };
 
+/*
 //Ans 1
 const [players1, player2] = game.players;
 console.log(players1, player2);
@@ -82,7 +83,7 @@ const players1Final = [...players1, 'Thiago', 'Coutinho', 'Perisic'];
 console.log(players1Final);
 
 //Ans 5
-const { team1, draw, team2 } = game.odds; //Failed
+// const { team1, draw, team2 } = game.odds; //Failed
 
 //Jonas Ans
 const {
@@ -104,3 +105,5 @@ printGoals(...game.scored);
 //Ans 7
 team1 < team2 && console.log('Team one is more likely to win');
 team1 > team2 && console.log('Team Two is more likely to win');
+
+*/
