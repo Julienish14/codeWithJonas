@@ -59,8 +59,6 @@ const game = {
   },
 };
 
-const [players1, player2] = game.players;
-console.log(players1, player2);
 /*
 //Ans 1
 const [players1, player2] = game.players;
