@@ -34,10 +34,6 @@ const game = {
       'Muller',
       'Gnarby',
       'Lewandowski',
-      'Kane',
-      'Thiago',
-      'Coutinho',
-      'Perisic',
     ],
     [
       'Burki',
