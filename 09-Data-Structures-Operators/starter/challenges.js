@@ -82,7 +82,7 @@ const players1Final = [...players1, 'Thiago', 'Coutinho', 'Perisic'];
 console.log(players1Final);
 
 //Ans 5
-// const { team1, draw, team2 } = game.odds; //Failed
+const { team1, draw, team2 } = game.odds; //Failed
 
 //Jonas Ans
 const {
