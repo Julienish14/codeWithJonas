@@ -17,9 +17,6 @@ const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 
-const current1El = document.getElementById('current--1');
-const winner0El = document.querySelector('.winner--0');
-const winner1El = document.querySelector('.winner--1');
 let scores, currentScore, activePlayer, playing;
 // Starting conditions
 
