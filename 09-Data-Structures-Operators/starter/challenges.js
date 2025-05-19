@@ -107,3 +107,38 @@ team1 < team2 && console.log('Team one is more likely to win');
 team1 > team2 && console.log('Team Two is more likely to win');
 
 */
+
+//2.4
+//Below are two variables called bookTitle and bookAuthor. Reassign them with the values of the title and author properties of the first book object from the books array.
+
+let bookTitle = 'unknown';
+let bookAuthor = 'unknown';
+
+({ title: bookTitle, author: bookAuthor } = books[0]);
+
+console.log(title, author);
+*/
+//2.5
+/* Each book object has a deeply nested rating property as illustrated below:
+{
+    title: 'Algorithms',
+    ...
+    thirdParty: {
+      goodreads: {
+        rating: 4.41,              // <-- HERE
+        ratingsCount: 1733,
+        reviewsCount: 63,
+        fiveStarRatingCount: 976,
+        oneStarRatingCount: 13
+      }
+    }
+  },
+
+  // const scoreOne = document.getElementById('score--0');
+// const scoreTwo = document.getElementById('score--1');
+// const currScoreOne = document.getElementById('current--0');
+// const currScoreTwo = document.getElementById('current--1');
+// const playerOne = document.querySelector('.player--0');
+// const playerTwo = document.querySelector('.player--1');
+// const winnerOne = document.querySelector('.winner--0');
+// const winnerTwo = document.querySelector('.winner--1');
