@@ -133,3 +133,12 @@ console.log(title, author);
       }
     }
   },
+
+  // const scoreOne = document.getElementById('score--0');
+// const scoreTwo = document.getElementById('score--1');
+// const currScoreOne = document.getElementById('current--0');
+// const currScoreTwo = document.getElementById('current--1');
+// const playerOne = document.querySelector('.player--0');
+// const playerTwo = document.querySelector('.player--1');
+// const winnerOne = document.querySelector('.winner--0');
+// const winnerTwo = document.querySelector('.winner--1');
