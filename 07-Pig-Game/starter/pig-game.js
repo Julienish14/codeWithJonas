@@ -49,41 +49,41 @@
 
 // initi();
 
-btn_roll.addEventListener('click', function () {
-  if (isPlaying) {
-    dice.classList.remove('hidden');
-    const tossDice = Math.trunc(Math.random() * 6) + 1;
-    dice.src = `dice-${tossDice}.png`;
-    if (tossDice !== 1) {
-      currentScore += tossDice;
-      document.querySelector(`#current--${currentP}`).textContent =
-        currentScore;
-    } else {
-      swithGame();
-    }
-  }
-});
+// btn_roll.addEventListener('click', function () {
+//   if (isPlaying) {
+//     dice.classList.remove('hidden');
+//     const tossDice = Math.trunc(Math.random() * 6) + 1;
+//     dice.src = `dice-${tossDice}.png`;
+//     if (tossDice !== 1) {
+//       currentScore += tossDice;
+//       document.querySelector(`#current--${currentP}`).textContent =
+//         currentScore;
+//     } else {
+//       swithGame();
+//     }
+//   }
+// });
 
-btn_hold.addEventListener('click', function () {
-  if (isPlaying) {
-    holdedScore[currentP] += currentScore;
-    document.getElementById(`score--${currentP}`).textContent =
-      holdedScore[currentP];
+// btn_hold.addEventListener('click', function () {
+//   if (isPlaying) {
+//     holdedScore[currentP] += currentScore;
+//     document.getElementById(`score--${currentP}`).textContent =
+//       holdedScore[currentP];
 
-    if (holdedScore[currentP] >= 100) {
-      isPlaying = false;
-      dice.classList.remove('hidden');
-      document
-        .querySelector(`.player--${currentP}`)
-        .classList.add('player--winner');
-      document.querySelector(`.winner--${currentP}`).classList.remove('hidden');
-      document
-        .querySelector(`.player--${currentP}`)
-        .classList.remove('player--active');
-    } else {
-      swithGame();
-    }
-  }
-});
+//     if (holdedScore[currentP] >= 100) {
+//       isPlaying = false;
+//       dice.classList.remove('hidden');
+//       document
+//         .querySelector(`.player--${currentP}`)
+//         .classList.add('player--winner');
+//       document.querySelector(`.winner--${currentP}`).classList.remove('hidden');
+//       document
+//         .querySelector(`.player--${currentP}`)
+//         .classList.remove('player--active');
+//     } else {
+//       swithGame();
+//     }
+//   }
+// });
 
 // btn_new.addEventListener('click', initi);
