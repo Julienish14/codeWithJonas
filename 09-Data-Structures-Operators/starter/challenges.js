@@ -107,6 +107,3 @@ team1 < team2 && console.log('Team one is more likely to win');
 team1 > team2 && console.log('Team Two is more likely to win');
 
 */
-
-//Ans 3
-const allPlayers = [...game.players[0], ...game.players[1]];
