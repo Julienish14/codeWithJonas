@@ -72,7 +72,6 @@ const currencies = new Map([
 ]);
 
 const movementsUSD = [200, 450, -400, 3000, -650, -130, 70, 1300];
-const movementsEUR = [5000, 3400, -150, -790, -3210, -1000, 8500, -30];
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
