@@ -33,6 +33,13 @@ const account4 = {
   pin: 4444,
 };
 
+const account5 = {
+  owner: 'Martha Johnson',
+  movements: [100, -50, 300, -200, 500],
+  interestRate: 1.2,
+  pin: 5555,
+};
+
 const accounts = [account1, account2, account3, account4];
 
 // Elements
