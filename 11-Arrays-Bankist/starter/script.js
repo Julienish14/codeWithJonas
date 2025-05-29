@@ -33,8 +33,6 @@ const account4 = {
   pin: 4444,
 };
 
-const account5 = {};
-
 const accounts = [account1, account2, account3, account4];
 
 // Elements
