@@ -22,10 +22,10 @@ const init = function () {
   activePlayer = 0;
   playing = true;
 
-  score0El.textContent = 0;
-  score1El.textContent = 0;
-  current0El.textContent = 0;
-  current1El.textContent = 0;
+  // score0El.textContent = 0;
+  // score1El.textContent = 0;
+  // current0El.textContent = 0;
+  // current1El.textContent = 0;
 
   diceEl.classList.add('hidden');
   player0El.classList.remove('player--winner');
@@ -57,9 +57,8 @@ btnRoll.addEventListener('click', function () {
     if (dice !== 1) {
       // Add dice to current score
       currentScore += dice;
-      document.getElementById(
-        `current--${activePlayer}`
-      ).textContent = currentScore;
+      document.getElementById(`current--${activePlayer}`).textContent =
+        currentScore;
     } else {
       // Switch to next player
       switchPlayer();
