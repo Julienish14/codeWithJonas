@@ -232,4 +232,9 @@ jessicaCopy.family.push('John');
 console.log('Before marriage: ', jessica2);
 console.log('After marriage: ', jessicaCopy);
 
-
+*/
+var addArrow = (a, b) => {
+  console.log(arguments);
+  return a + b;
+}; //argument function doesn't exist in arrow fun
+addArrow(2, 5, 6);
