@@ -23,3 +23,23 @@ function calcAge(birthYear) {
         return a + b;
       }
     }
+
+    //variables
+
+console.log(me);
+//console.log(job);
+//console.log(year); // both let&const create a TDZ:Temporal Dead Zone when used before initialization.
+
+var me = 'Julien';
+let job = 'teacher';
+const year = 1997;
+
+//Functions
+
+console.log(addDecl(3, 5));
+// console.log(addExpr(3, 5)); // same hear both Exp&Arro create TDZ
+// con sole.log(addArrow(3, 5)); //var gives not a function error bcz it is undifined
+
+function addDecl(a, b) {
+  return a + b;
+}
