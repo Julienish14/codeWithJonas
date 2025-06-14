@@ -70,3 +70,17 @@ const z = 7;
 console.log(x === window.x); //true
 console.log(y === window.y); //false
 console.log(z === window.z); //false
+
+// console.log(this);
+
+const calcAge = function (birthYear) {
+  console.log(2024 - birthYear);
+  //   console.log(this);
+};
+calcAge(1998);
+
+const calcAgeArrow = birthYear => {
+  console.log(2024 - 1990);
+  //   console.log(this); //arrow function doesn't get it own this keyword
+};
+calcAgeArrow();
