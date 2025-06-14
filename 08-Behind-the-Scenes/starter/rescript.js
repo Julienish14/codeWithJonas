@@ -45,3 +45,20 @@ function calcAge(birthYear) {
     }
   }
 }
+
+const addExpr = function (a, b) {
+  return a + b;
+};
+
+var addArrow = (a, b) => a + b;
+
+//Example
+
+console.log(numProducts);
+if (!numProducts) deleteShoppingCart(); //function will still be excuted even thou the numProducs is undefined. Again don't use Var
+
+var numProducts = 10;
+
+function deleteShoppingCart() {
+  console.log('All products deleted!');
+}
