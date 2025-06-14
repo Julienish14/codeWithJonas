@@ -84,3 +84,65 @@ const calcAgeArrow = birthYear => {
   //   console.log(this); //arrow function doesn't get it own this keyword
 };
 calcAgeArrow();
+const jonas = {
+  year: 1991,
+  calcAge: function () {
+    console.log(this);
+    console.log(2024 - this.year);
+  },
+};
+
+jonas.calcAge();
+
+const matilda = {
+  year: 2017,
+};
+
+matilda.calcAge = jonas.calcAge; //Method borrowing
+matilda.calcAge();
+
+const f = jonas.calcAge;
+f();
+
+// var firstName = 'Matilda';
+jonas.greet();
+jonas.calcAge();
+
+//Arguments keyword
+const addExpr = function (a, b) {
+  console.log(arguments);
+  return a + b;
+};
+addExpr(2, 5);
+addExpr(2, 5, 6, 71);
+
+// var addArrow = (a, b) => {
+//   console.log(arguments);
+//   return a + b;
+// }; //argument function doesn't exist in arrow fun
+// addArrow(2, 5, 6);
+*/
+
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+  name: 'Jonas',
+  age: 30,
+};
+
+//Primitive types
+let lastName = 'Williams';
+let oldLastName = lastName;
+lastName = 'Davis';
+console.log(lastName, oldLastName);
+
+//Reference types
+const jessica = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+};
