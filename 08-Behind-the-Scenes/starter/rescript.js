@@ -62,3 +62,11 @@ var numProducts = 10;
 function deleteShoppingCart() {
   console.log('All products deleted!');
 }
+
+var x = 1; //variable declared with var will create propert on global window object.
+let y = 5;
+const z = 7;
+
+console.log(x === window.x); //true
+console.log(y === window.y); //false
+console.log(z === window.z); //false
