@@ -121,3 +121,4 @@ addExpr(2, 5, 6, 71);
 //   return a + b;
 // }; //argument function doesn't exist in arrow fun
 // addArrow(2, 5, 6);
+*/
