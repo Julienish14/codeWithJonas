@@ -105,3 +105,19 @@ const f = jonas.calcAge;
 f();
 
 // var firstName = 'Matilda';
+jonas.greet();
+jonas.calcAge();
+
+//Arguments keyword
+const addExpr = function (a, b) {
+  console.log(arguments);
+  return a + b;
+};
+addExpr(2, 5);
+addExpr(2, 5, 6, 71);
+
+// var addArrow = (a, b) => {
+//   console.log(arguments);
+//   return a + b;
+// }; //argument function doesn't exist in arrow fun
+// addArrow(2, 5, 6);
