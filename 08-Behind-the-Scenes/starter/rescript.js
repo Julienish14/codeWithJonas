@@ -163,12 +163,12 @@ jessicaCopy.family.push('John');
 console.log('Before marriage: ', jessica2);
 console.log('After marriage: ', jessicaCopy);
 //Solution 1
-const self = this; // self or that
-const isMelleial = function () {
-  console.log(self);
-  console.log(self.year >= 1981 && self.year <= 1996);
-  //   console.log(this.year >= 1981 && this.year <= 1996);
-};
+// const self = this; // self or that
+// const isMellenial = function () {
+//   console.log(self);
+//   console.log(self.year >= 1981 && self.year <= 1996);
+//   //   console.log(this.year >= 1981 && this.year <= 1996);
+// };
 
 //Solution 2
 const isMellenial = () => {
