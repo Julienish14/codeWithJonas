@@ -27,8 +27,8 @@ function calcAge(birthYear) {
     //variables
 
     console.log(me);
-    //console.log(job);
-    //console.log(year); // both let&const create a TDZ:Temporal Dead Zone when used before initialization.
+    console.log(job);
+    console.log(year); // both let&const create a TDZ:Temporal Dead Zone when used before initialization.
 
     var me = 'Julien';
     let job = 'teacher';
@@ -109,19 +109,18 @@ jonas.greet();
 jonas.calcAge();
 
 //Arguments keyword
-const addExpr = function (a, b) {
+const addExprl = function (a, b) {
   console.log(arguments);
   return a + b;
 };
 addExpr(2, 5);
 addExpr(2, 5, 6, 71);
 
-// var addArrow = (a, b) => {
-//   console.log(arguments);
-//   return a + b;
-// }; //argument function doesn't exist in arrow fun
-// addArrow(2, 5, 6);
-*/
+var addArrow = (a, b) => {
+  console.log(arguments);
+  return a + b;
+}; //argument function doesn't exist in arrow fun
+addArrow(2, 5, 6);
 
 let age = 30;
 let oldAge = age;
@@ -146,3 +145,34 @@ const jessica = {
   lastName: 'Williams',
   age: 27,
 };
+
+// compying objects
+const jessica2 = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+  family: ['Alice', 'Bob'],
+};
+
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = 'Davis';
+
+jessicaCopy.family.push('Mary');
+jessicaCopy.family.push('John');
+
+console.log('Before marriage: ', jessica2);
+console.log('After marriage: ', jessicaCopy);
+//Solution 1
+const self = this; // self or that
+const isMellenial = function () {
+  console.log(self);
+  console.log(self.year >= 1981 && self.year <= 1996);
+  //   console.log(this.year >= 1981 && this.year <= 1996);
+};
+
+//Solution 2
+// const isMellenial = () => {
+//   //Arrow func use this keyword from its parent
+//   console.log(this);
+//   console.log(this.year >= 1981 && this.year <= 1996);
+// };
