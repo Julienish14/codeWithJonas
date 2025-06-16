@@ -176,3 +176,10 @@ const isMellenial = function () {
 //   console.log(this);
 //   console.log(this.year >= 1981 && this.year <= 1996);
 // };
+console.log(addDecl(3, 5));
+// console.log(addExpr(3, 5)); // same hear both Exp&Arro create TDZ
+// con sole.log(addArrow(3, 5)); //var gives not a function error bcz it is undifined
+
+function addDecl(a, b) {
+  return a + b;
+}
