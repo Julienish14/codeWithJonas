@@ -27,8 +27,8 @@ function calcAge(birthYear) {
     //variables
 
     console.log(me);
-    //console.log(job);
-    //console.log(year); // both let&const create a TDZ:Temporal Dead Zone when used before initialization.
+    console.log(job);
+    console.log(year); // both let&const create a TDZ:Temporal Dead Zone when used before initialization.
 
     var me = 'Julien';
     let job = 'teacher';
