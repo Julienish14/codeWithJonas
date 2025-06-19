@@ -154,31 +154,31 @@ const jessica2 = {
   family: ['Alice', 'Bob'],
 };
 
-// const jessicaCopy = Object.assign({}, jessica2);
-// jessicaCopy.lastName = 'Davis';
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = 'Davis';
 
-// jessicaCopy.family.push('Mary');
-// jessicaCopy.family.push('John');
+jessicaCopy.family.push('Mary');
+jessicaCopy.family.push('John');
 
-// console.log('Before marriage: ', jessica2);
-// console.log('After marriage: ', jessicaCopy);
-// //Solution 1
-// const self = this; // self or that
-// const isMellenial = function () {
-//   console.log(self);
-//   console.log(self.year >= 1981 && self.year <= 1996);
-//   //   console.log(this.year >= 1981 && this.year <= 1996);
+console.log('Before marriage: ', jessica2);
+console.log('After marriage: ', jessicaCopy);
+//Solution 1
+const self = this; // self or that
+const isMellenial = function () {
+  console.log(self);
+  console.log(self.year >= 1981 && self.year <= 1996);
+  //   console.log(this.year >= 1981 && this.year <= 1996);
+};
+
+//Solution 2
+// const isMellenial = () => {
+//   //Arrow func use this keyword from its parent
+//   console.log(this);
+//   console.log(this.year >= 1981 && this.year <= 1996);
 // };
-
-// //Solution 2
-// // const isMellenial = () => {
-// //   //Arrow func use this keyword from its parent
-// //   console.log(this);
-// //   console.log(this.year >= 1981 && this.year <= 1996);
-// // };
-// console.log(addDecl(3, 5));
-// // console.log(addExpr(3, 5)); // same hear both Exp&Arro create TDZ
-// // con sole.log(addArrow(3, 5)); //var gives not a function error bcz it is undifined
+console.log(addDecl(3, 5));
+// console.log(addExpr(3, 5)); // same hear both Exp&Arro create TDZ
+// con sole.log(addArrow(3, 5)); //var gives not a function error bcz it is undifined
 
 function addDecl(a, b) {
   return a + b;
