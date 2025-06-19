@@ -59,7 +59,6 @@ const game = {
   },
 };
 
-/*
 //Ans 1
 const [players1, player2] = game.players;
 console.log(players1, player2);
@@ -106,4 +105,6 @@ printGoals(...game.scored);
 team1 < team2 && console.log('Team one is more likely to win');
 team1 > team2 && console.log('Team Two is more likely to win');
 
-*/
+team1 < team2
+  ? console.log('Team one is more likely to win')
+  : console.log('Team Two is more likely to win');
