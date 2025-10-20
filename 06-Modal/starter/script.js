@@ -10,8 +10,8 @@ const closeModal = function () {
   overlay.classList.add('hidden');
 };
 const openModal = function () {
-  modal.classList.remove('hidden');
-  overlay.classList.remove('hidden');
+  // modal.classList.remove('hidden');
+  // overlay.classList.remove('hidden');
 };
 
 for (let i = 0; i < btnsOpenModal.length; i++)
