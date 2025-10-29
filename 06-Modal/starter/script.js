@@ -8,7 +8,6 @@ const btnsOpenModal = document.querySelectorAll('.show-modal');
 const closeModal = function () {
   modal.classList.add('hidden');
   overlay.classList.add('hidden');
-  modal.classList.add('hidden');
 };
 const openModal = function () {
   modal.classList.remove('hidden');
