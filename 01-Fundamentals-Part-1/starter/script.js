@@ -1,37 +1,36 @@
 'use strict';
-/*
-let js = "amazing";
-console.log (40 + 8 + 23 -10); 
 
-console.log("Jonas");
+let js = 'amazing';
+console.log(40 + 8 + 23 - 10);
+
+console.log('Jonas');
 console.log(23);
 
-let firstName = "Matilda";
+let firstName = 'Matilda';
 
 console.log(firstName);
 console.log(firstName);
 console.log(firstName);
 
- let _newjonas_$matilda = 'JM'
+let _newjonas_$matilda = 'JM';
 
- let myFirstJob = "Coder";
-let myCurrentJob = "Teacher"; 
+let myFirstJob = 'Coder';
+let myCurrentJob = 'Teacher';
 
 let job1 = 'programmer';
 let job2 = 'teacher';
 
 console.log(myFirstJob);
 
-
-true; 
-let javascriptIsFun = true; 
+true;
+let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
 console.log(typeof true);
 console.log(typeof javascriptIsFun);
 console.log(typeof 'Jonas');
 console.log(typeof 23);
-
+/*
 // change the value of variable 
 
 javascriptIsFun = 'YES!';
@@ -326,6 +325,3 @@ console.log(`I like to drink ${age >= 18 ? 'wine ğŸ·' : age === 15 ? 'water ğŸ’
 
  
 */
-
-
-
